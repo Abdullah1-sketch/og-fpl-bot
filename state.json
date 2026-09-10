@@ -1028,6 +1028,10 @@
       "name": "Bentley",
       "price": 4.0
     },
+    "655": {
+      "name": "Gboho",
+      "price": 5.5
+    },
     "42": {
       "name": "Guessand",
       "price": 5.5
@@ -3115,6 +3119,9 @@
       "https://www.chelseafc.com/en/news/article/analysis-how-devastating-palmer-and-rogers-helped-turn-tie-around",
       "https://www.chelseafc.com/en/news/article/chelseas-christmas-and-new-year-fixture-schedule-confirmed",
       "https://www.chelseafc.com/en/news/article/those-were-the-days-matchday-heritage-event-to-celebrate-the-shed",
+      "https://www.chelseafc.com/en/news/article/morgan-rogers-to-answer-your-dilemmas",
+      "https://www.chelseafc.com/en/news/article/bompastor-issues-melvine-malard-injury-update-plus-news-on-trio",
+      "https://www.chelseafc.com/en/news/article/carabao-cup-fourth-round-draw-how-to-watch-possible-opponents",
       "https://www.chelseafc.com/en/news/article/oscars-greatest-goals-in-blue",
       "https://www.chelseafc.com/en/news/article/chelsea-foundation-to-host-exclusive-gala-dinner-at-mansion-house",
       "https://www.chelseafc.com/en/news/article/five-blues-shortlisted-for-ballon-dor-2026-awards",
@@ -3150,10 +3157,10 @@
       "https://www.chelseafc.com/en/news/article/alonso-on-henderson-influence-and-caicedo-latest",
       "https://www.chelseafc.com/en/news/article/from-the-archive-marcel-desailly-on-building-a-winning-mentality-at-chelsea",
       "https://www.chelseafc.com/en/news/article/carabao-cup-ticket-news-leeds-at-home",
-      "https://www.chelseafc.com/en/news/article/the-premier-league-is-back-be-there-with-official-chelsea-membership",
-      "https://www.chelseafc.com/en/news/article/the-premier-league-is-back-be-there-with-official-chelsea-membership-app",
+      "https://www.chelseafc.com/en/news/tag/katie-mccabe",
       "https://www.chelseafc.com/en/news/article/alonso-on-learning-from-every-game-win-or-lose",
-      "https://www.chelseafc.com/en/news/tag/katie-mccabe"
+      "https://www.chelseafc.com/en/news/article/the-premier-league-is-back-be-there-with-official-chelsea-membership-app",
+      "https://www.chelseafc.com/en/news/article/the-premier-league-is-back-be-there-with-official-chelsea-membership"
     ],
     "Coventry City": [
       "https://www.ccfc.co.uk/news/2026/september/10/three-festive-fixtures-selected-for-live-broadcast-",
@@ -3371,6 +3378,7 @@
       "https://www.wearehullcity.co.uk/news/2026/september/01/thomas-joins-the-tigers"
     ],
     "Ipswich Town": [
+      "https://www.itfc.co.uk/news/2026/september/10/kick-off-changes-for-chelsea-and-coventry",
       "https://www.itfc.co.uk/news/2026/september/08/Ipswich-Town-kit-colours-Premier-League-fixture-Crystal-Palace",
       "https://www.itfc.co.uk/news/2026/september/07/ticket-details---manchester-city--a-",
       "https://www.itfc.co.uk/news/2026/september/07/academy-spotlight---oliver-wilkinson"
@@ -3400,6 +3408,7 @@
       "https://www.leedsunited.com/en/news/category/partnerships"
     ],
     "Liverpool": [
+      "https://www.liverpoolfc.com/news/every-touch-ronald-araujos-performance-against-atletico-madrid",
       "https://www.liverpoolfc.com/news/training-photos-liverpool-prepare-wsl-clash-tottenham",
       "https://www.liverpoolfc.com/news/festive-fixtures-updates-three-liverpools-premier-league-games",
       "https://www.liverpoolfc.com/news/lfc-women-team-news-roman-haug-trueman-and-squad-options",
@@ -3426,6 +3435,7 @@
       "https://www.mancity.com/news/womens",
       "https://www.mancity.com/news/eds-academy",
       "https://www.mancity.com/news/club",
+      "https://www.mancity.com/news/mens/one-moment-in-time-manchester-united-v-city-benjani-2008-63924644",
       "https://www.mancity.com/news/mens/city-new-year-and-christmas-fixtures-63924639",
       "https://www.mancity.com/news/mens/manchester-united-manchester-city-last-five-meetings-63924632",
       "https://www.mancity.com/news/womens/real-madrid-psg-womens-champions-league-tickets-man-city-63924572",
@@ -3435,9 +3445,9 @@
       "https://www.mancity.com/news/club/city-in-the-community-s-inaugural-gala-dinner-63924561",
       "https://www.mancity.com/news/mens/manchester-united-opta-analysis-september-2026-63924477",
       "https://www.mancity.com/news/club/citc-free-open-access-sessions-63924479",
-      "https://www.mancity.com/news/club/uefa-champions-league-202627-hospitality-63924537",
       "https://www.mancity.com/news/mens/man-utd-v-city-match-preview-pl-13-sep-63924475",
-      "https://www.mancity.com/news/womens/aston-villa-wsl-match-preview-september-2026-63924452"
+      "https://www.mancity.com/news/womens/aston-villa-wsl-match-preview-september-2026-63924452",
+      "https://www.mancity.com/news/club/uefa-champions-league-202627-hospitality-63924537"
     ],
     "Newcastle United": [
       "https://www.newcastleunited.com/en/news/listing/features",
