@@ -2763,10 +2763,12 @@
   },
   "recent_news_updates": {
     "Rodon|OUT": "2026-09-10T15:28:46.217871+00:00",
-    "Okafor|MINUTES": "2026-09-10T15:28:46.217871+00:00"
+    "Okafor|MINUTES": "2026-09-10T15:28:46.217871+00:00",
+    "Calafiori|ROTATION": "2026-09-10T16:12:27.698847+00:00"
   },
   "news_seen": {
     "Fantasy Football Scout": [
+      "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-calafiori-rested-gakpo-barcola-white-injury-updates",
       "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-gameweek-4-team-news-thursdays-live-injury-updates-2",
       "https://www.fantasyfootballscout.co.uk/2026/09/10/who-has-the-best-fixtures-from-fpl-gameweek-4",
       "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-gameweek-4-best-clean-sheet-odds",
@@ -2938,6 +2940,7 @@
       "https://www.uefa.com/uefaconferenceleague/news/02a8-21737138dae7-37bfb18d9aa7-1000--2026-27-conference-league-who-has-qualified-for-the-league-"
     ],
     "AFC Bournemouth": [
+      "https://www.afcb.co.uk/news/2026/september/10/rayan-named-in-latest-brazil-squad",
       "https://www.afcb.co.uk/news/2026/september/10/cherries-fpl-gameweek-4-preview",
       "https://www.afcb.co.uk/news/2026/september/10/feature--di-gregorio-excited-by-cherries--ambition-",
       "https://www.afcb.co.uk/news/2026/september/09/premier-league-2-preview-as-development-squad-look-to-maintain-perfect-record-",
@@ -3057,6 +3060,21 @@
       "https://avfc.co.uk/news/2026/september/05/prematch-travelling-north-to-take-on-the-tigers"
     ],
     "Brentford": [
+      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-aaron-hickey-haiti-0-scotland-1-group-c-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-v-croatia-2026-fifa-world-cup-jude-bellingham-morgan-rogers",
+      "https://www.brentfordfc.com/en/news/article/international-iraq-1-norway-4-2026-fifa-world-cup-kristoffer-ajer",
+      "https://www.brentfordfc.com/en/news/article/international-norway-3-senegal-2-2026-fifa-world-cup-kristoffer-ajer",
+      "https://www.brentfordfc.com/en/news/article/international-panama-0-england-2-2026-fifa-world-cup-record-jordan-henderson",
+      "https://www.brentfordfc.com/en/news/article/interviews-roger-cross-west-ham-united-england-world-cup-1966",
+      "https://www.brentfordfc.com/en/news/article/international-2026-fifa-world-cup-kristoffer-ajer-norway-2-ivory-coast-1-brazil-igor-thiago",
+      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-v-dr-congo-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-world-cup-2026-brazil-1-norway-2-mexico-2-england-3",
+      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-injury-update-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-norway-v-england-match-preview-kristoffer-ajer-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-kristoffer-ajer-interview-norway-v-england-2026-fifa-world-cup",
+      "https://www.brentfordfc.com/en/news/article/international-kristoffer-ajer-norway-1-england-2-extra-time-2026-fifa-world-cup-quarter-final",
       "https://www.brentfordfc.com/en/news/article/brentford-b-team-interview-andre-grey-reggie-rose-crystal-palace",
       "https://www.brentfordfc.com/en/news/article/first-team-brentford-premier-league-fixtures-live-sky-sports-december-2026-january-2027",
       "https://www.brentfordfc.com/en/news/article/matchday-guide-bournemouth-vitality-stadium-12-09-2026",
@@ -3092,22 +3110,22 @@
       "https://www.brentfordfc.com/en/news/article/club-news-brentford-reiterates-commitment-to-ensuring-acceptable-behaviour",
       "https://www.brentfordfc.com/en/news/article/brentford-b-team-sign-kiefer-gorman-watford-sweden",
       "https://www.brentfordfc.com/en/news/article/fpl-fantasy-football-scout-gameweek-3-premier-league-2026-27-hints-tips-advice",
-      "https://www.brentfordfc.com/en/news/article/analysis-phil-smith-sunderland-echo-brentford-premier-league",
-      "https://www.brentfordfc.com/en/news/article/first-team-mamadou-sangare-keane-lewis-potter-kevin-schade-premier-league-awards-august",
-      "https://www.brentfordfc.com/en/news/article/club-news-brentford-community-mental-health-talking-is-the-best-tactic-2026",
-      "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
-      "https://www.brentfordfc.com/en/news/article/first-team-jayden-meghoma-portsmouth-loan-transfer",
-      "https://www.brentfordfc.com/en/news/video/interviews-phil-giles-director-of-football-summer-2026-premier-league-transfer-window-round-up",
-      "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
+      "https://www.brentfordfc.com/en/news/article/brentford-women-v-newhaven-gtech-community-stadium-lse-premier-27-09-2026",
       "https://www.brentfordfc.com/en/news/article/analysis-leeds-united-1-brentford-1-premier-league-vitaly-janelt-mamadou-sangare-kevin-schade",
-      "https://www.brentfordfc.com/en/news/tag/u18s-premier-league",
-      "https://www.brentfordfc.com/en/news/article/brentford-b-team-match-preview-sunderland-u21s-premier-league-2-wheatsheaf-park",
-      "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league",
       "https://www.brentfordfc.com/en/news/article/first-team-leeds-united-v-brentford-premier-league-confirmed-team-news-30-08-2026",
-      "https://www.brentfordfc.com/en/news/article/brentford-women-8-aylesford-2-kiszkis-hat-trick-lse-premier",
-      "https://www.brentfordfc.com/en/news/article/stadium-guide-leeds-united-elland-road-premier-league-30-08-2026",
+      "https://www.brentfordfc.com/en/news/article/first-team-jayden-meghoma-portsmouth-loan-transfer",
+      "https://www.brentfordfc.com/en/news/article/analysis-phil-smith-sunderland-echo-brentford-premier-league",
+      "https://www.brentfordfc.com/en/news/article/brentford-b-team-match-preview-sunderland-u21s-premier-league-2-wheatsheaf-park",
+      "https://www.brentfordfc.com/en/news/article/first-team-mamadou-sangare-keane-lewis-potter-kevin-schade-premier-league-awards-august",
+      "https://www.brentfordfc.com/en/news/article/match-reports-leeds-united-1-brentford-1-premier-league-30-08-2026",
       "https://www.brentfordfc.com/en/news/article/first-team-carabao-cup-round-three-reading-v-brentford",
-      "https://www.brentfordfc.com/en/news/article/brentford-women-v-newhaven-gtech-community-stadium-lse-premier-27-09-2026"
+      "https://www.brentfordfc.com/en/news/article/stadium-guide-leeds-united-elland-road-premier-league-30-08-2026",
+      "https://www.brentfordfc.com/en/news/article/club-news-brentford-community-mental-health-talking-is-the-best-tactic-2026",
+      "https://www.brentfordfc.com/en/news/article/brentford-women-8-aylesford-2-kiszkis-hat-trick-lse-premier",
+      "https://www.brentfordfc.com/en/news/article/academy-west-ham-u18s-5-brentford-u18s-4-jai-nwosu-gary-mcdermott-match-report-u18s-premier-league",
+      "https://www.brentfordfc.com/en/news/article/brentford-b-team-5-sunderland-u21s-1-match-report-kaye-furo-fabio-carvalho-premier-league-2",
+      "https://www.brentfordfc.com/en/news/tag/u18s-premier-league",
+      "https://www.brentfordfc.com/en/news/video/interviews-phil-giles-director-of-football-summer-2026-premier-league-transfer-window-round-up"
     ],
     "Brighton": [],
     "Chelsea": [
