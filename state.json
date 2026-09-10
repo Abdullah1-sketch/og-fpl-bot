@@ -125,6 +125,14 @@
     "63": {
       "name": "Milosavljević",
       "prediction": -0.934
+    },
+    "103": {
+      "name": "Dasilva",
+      "prediction": -0.904
+    },
+    "552": {
+      "name": "Brobbey",
+      "prediction": -0.902
     }
   },
   "last_prices": {
@@ -2744,5 +2752,9 @@
       "name": "J.Angulo",
       "price": 4.5
     }
+  },
+  "deadline_alerts": {
+    "4": {},
+    "3": {}
   }
 }
