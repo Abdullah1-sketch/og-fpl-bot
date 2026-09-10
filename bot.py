@@ -105,8 +105,6 @@ def format_prediction_post(direction, players):
         lines.append(f"{arrow} {p['name']} — {pct:.0f}%")
 
     lines.append("")
-    lines.append("النسب توقعية وليست تغييرًا مؤكدًا.")
-    lines.append("")
     lines.append("#FPL")
     lines.append("#فانتزي_البريميرليغ")
 
