@@ -2739,117 +2739,59 @@
   },
   "recent_news_updates": {
     "Calafiori|ROTATION": "2026-09-11T01:22:50.293233+00:00",
-    "White|INJURY": "2026-09-11T01:22:50.293233+00:00"
+    "White|INJURY": "2026-09-11T01:22:50.293233+00:00",
+    "Tavernier|ROTATION": "2026-09-11T01:44:38.509350+00:00",
+    "Rayan|ROTATION": "2026-09-11T01:44:38.509350+00:00"
   },
   "news_seen": {
     "Fantasy Football Scout": [
       "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-calafiori-rested-gakpo-barcola-white-injury-updates",
-      "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-gameweek-4-team-news-thursdays-live-injury-updates-2",
-      "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-dedic-injury-mendy-sub-explained-another-hall-assist"
+      "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-gameweek-4-team-news-thursdays-live-injury-updates-2"
     ],
     "Premier League": [],
     "UEFA Champions League": [],
     "UEFA Europa League": [],
     "UEFA Conference League": [],
-    "AFC Bournemouth": [
-      "https://www.afcb.co.uk/news/2026/september/10/rayan-named-in-latest-brazil-squad",
-      "https://www.afcb.co.uk/news/2026/september/10/injury-news--updates-on-"
-    ],
-    "Arsenal": [
-      "https://www.arsenal.com/news/all/1",
-      "https://www.arsenal.com/news/men/1"
-    ],
-    "Aston Villa": [
-      "https://avfc.co.uk/news/2026/september/10/matchday-guide--aston-villa-vs-manchester-city",
-      "https://avfc.co.uk/news/2026/september/10/news-festive-fixtures-confirmed"
-    ],
-    "Brentford": [
-      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-2026-fifa-world-cup",
-      "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup"
-    ],
+    "AFC Bournemouth": [],
+    "Arsenal": [],
+    "Aston Villa": [],
+    "Brentford": [],
     "Brighton Press Conferences": [],
     "Brighton": [],
-    "Chelsea": [
-      "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
-      "https://www.chelseafc.com/en/news/article/premier-league-ticket-news-bournemouth-at-home-2026-27"
-    ],
-    "Coventry City": [
-      "https://www.ccfc.co.uk/news/2026/september/10/three-festive-fixtures-selected-for-live-broadcast-",
-      "https://www.ccfc.co.uk/news/2026/september/10/-mascot-packages-now-on-sale-for-october-fixtures"
-    ],
-    "Crystal Palace": [
-      "https://www.cpfc.co.uk/news/club/palace-back-together-against-suicide-campaign-partner-life-and-progress",
-      "https://www.cpfc.co.uk/news/video/sage-on-role-of-possession-vs-ipswich-chilwells-impact"
-    ],
-    "Everton": [
-      "https://www.evertonfc.com/news/2026/september/10/watch--blues--intense-training-session-for-spurs-test",
-      "https://www.evertonfc.com/news/2026/september/10/three-of-everton-s-festive-fixtures-moved-for-live-television-coverage"
-    ],
-    "Fulham": [
-      "https://www.fulhamfc.com/news/2026/september/10/motspur-parklife-liverpool-prep",
-      "https://www.fulhamfc.com/news/2026/september/10/cottage-tactico-liverpools-risk-and-reward-balance"
-    ],
-    "Hull City": [
-      "https://www.wearehullcity.co.uk/news/2026/september/10/Fantasy-Football-Scout-Gameweek-4-Hints-and-tips",
-      "https://www.wearehullcity.co.uk/news/2026/september/10/expert-view-nobel-mendy"
-    ],
-    "Ipswich Town": [
-      "https://www.itfc.co.uk/news/2026/september/10/kick-off-changes-for-chelsea-and-coventry",
-      "https://www.itfc.co.uk/news/2026/september/08/Ipswich-Town-kit-colours-Premier-League-fixture-Crystal-Palace"
-    ],
+    "Chelsea": [],
+    "Coventry City": [],
+    "Crystal Palace": [],
+    "Everton": [],
+    "Fulham": [],
+    "Hull City": [],
+    "Ipswich Town": [],
     "Leeds United": [
-      "https://www.leedsunited.com/en/news/listing/academy",
-      "https://www.leedsunited.com/en/news/listing/women",
       "https://www.leedsunited.com/en/news/daniel-farke-provides-update-on-duos-fitness-ahead-of-newcastle"
     ],
     "Liverpool": [
-      "https://www.liverpoolfc.com/news/inside-anfield-unseen-moments-and-best-views-liverpool-2-1-atletico",
-      "https://www.liverpoolfc.com/news/lfc-women-team-news-roman-haug-trueman-and-squad-options",
-      "https://www.liverpoolfc.com/news/friday-watch-andoni-iraolas-liverpool-v-fulham-press-conference-live",
-      "https://www.liverpoolfc.com/news/rio-ngumoha-way-anfield-roars-its-crazy-and-its-special",
-      "https://www.liverpoolfc.com/news/podcast-reaction-and-analysis-champions-league-win-over-atletico",
-      "https://www.liverpoolfc.com/news/liverpool-2-1-atletico-madrid-watch-andoni-iraolas-post-match-press-conference"
+      "https://www.liverpoolfc.com/news/lfc-women-team-news-roman-haug-trueman-and-squad-options"
     ],
-    "Manchester City": [
-      "https://www.mancity.com/news/mens"
-    ],
+    "Manchester City": [],
     "Manchester United Press Conference": [
       "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
       "https://www.manutd.com/ko/news/manchester-united-4-sabah-0",
       "https://www.manutd.com/ar/news/carrick-identifies-threat-supplied-by-sesko",
       "https://www.manutd.com/ko/news/carrick-identifies-threat-supplied-by-sesko",
-      "https://www.manutd.com/ar/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah",
-      "https://www.manutd.com/ko/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah",
-      "https://www.manutd.com/ar/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
-      "https://www.manutd.com/ko/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
-      "https://www.manutd.com/ar/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo",
-      "https://www.manutd.com/ko/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo"
+      "https://www.manutd.com/ar/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah"
     ],
     "Manchester United": [
       "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
       "https://www.manutd.com/ko/news/manchester-united-4-sabah-0",
       "https://www.manutd.com/ar/news/carrick-identifies-threat-supplied-by-sesko",
       "https://www.manutd.com/ko/news/carrick-identifies-threat-supplied-by-sesko",
-      "https://www.manutd.com/ar/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah",
-      "https://www.manutd.com/ko/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah",
-      "https://www.manutd.com/ar/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
-      "https://www.manutd.com/ko/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
-      "https://www.manutd.com/ar/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo",
-      "https://www.manutd.com/ko/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo"
+      "https://www.manutd.com/ar/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah"
     ],
     "Newcastle United": [
-      "https://www.newcastleunited.com/en/news/listing/features",
       "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-fernandez-pardo-and-hall-latest-ahead-of-leeds-trip"
     ],
-    "Nottingham Forest": [
-      "https://www.nottinghamforest.co.uk/news/2026/september/10/visitor-guides---aston-villa"
-    ],
-    "Sunderland": [
-      "https://www.safc.com/news/2026/september/10/fantasy-football-scout--spotlight-on-ballard"
-    ],
-    "Tottenham Hotspur": [
-      "https://www.tottenhamhotspur.com/news/2026/february/tottenham-hotspur-announces-partnership-with-infinox"
-    ]
+    "Nottingham Forest": [],
+    "Sunderland": [],
+    "Tottenham Hotspur": []
   },
   "sitemap_fallback_baselined": true,
   "daily_prediction_date": "",
