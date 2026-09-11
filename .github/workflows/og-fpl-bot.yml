@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Get files
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -43,13 +45,45 @@ jobs:
         run: python bot.py
 
       - name: Save bot state
+        shell: bash
         run: |
+          set -euo pipefail
+
           if git diff --quiet -- state.json; then
             echo "No state changes"
             exit 0
           fi
+
+          # Preserve the state created by this run.
+          cp state.json /tmp/og-fpl-state.json
+
           git config user.name "og-fpl-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add state.json
-          git commit -m "Update bot state"
-          git push
+
+          # Retry a few times in case main changes while this run is finishing.
+          for attempt in 1 2 3; do
+            echo "State save attempt ${attempt}/3"
+
+            git fetch origin main
+            git reset --hard origin/main
+            cp /tmp/og-fpl-state.json state.json
+
+            if git diff --quiet -- state.json; then
+              echo "State already current"
+              exit 0
+            fi
+
+            git add state.json
+            git commit -m "Update bot state"
+
+            if git push origin HEAD:main; then
+              echo "State saved successfully"
+              exit 0
+            fi
+
+            echo "Push was rejected; refreshing main and retrying..."
+            sleep 2
+          done
+
+          echo "Failed to save state after 3 attempts"
+          exit 1
