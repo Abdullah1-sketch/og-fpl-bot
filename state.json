@@ -19,6 +19,11 @@
     "26": {
       "name": "Havertz",
       "prediction": 0.901
+    },
+    "165": {
+      "name": "João Pedro",
+      "prediction": 98.9,
+      "alerted_at": "2026-09-11T15:10:12.611611+00:00"
     }
   },
   "alerted_fall": {
@@ -109,6 +114,61 @@
     "269": {
       "name": "Sessegnon",
       "prediction": -0.912
+    },
+    "542": {
+      "name": "E.Le Fée",
+      "prediction": -105.0,
+      "alerted_at": "2026-09-11T15:10:12.828544+00:00"
+    },
+    "125": {
+      "name": "Georginio",
+      "prediction": -102.5,
+      "alerted_at": "2026-09-11T15:10:13.020734+00:00"
+    },
+    "265": {
+      "name": "Berge",
+      "prediction": -99.8,
+      "alerted_at": "2026-09-11T15:10:13.242860+00:00"
+    },
+    "498": {
+      "name": "Senesi",
+      "prediction": -97.6,
+      "alerted_at": "2026-09-11T15:10:13.469107+00:00"
+    },
+    "522": {
+      "name": "Gray",
+      "prediction": -97.5,
+      "alerted_at": "2026-09-11T15:10:13.677911+00:00"
+    },
+    "97": {
+      "name": "Jensen",
+      "prediction": -97.2,
+      "alerted_at": "2026-09-11T15:10:13.876209+00:00"
+    },
+    "105": {
+      "name": "Anthony",
+      "prediction": -95.2,
+      "alerted_at": "2026-09-11T15:10:14.093763+00:00"
+    },
+    "223": {
+      "name": "Mateta",
+      "prediction": -94.4,
+      "alerted_at": "2026-09-11T15:10:14.297764+00:00"
+    },
+    "412": {
+      "name": "Lammens",
+      "prediction": -94.2,
+      "alerted_at": "2026-09-11T15:10:14.506524+00:00"
+    },
+    "452": {
+      "name": "Bruno G.",
+      "prediction": -92.8,
+      "alerted_at": "2026-09-11T15:10:14.743202+00:00"
+    },
+    "582": {
+      "name": "Madjo",
+      "prediction": -92.2,
+      "alerted_at": "2026-09-11T15:10:14.927924+00:00"
     }
   },
   "last_prices": {
@@ -1007,6 +1067,10 @@
     "655": {
       "name": "Gboho",
       "price": 5.5
+    },
+    "656": {
+      "name": "Mfuni",
+      "price": 4.0
     },
     "42": {
       "name": "Guessand",
@@ -3627,6 +3691,9 @@
   "sitemap_fallback_baselined": true,
   "daily_prediction_date": "",
   "last_confirmed_price_date_uk": "2026-09-11",
-  "news_logic_version": 7,
-  "conference_schedule": {}
+  "news_logic_version": 8,
+  "conference_schedule": {},
+  "ffscout_sections": {
+    "https://www.fantasyfootballscout.co.uk/2026/09/11/fpl-gameweek-4-team-news-fridays-live-injury-updates-4": {}
+  }
 }
