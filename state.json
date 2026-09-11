@@ -329,6 +329,16 @@
       "name": "Solanke",
       "prediction": -85.2,
       "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "43": {
+      "name": "Tielemans",
+      "prediction": -86.9,
+      "alerted_at": "2026-09-11T23:19:44.584897+00:00"
+    },
+    "533": {
+      "name": "Mukiele",
+      "prediction": -85.5,
+      "alerted_at": "2026-09-11T23:19:44.584897+00:00"
     }
   },
   "last_prices": {
