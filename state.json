@@ -1,6 +1,116 @@
 {
-  "alerted_rise": {},
-  "alerted_fall": {},
+  "alerted_rise": {
+    "449": {
+      "name": "Hall",
+      "prediction": 1.013
+    },
+    "454": {
+      "name": "Elanga",
+      "prediction": 0.988
+    },
+    "31": {
+      "name": "Konsa",
+      "prediction": 0.966
+    },
+    "279": {
+      "name": "Ajayi",
+      "prediction": 0.927
+    },
+    "26": {
+      "name": "Havertz",
+      "prediction": 0.901
+    }
+  },
+  "alerted_fall": {
+    "14": {
+      "name": "Eze",
+      "prediction": -1.042
+    },
+    "374": {
+      "name": "Endo",
+      "prediction": -1.033
+    },
+    "48": {
+      "name": "Onana",
+      "prediction": -0.997
+    },
+    "524": {
+      "name": "Olusesi",
+      "prediction": -0.987
+    },
+    "63": {
+      "name": "Milosavljević",
+      "prediction": -0.986
+    },
+    "300": {
+      "name": "Walton",
+      "prediction": -0.983
+    },
+    "552": {
+      "name": "Brobbey",
+      "prediction": -0.982
+    },
+    "513": {
+      "name": "Xavi",
+      "prediction": -0.98
+    },
+    "313": {
+      "name": "Clarke",
+      "prediction": -0.971
+    },
+    "152": {
+      "name": "Palestra",
+      "prediction": -0.97
+    },
+    "502": {
+      "name": "Robertson",
+      "prediction": -0.963
+    },
+    "395": {
+      "name": "Lewis",
+      "prediction": -0.96
+    },
+    "266": {
+      "name": "Cairney",
+      "prediction": -0.957
+    },
+    "243": {
+      "name": "Alcaraz",
+      "prediction": -0.947
+    },
+    "359": {
+      "name": "Gomez",
+      "prediction": -0.947
+    },
+    "560": {
+      "name": "Penders",
+      "prediction": -0.946
+    },
+    "278": {
+      "name": "Hughes",
+      "prediction": -0.941
+    },
+    "17": {
+      "name": "Merino",
+      "prediction": -0.94
+    },
+    "506": {
+      "name": "Udogie",
+      "prediction": -0.936
+    },
+    "338": {
+      "name": "Ampadu",
+      "prediction": -0.934
+    },
+    "103": {
+      "name": "Dasilva",
+      "prediction": -0.913
+    },
+    "269": {
+      "name": "Sessegnon",
+      "prediction": -0.912
+    }
+  },
   "last_prices": {
     "1": {
       "name": "Raya",
@@ -2649,10 +2759,10 @@
       "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-dedic-injury-mendy-sub-explained-another-hall-assist",
       "https://www.fantasyfootballscout.co.uk/2026/09/09/fpl-notes-haaland-double-no-cash-cherki-subbed-early-again",
       "https://www.fantasyfootballscout.co.uk/2026/09/09/missed-the-ucl-fantasy-deadline-heres-a-matchday-1-squad-you-can-still-enter",
-      "https://www.fantasyfootballscout.co.uk/2026/09/09/goals-assists-imminent-who-is-due-in-fpl-gameweek-4",
       "https://www.fantasyfootballscout.co.uk/2026/09/10/fantasy-efl-gameweek-5-scout-picks-3",
+      "https://www.fantasyfootballscout.co.uk/2026/09/09/how-fpl-harry-mark-sutherns-more-did-in-gameweek-3",
       "https://www.fantasyfootballscout.co.uk/2026/09/09/0-up-6-down-wednesdays-fpl-price-changes-predictions",
-      "https://www.fantasyfootballscout.co.uk/2026/09/09/how-fpl-harry-mark-sutherns-more-did-in-gameweek-3"
+      "https://www.fantasyfootballscout.co.uk/2026/09/09/goals-assists-imminent-who-is-due-in-fpl-gameweek-4"
     ],
     "Premier League": [],
     "UEFA Champions League": [
@@ -2706,8 +2816,8 @@
       "https://www.uefa.com/uefachampionsleague/news/02a9-218a9ecd5f83-091799d07d42-1000--different-roads-same-dream-how-sabah-and-coach-dambrauska",
       "https://www.uefa.com/uefachampionsleague/news/02a9-2188586e5576-a0a49c496252-1000--jose-mourinho-interview-real-madrid-coach-on-league-phas",
       "https://www.uefa.com/uefachampionsleague/news/02a9-2188570c88bb-d0fb15a9399a-1000--erling-haaland-interview-man-city-striker-on-his-playing-",
-      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures",
-      "https://www.uefa.com/uefaconferenceleague/news/02a8-21737138dae7-37bfb18d9aa7-1000--2026-27-conference-league-who-has-qualified-for-the-league-"
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-21737138dae7-37bfb18d9aa7-1000--2026-27-conference-league-who-has-qualified-for-the-league-",
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures"
     ],
     "UEFA Europa League": [
       "https://www.uefa.com/uefachampionsleague/news/trending-now",
@@ -2718,6 +2828,12 @@
       "https://www.uefa.com/womenschampionsleague/news/queenzine/news",
       "https://www.uefa.com/womenschampionsleague/news/queenzine/publications",
       "https://www.uefa.com/womenseuro/news/players-to-watch",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-218f92165095-9612a9de92d3-1000--champions-league-matchday-1-thursday-highlights-and-round-u",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-218f8e669a0a-debba167a199-1000--champions-league-top-scorers-ermedin-demirovic-ferran-torres",
+      "https://www.uefa.com/uefachampionsleague/news/0225-0e919f9fb3a2-f33f9f8bd0a7-1000--champions-league-matchday-1-classic-games",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-and-results-by-team",
+      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-218b8766a6ce-03f12a507d5c-1000--every-2026-27-uefa-champions-league-player-of-the-match",
       "https://www.uefa.com/uefachampionsleague/news/02a9-218d719135c9-b50c80ec606c-1000--every-uefa-champions-league-goal-of-the-day",
       "https://www.uefa.com/uefayouthleague/news/02a9-217f1797a7df-a124ba203d2c-1000--uefa-youth-league-drama-as-league-phase-begins",
       "https://www.uefa.com/uefachampionsleague/news/02a9-2180c6b55c39-54a55373de68-1000--champions-league-matchday-1-key-stats-and-what-to-look-o",
@@ -2725,43 +2841,43 @@
       "https://www.uefa.com/uefachampionsleague/news/02a8-217913c5bd8c-5552b60e811a-1000--ten-storylines-from-the-champions-league-league-phase-draw-",
       "https://www.uefa.com/uefanationsleague/news/02a9-218efce0f6d6-a500a56143e9-1000--uefa-nations-league-greece-gear-up-for-first-league-a-cam",
       "https://www.uefa.com/uefachampionsleague/news/0253-0d82037aaedd-f371c464f919-1000--where-to-watch-the-champions-league-tv-broadcast-partners-li",
-      "https://www.uefa.com/uefachampionsleague/news/0225-0e919f9fb3a2-f33f9f8bd0a7-1000--champions-league-matchday-1-classic-games",
       "https://www.uefa.com/uefachampionsleague/news/02a6-20d57cfcd03e-407c22a7f465-1000--2026-27-champions-league-teams-dates-draws-format-final",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-218080c33e00-948c7f405b79-1000--uefa-champions-league-var-technical-explanations",
       "https://www.uefa.com/uefayouthleague/news/0253-0d0472189d41-ff9acc9e4636-1000--all-time-uefa-youth-league-records",
+      "https://www.uefa.com/uefachampionsleague/news/02a7-2101c9e7335c-4bb71d400574-1000--harry-kane-in-the-champions-league-records-stats-who-he-ha",
+      "https://www.uefa.com/uefachampionsleague/news/023d-0e97c625b737-41a8e3c3c6c3-1000--the-highest-scoring-nights-and-matchdays-in-the-champions-l",
+      "https://www.uefa.com/uefachampionsleague/news/0257-0e994d4dc7ad-61a6d5d372dd-1000--champions-league-group-stage-league-phase-records-and-stati",
+      "https://www.uefa.com/uefachampionsleague/news/0257-0e9a02ecaf1e-a1d96d1587ba-1000--who-are-the-all-time-champions-league-group-stage-league",
       "https://www.uefa.com/uefachampionsleague/news/0257-0e9a10f58015-92c648e6303d-1000--who-has-played-100-champions-league-games-thibaut-courtois-",
       "https://www.uefa.com/uefachampionsleague/news/025a-0e9f8a3d1e40-d534e8b4a897-1000--champions-league-all-time-appearances-cristiano-ronaldo-iker",
+      "https://www.uefa.com/uefachampionsleague/news/0257-0e910cf2494a-5185150de9d4-1000--champions-league-all-time-top-scorers-cristiano-ronaldo-",
       "https://www.uefa.com/uefachampionsleague/news/0257-0e9a0f70e31c-e6f6d51eef60-1000--who-has-made-the-most-uefa-club-competition-appearances",
+      "https://www.uefa.com/uefachampionsleague/news/0257-0e91daaa4ec8-19686ad1d08f-1000--uefa-club-competition-all-time-top-scorers-cristiano-ronaldo",
+      "https://www.uefa.com/uefachampionsleague/news/0253-0e99cb9576d8-81e0528b33a7-1000--champions-league-s-top-goalkeepers-iker-casillas-most-ap",
       "https://www.uefa.com/uefachampionsleague/news/02a9-218d8d30549a-1b24ad6c6a98-1000--champions-league-matchday-1-wednesday-highlights-and-roun",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2174c9e9019d-f909a77bd77a-1000--2026-27-champions-league-all-the-league-phase-fixtures-a",
-      "https://www.uefa.com/uefachampionsleague/news/02a9-218b8766a6ce-03f12a507d5c-1000--every-2026-27-uefa-champions-league-player-of-the-match",
-      "https://www.uefa.com/uefachampionsleague/news/02a8-2176fa83582b-d99f0b27f405-1000--champions-league-league-phase-fixtures-and-results-by-team",
       "https://www.uefa.com/uefachampionsleague/news/0257-0e99f0d0d91b-eb0f4ba7a8f7-1000--champions-league-hat-tricks-who-has-the-most-when-was-th",
       "https://www.uefa.com/uefachampionsleague/news/02a9-218857a01cf9-8e16cfe050b8-1000--pau-cubarsi-interview-barcelona-defender-on-his-playing-",
       "https://www.uefa.com/futsalfinalissima/news/02a9-218cf056b537-c74f9d2bbb2e-1000--brazil-to-host-futsal-finalissima-2026",
       "https://www.uefa.com/under20intercontinental/news/02a9-218cc4dbf062-8895dec2c475-1000--tickets-on-sale-for-under-20-intercontinental-cup-real-mad",
       "https://www.uefa.com/uefayouthleague/news/02a9-217f1f848ed1-ec20c176b093-1000--uefa-youth-league-domestic-champions-path-starts-tuesday",
-      "https://www.uefa.com/uefachampionsleague/news/02a9-218080c33e00-948c7f405b79-1000--uefa-champions-league-var-technical-explanations",
       "https://www.uefa.com/uefachampionsleague/news/02a9-218880e7a2aa-96adf63aa534-1000--who-is-the-referee-which-officials-are-in-charge-of-the-uefa",
       "https://www.uefa.com/uefachampionsleague/news/02a7-211e6967ce56-e8c3af6961a3-1000--lamine-yamal-in-the-champions-league-records-stats-who-h",
       "https://www.uefa.com/uefachampionsleague/news/0243-0e9cafe88e22-3c9a4d092ca1-1000--champions-league-longest-unbeaten-runs-and-winning-streaks-",
-      "https://www.uefa.com/uefachampionsleague/news/0257-0e994d4dc7ad-61a6d5d372dd-1000--champions-league-group-stage-league-phase-records-and-stati",
       "https://www.uefa.com/uefachampionsleague/news/0281-18096ab833ba-60100b78b635-1000--most-champions-league-games-and-wins-as-a-coach",
       "https://www.uefa.com/uefachampionsleague/news/029d-1eb2d5faf53c-d67c9fed04fa-1000--2027-uefa-champions-league-final-estadio-metropolitano-m",
       "https://www.uefa.com/uefachampionsleague/news/02a7-211c60a5eb04-753a65259af9-1000--ousmane-dembele-in-the-champions-league-records-stats-who-h",
-      "https://www.uefa.com/uefachampionsleague/news/0257-0e9a02ecaf1e-a1d96d1587ba-1000--who-are-the-all-time-champions-league-group-stage-league",
       "https://www.uefa.com/uefachampionsleague/news/02a1-1fa9bc9c0c06-600016927519-1000--who-has-scored-the-most-champions-league-goals-at-the-age-",
-      "https://www.uefa.com/uefachampionsleague/news/0253-0e99cb9576d8-81e0528b33a7-1000--champions-league-s-top-goalkeepers-iker-casillas-most-ap",
       "https://www.uefa.com/uefachampionsleague/news/02a9-218b8c00ab1e-0e070e496ca8-1000--champions-league-matchday-1-highlights-and-round-up-real-mad",
       "https://www.uefa.com/uefachampionsleague/news/0219-0e8c384ee79a-e94c0f9968ee-1000--champions-league-opening-scorers-john-mcginn-scores-firs",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-218b019cbca5-cb4b9be51c4b-1000--2026-ballon-d-or-awards-nominees-revealed",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-218a9ecd5f83-091799d07d42-1000--different-roads-same-dream-how-sabah-and-coach-dambrauska",
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-21737138dae7-37bfb18d9aa7-1000--2026-27-conference-league-who-has-qualified-for-the-league-",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-2188570c88bb-d0fb15a9399a-1000--erling-haaland-interview-man-city-striker-on-his-playing-",
+      "https://www.uefa.com/uefachampionsleague/news/02a9-2188586e5576-a0a49c496252-1000--jose-mourinho-interview-real-madrid-coach-on-league-phas",
+      "https://www.uefa.com/womenschampionsleague/news/02a9-218b01b0161c-10398b774ecc-1000--2026-ballon-d-or-awards-nominees-revealed",
       "https://www.uefa.com/uefaeuropaleague/news/02a9-218b246a8d84-9ca13dac85fb-1000--europa-league-matchday-1-briefing-milan-vs-benfica-plus-t",
       "https://www.uefa.com/regionscup/news/02a2-1ff6e0c8d221-39770df1ab9a-1000--uefa-regions-cup-qualifying-federacion-canaria-zenica-doboj",
-      "https://www.uefa.com/uefachampionsleague/news/02a9-218b019cbca5-cb4b9be51c4b-1000--2026-ballon-d-or-awards-nominees-revealed",
-      "https://www.uefa.com/womenschampionsleague/news/02a9-218b01b0161c-10398b774ecc-1000--2026-ballon-d-or-awards-nominees-revealed",
-      "https://www.uefa.com/uefachampionsleague/news/02a9-218a9ecd5f83-091799d07d42-1000--different-roads-same-dream-how-sabah-and-coach-dambrauska",
-      "https://www.uefa.com/uefachampionsleague/news/02a9-2188586e5576-a0a49c496252-1000--jose-mourinho-interview-real-madrid-coach-on-league-phas",
-      "https://www.uefa.com/uefachampionsleague/news/02a9-2188570c88bb-d0fb15a9399a-1000--erling-haaland-interview-man-city-striker-on-his-playing-",
-      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures",
-      "https://www.uefa.com/uefaconferenceleague/news/02a8-21737138dae7-37bfb18d9aa7-1000--2026-27-conference-league-who-has-qualified-for-the-league-"
+      "https://www.uefa.com/uefaconferenceleague/news/02a8-2174cb200f25-b94693ddff4e-1000--2026-27-conference-league-all-the-league-phase-fixtures"
     ],
     "UEFA Conference League": [
       "https://www.uefa.com/uefachampionsleague/news/trending-now",
