@@ -24,6 +24,11 @@
       "name": "João Pedro",
       "prediction": 98.9,
       "alerted_at": "2026-09-11T15:10:12.611611+00:00"
+    },
+    "40": {
+      "name": "Rogers",
+      "prediction": 101.1,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
     }
   },
   "alerted_fall": {
@@ -279,6 +284,51 @@
       "name": "Kevin",
       "prediction": -85.8,
       "alerted_at": "2026-09-11T17:46:33.125386+00:00"
+    },
+    "491": {
+      "name": "Igor Jesus",
+      "prediction": -101.5,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "482": {
+      "name": "Hudson-Odoi",
+      "prediction": -100.4,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "231": {
+      "name": "Keane",
+      "prediction": -91.3,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "336": {
+      "name": "Okafor",
+      "prediction": -89.7,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "529": {
+      "name": "Roefs",
+      "prediction": -89.1,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "212": {
+      "name": "Hughes",
+      "prediction": -87.0,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "270": {
+      "name": "Reed",
+      "prediction": -86.1,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "473": {
+      "name": "Aina",
+      "prediction": -86.1,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "526": {
+      "name": "Solanke",
+      "prediction": -85.2,
+      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
     }
   },
   "last_prices": {
