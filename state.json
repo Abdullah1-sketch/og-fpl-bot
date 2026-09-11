@@ -339,6 +339,21 @@
       "name": "Mukiele",
       "prediction": -85.5,
       "alerted_at": "2026-09-11T23:19:44.584897+00:00"
+    },
+    "11": {
+      "name": "Mosquera",
+      "prediction": -89.0,
+      "alerted_at": "2026-09-11T23:32:06.628070+00:00"
+    },
+    "246": {
+      "name": "Röhl",
+      "prediction": -88.4,
+      "alerted_at": "2026-09-11T23:32:06.628070+00:00"
+    },
+    "164": {
+      "name": "Quenda",
+      "prediction": -87.0,
+      "alerted_at": "2026-09-11T23:32:06.628070+00:00"
     }
   },
   "last_prices": {
