@@ -2746,12 +2746,14 @@
       "https://www.afcb.co.uk/news/2026/september/10/feature--di-gregorio-excited-by-cherries--ambition-",
       "https://www.afcb.co.uk/news/2026/september/09/premier-league-2-preview-as-development-squad-look-to-maintain-perfect-record-",
       "https://www.afcb.co.uk/news/2026/september/08/gallery--ryan-christie-bags-hat-trick-as-cherries-beat-lincoln-",
+      "https://www.afcb.co.uk/news/2026/september/08/team-news--michele-di-gregorio-makes-cherries-debut-",
+      "https://www.afcb.co.uk/news/2026/september/08/match-report-v-lincoln",
       "https://www.afcb.co.uk/news/2026/september/05/tavernier-newcastle-draw-reaction"
     ],
     "Arsenal": [
-      "https://www.arsenal.com/news/all/1",
       "https://www.arsenal.com/news/men/1",
       "https://www.arsenal.com/news/women/1",
+      "https://www.arsenal.com/news/all/1",
       "https://www.arsenal.com/news/academy/1"
     ],
     "Aston Villa": [
@@ -2760,13 +2762,17 @@
       "https://avfc.co.uk/news/2026/september/10/fans-villa-matchday-whatsapp-channel",
       "https://avfc.co.uk/news/2026/september/10/fans-aston-villa-deliver-support-for-fans-in-together-against-suicide-initiative",
       "https://avfc.co.uk/news/2026/september/10/prematch-nottingham-forest-fpl-preview",
+      "https://avfc.co.uk/news/2026/september/09/retail-personalise-your-adidas-originals-denim-at-the-bullring",
+      "https://avfc.co.uk/news/2026/september/09/postmatch-gallery-off-to-a-flyer-in-europe",
       "https://avfc.co.uk/news/2026/september/08/postmatch-unai-emery-club-brugge-reaction"
     ],
     "Brentford": [
       "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-2026-fifa-world-cup",
       "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup",
       "https://www.brentfordfc.com/en/news/article/international-aaron-hickey-haiti-0-scotland-1-group-c-2026-fifa-world-cup",
-      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-v-croatia-2026-fifa-world-cup-jude-bellingham-morgan-rogers"
+      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-v-croatia-2026-fifa-world-cup-jude-bellingham-morgan-rogers",
+      "https://www.brentfordfc.com/en/news/article/international-iraq-1-norway-4-2026-fifa-world-cup-kristoffer-ajer",
+      "https://www.brentfordfc.com/en/news/article/international-norway-3-senegal-2-2026-fifa-world-cup-kristoffer-ajer"
     ],
     "Brighton Press Conferences": [],
     "Brighton": [],
@@ -2775,37 +2781,44 @@
       "https://www.chelseafc.com/en/news/article/premier-league-ticket-news-bournemouth-at-home-2026-27",
       "https://www.chelseafc.com/en/news/article/hull-game-travel-warning-fulham-broadway-closed-district-line-disruption",
       "https://www.chelseafc.com/en/news/article/cole-palmer-you-can-see-im-enjoying-my-football",
+      "https://www.chelseafc.com/en/news/article/alonso-we-want-to-be-able-to-win-a-boring-game",
+      "https://www.chelseafc.com/en/news/article/wnl-cup-report-swindon-town-1-2-chelsea-women-under-18s",
       "https://www.chelseafc.com/en/news/article/key-talking-points-from-sonia-bompastors-pre-man-utd-press-conference"
     ],
     "Coventry City": [
       "https://www.ccfc.co.uk/news/2026/september/10/three-festive-fixtures-selected-for-live-broadcast-",
       "https://www.ccfc.co.uk/news/2026/september/10/-mascot-packages-now-on-sale-for-october-fixtures",
       "https://www.ccfc.co.uk/news/2026/september/08/ticket-exchange-open-for-brighton---hove-albion--h-",
-      "https://www.ccfc.co.uk/news/2026/september/08/ticket-forwarding--how-it-works-for-2026-27"
+      "https://www.ccfc.co.uk/news/2026/september/08/ticket-forwarding--how-it-works-for-2026-27",
+      "https://www.ccfc.co.uk/news/2026/september/07/nottingham-forest--a--ticket-allocation-sold-out"
     ],
     "Crystal Palace": [
       "https://www.cpfc.co.uk/news/club/palace-back-together-against-suicide-campaign-partner-life-and-progress",
       "https://www.cpfc.co.uk/news/video/sage-on-role-of-possession-vs-ipswich-chilwells-impact",
       "https://www.cpfc.co.uk/news/features/academy-spotlight-sarah-lawson-tilley",
-      "https://www.cpfc.co.uk/news/announcement/three-changes-as-palaces-festive-fixture-schedule-confirmed"
+      "https://www.cpfc.co.uk/news/announcement/three-changes-as-palaces-festive-fixture-schedule-confirmed",
+      "https://www.cpfc.co.uk/news/first-team/team-news-sage-updates-on-doucoure-ahead-of-ipswich-visit"
     ],
     "Everton": [
       "https://www.evertonfc.com/news/2026/september/10/watch--blues--intense-training-session-for-spurs-test",
       "https://www.evertonfc.com/news/2026/september/10/three-of-everton-s-festive-fixtures-moved-for-live-television-coverage",
       "https://www.evertonfc.com/news/2026/september/10/gallery--blues-in-training-for-spurs-clash",
-      "https://www.evertonfc.com/news/2026/september/10/garner-s-hunger-to-contribute-while-recapturing-peak-fitness"
+      "https://www.evertonfc.com/news/2026/september/10/garner-s-hunger-to-contribute-while-recapturing-peak-fitness",
+      "https://www.evertonfc.com/news/2026/september/10/everton-icon-cahill-to-return-alongside-brazil-great-rivaldo-at-hill-dickinson-stadium"
     ],
     "Fulham": [
       "https://www.fulhamfc.com/news/2026/september/10/motspur-parklife-liverpool-prep",
       "https://www.fulhamfc.com/news/2026/september/10/cottage-tactico-liverpools-risk-and-reward-balance",
       "https://www.fulhamfc.com/news/2026/september/10/bassey-to-captain-this-club-is-unbelievable",
-      "https://www.fulhamfc.com/news/2026/september/09/cesar-we-have-a-strong-desire-to-win"
+      "https://www.fulhamfc.com/news/2026/september/09/cesar-we-have-a-strong-desire-to-win",
+      "https://www.fulhamfc.com/news/2025/may/20/hudl-become-official-player-performance-insights-partner"
     ],
     "Hull City": [
       "https://www.wearehullcity.co.uk/news/2026/september/10/Fantasy-Football-Scout-Gameweek-4-Hints-and-tips",
       "https://www.wearehullcity.co.uk/news/2026/september/10/expert-view-nobel-mendy",
       "https://www.wearehullcity.co.uk/news/2026/september/10/sellars-they-gave-everything",
-      "https://www.wearehullcity.co.uk/news/2026/september/10/festive-fixtures-moved"
+      "https://www.wearehullcity.co.uk/news/2026/september/10/festive-fixtures-moved",
+      "https://www.wearehullcity.co.uk/news/2026/september/10/hull-city-u21s-1-1-brentford-u21s"
     ],
     "Ipswich Town": [
       "https://www.itfc.co.uk/news/2026/september/10/kick-off-changes-for-chelsea-and-coventry",
@@ -2816,12 +2829,14 @@
       "https://www.leedsunited.com/en/news/listing/academy",
       "https://www.leedsunited.com/en/news/listing/women",
       "https://www.leedsunited.com/en/news/listing/club-news",
-      "https://www.leedsunited.com/en/news/listing/ticketing"
+      "https://www.leedsunited.com/en/news/listing/ticketing",
+      "https://www.leedsunited.com/en/news/listing/community"
     ],
     "Liverpool": [
       "https://www.liverpoolfc.com/news/inside-anfield-unseen-moments-and-best-views-liverpool-2-1-atletico",
       "https://www.liverpoolfc.com/news/liverpool-v-fulham-tv-channels-live-commentary-how-watch-highlights-and-more",
       "https://www.liverpoolfc.com/news/liverpool-v-tottenham-watch-gareth-taylors-wsl-preview",
+      "https://www.liverpoolfc.com/news/arsenal-manchester-united-and-liverpool-tracking-eu50m-rated-defender",
       "https://www.liverpoolfc.com/news/friday-watch-andoni-iraolas-liverpool-v-fulham-press-conference-live",
       "https://www.liverpoolfc.com/news/rio-ngumoha-way-anfield-roars-its-crazy-and-its-special",
       "https://www.liverpoolfc.com/news/podcast-reaction-and-analysis-champions-league-win-over-atletico",
@@ -2832,7 +2847,8 @@
     "Manchester City": [
       "https://www.mancity.com/news/mens",
       "https://www.mancity.com/news/womens",
-      "https://www.mancity.com/news/eds-academy"
+      "https://www.mancity.com/news/eds-academy",
+      "https://www.mancity.com/news/club"
     ],
     "Manchester United Press Conference": [
       "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
@@ -2881,12 +2897,14 @@
     "Newcastle United": [
       "https://www.newcastleunited.com/en/news/listing/features",
       "https://www.newcastleunited.com/en/news/listing/mens-news",
-      "https://www.newcastleunited.com/en/news/listing/womens-news"
+      "https://www.newcastleunited.com/en/news/listing/womens-news",
+      "https://www.newcastleunited.com/en/news/listing/academy-news"
     ],
     "Nottingham Forest": [
       "https://www.nottinghamforest.co.uk/news/2026/september/10/visitor-guides---aston-villa",
       "https://www.nottinghamforest.co.uk/news/2026/september/10/202",
       "https://www.nottinghamforest.co.uk/news/2026/september/10/team-news-for-aston-villa-clash",
+      "https://www.nottinghamforest.co.uk/news/2026/september/10/festive-tv-selections---three-games-affected",
       "https://www.nottinghamforest.co.uk/news/2026/september/10/live-blog---pre-aston-villa-press-conference",
       "https://www.nottinghamforest.co.uk/news/2026/september/10/how-to-follow-glasner-s-pre-villa-press-conference",
       "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction"
@@ -2894,12 +2912,14 @@
     "Sunderland": [
       "https://www.safc.com/news/2026/september/10/fantasy-football-scout--spotlight-on-ballard",
       "https://www.safc.com/news/2026/september/10/reay---it-s-a-fantastic-start---but-we-remain-grounded-",
-      "https://www.safc.com/news/2026/september/10/liverpool-and-manchester-united-fixtures-selected-for-sky-sports-coverage"
+      "https://www.safc.com/news/2026/september/10/liverpool-and-manchester-united-fixtures-selected-for-sky-sports-coverage",
+      "https://www.safc.com/news/2026/september/10/le-bris-on-mundle-and-diarra-injuries"
     ],
     "Tottenham Hotspur": [
       "https://www.tottenhamhotspur.com/news/2026/february/tottenham-hotspur-announces-partnership-with-infinox",
       "https://www.tottenhamhotspur.com/news/featured",
-      "https://www.tottenhamhotspur.com/news/spurs-media-watch"
+      "https://www.tottenhamhotspur.com/news/spurs-media-watch",
+      "https://www.tottenhamhotspur.com/news/983633/travel-information-spurs-legends-vs-ac-milan-glorie"
     ]
   },
   "sitemap_fallback_baselined": true,
