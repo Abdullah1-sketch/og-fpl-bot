@@ -2737,9 +2737,15 @@
     "4": {},
     "3": {}
   },
-  "recent_news_updates": {},
+  "recent_news_updates": {
+    "Calafiori|ROTATION": "2026-09-11T01:22:50.293233+00:00",
+    "White|INJURY": "2026-09-11T01:22:50.293233+00:00"
+  },
   "news_seen": {
-    "Fantasy Football Scout": [],
+    "Fantasy Football Scout": [
+      "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-notes-calafiori-rested-gakpo-barcola-white-injury-updates",
+      "https://www.fantasyfootballscout.co.uk/2026/09/10/fpl-gameweek-4-team-news-thursdays-live-injury-updates-2"
+    ],
     "Premier League": [],
     "UEFA Champions League": [],
     "UEFA Europa League": [],
@@ -2757,12 +2763,30 @@
     "Fulham": [],
     "Hull City": [],
     "Ipswich Town": [],
-    "Leeds United": [],
-    "Liverpool": [],
+    "Leeds United": [
+      "https://www.leedsunited.com/en/news/daniel-farke-provides-update-on-duos-fitness-ahead-of-newcastle"
+    ],
+    "Liverpool": [
+      "https://www.liverpoolfc.com/news/lfc-women-team-news-roman-haug-trueman-and-squad-options"
+    ],
     "Manchester City": [],
-    "Manchester United Press Conference": [],
-    "Manchester United": [],
-    "Newcastle United": [],
+    "Manchester United Press Conference": [
+      "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
+      "https://www.manutd.com/ko/news/manchester-united-4-sabah-0",
+      "https://www.manutd.com/ar/news/carrick-identifies-threat-supplied-by-sesko",
+      "https://www.manutd.com/ko/news/carrick-identifies-threat-supplied-by-sesko",
+      "https://www.manutd.com/ar/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah"
+    ],
+    "Manchester United": [
+      "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
+      "https://www.manutd.com/ko/news/manchester-united-4-sabah-0",
+      "https://www.manutd.com/ar/news/carrick-identifies-threat-supplied-by-sesko",
+      "https://www.manutd.com/ko/news/carrick-identifies-threat-supplied-by-sesko",
+      "https://www.manutd.com/ar/news/carrick-encouraged-by-connections-from-man-utd-champions-league-win-v-sabah"
+    ],
+    "Newcastle United": [
+      "https://www.newcastleunited.com/en/news/matthias-jaissles-team-news-update-fernandez-pardo-and-hall-latest-ahead-of-leeds-trip"
+    ],
     "Nottingham Forest": [],
     "Sunderland": [],
     "Tottenham Hotspur": []
