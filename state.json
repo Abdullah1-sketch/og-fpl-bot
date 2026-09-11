@@ -354,6 +354,16 @@
       "name": "Quenda",
       "prediction": -87.0,
       "alerted_at": "2026-09-11T23:32:06.628070+00:00"
+    },
+    "587": {
+      "name": "Rulli",
+      "prediction": -91.0,
+      "alerted_at": "2026-09-11T23:46:00.833154+00:00"
+    },
+    "378": {
+      "name": "McConnell",
+      "prediction": -87.6,
+      "alerted_at": "2026-09-11T23:46:00.833154+00:00"
     }
   },
   "last_prices": {
