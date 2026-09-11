@@ -2740,6 +2740,7 @@
   "recent_news_updates": {},
   "news_seen": {
     "AFC Bournemouth": [
+      "https://www.afcb.co.uk/news/2026/september/10/helen-bleazard-previews-league-clash-against-lewes-",
       "https://www.afcb.co.uk/news/2026/september/10/rayan-named-in-latest-brazil-squad",
       "https://www.afcb.co.uk/news/2026/september/10/injury-news--updates-on-",
       "https://www.afcb.co.uk/news/2026/september/10/cherries-fpl-gameweek-4-preview",
@@ -2792,21 +2793,23 @@
       "https://www.afcb.co.uk/news/2026/august/28/afc-bournemouth-announces-carling-brewer--molson-coors--as-official-beer-supplier"
     ],
     "Arsenal": [
-      "https://www.arsenal.com/news/everything-you-need-to-know-about-the-ticket-hub-aIBDa9M54aPn",
       "https://www.arsenal.com/news/all/1",
-      "https://www.arsenal.com/news/club/1",
-      "https://www.arsenal.com/news/safeguarding-aKleE8V4RedX",
-      "https://www.arsenal.com/news/women/1",
-      "https://www.arsenal.com/news/gay-gooners-aIddi9f8F9co",
-      "https://www.arsenal.com/news/calendar-import-aCMaF4Q9OGKp",
       "https://www.arsenal.com/news/men/1",
-      "https://www.arsenal.com/news/get-to-emirates-stadium-aErsq4S9pmwx",
-      "https://www.arsenal.com/news/arsenal-disabled-supporters-association-acj8p2P0pK6j",
-      "https://www.arsenal.com/news/emirates-stadium-access-guide-ayXpB8x47RJS",
+      "https://www.arsenal.com/news/women/1",
+      "https://www.arsenal.com/news/academy/1",
+      "https://www.arsenal.com/news/club/1",
+      "https://www.arsenal.com/news/calendar-import-aCMaF4Q9OGKp",
+      "https://www.arsenal.com/news/everything-you-need-to-know-about-the-ticket-hub-aIBDa9M54aPn",
       "https://www.arsenal.com/news/mens-ticketing-guide-202627-a3OJ93u8067p",
-      "https://www.arsenal.com/news/academy/1"
+      "https://www.arsenal.com/news/safeguarding-aKleE8V4RedX",
+      "https://www.arsenal.com/news/arsenal-disabled-supporters-association-acj8p2P0pK6j",
+      "https://www.arsenal.com/news/gay-gooners-aIddi9f8F9co",
+      "https://www.arsenal.com/news/get-to-emirates-stadium-aErsq4S9pmwx",
+      "https://www.arsenal.com/news/emirates-stadium-access-guide-ayXpB8x47RJS"
     ],
     "Aston Villa": [
+      "https://avfc.co.uk/news/2026/september/11/ticketing-brentford-ticket-details",
+      "https://avfc.co.uk/news/2026/september/11/effc7ce0-adba-11f1-b598-b5fc7f8856a6",
       "https://avfc.co.uk/news/2026/september/11/news-inside-the-matchday-programme-for-nottm-forest",
       "https://avfc.co.uk/news/2026/september/10/matchday-guide--aston-villa-vs-manchester-city",
       "https://avfc.co.uk/news/2026/september/10/news-festive-fixtures-confirmed",
@@ -2855,12 +2858,13 @@
       "https://avfc.co.uk/news/2026/september/05/1fa097e0-a967-11f1-8710-a12e43410573",
       "https://avfc.co.uk/news/2026/september/05/postmatch-interview-emery-comfortable-with-hull-stalemate",
       "https://avfc.co.uk/news/2026/september/05/281e8120-a958-11f1-a3cc-bf0db9b5f35e",
-      "https://avfc.co.uk/news/2026/september/05/women-report--chelsea-1-1-aston-villa",
-      "https://avfc.co.uk/news/2026/september/05/report-hull-city-0-0-aston-villa"
+      "https://avfc.co.uk/news/2026/september/05/report-hull-city-0-0-aston-villa",
+      "https://avfc.co.uk/news/2026/september/05/women-report--chelsea-1-1-aston-villa"
     ],
     "Brentford": [
       "https://www.brentfordfc.com/en/news/article/brentford-women-v-newhaven-lse-premier-gtech-community-stadium-activities",
       "https://www.brentfordfc.com/en/news/article/club-news-brentford-fans-players-talking-is-the-best-tactic",
+      "https://www.brentfordfc.com/en/news/article/brentford-b-team-v-everton-u21s-premier-league-2-wheatsheaf-park-match-preview",
       "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-2026-fifa-world-cup",
       "https://www.brentfordfc.com/en/news/article/international-igor-thiago-brazil-1-morocco-1-group-c-2026-fifa-world-cup",
       "https://www.brentfordfc.com/en/news/article/international-aaron-hickey-haiti-0-scotland-1-group-c-2026-fifa-world-cup",
@@ -2933,7 +2937,8 @@
       "https://www.chelseafc.com/en/news/article/training-gallery-rest-recovery-and-getting-ready",
       "https://www.chelseafc.com/en/news/article/oscars-greatest-goals-in-blue",
       "https://www.chelseafc.com/en/news/article/chelsea-foundation-to-host-exclusive-gala-dinner-at-mansion-house",
-      "https://www.chelseafc.com/en/news/article/five-blues-shortlisted-for-ballon-dor-2026-awards"
+      "https://www.chelseafc.com/en/news/article/five-blues-shortlisted-for-ballon-dor-2026-awards",
+      "https://www.chelseafc.com/en/news/article/chelsea-vs-leeds-all-you-need-to-know-cc-26-27"
     ],
     "Coventry City": [
       "https://www.ccfc.co.uk/news/2026/september/10/three-festive-fixtures-selected-for-live-broadcast-",
@@ -3040,6 +3045,9 @@
       "https://www.cpfc.co.uk/news/academy/live-saturday-1100-bst-palace-u18s-ready-for-tottenham-test"
     ],
     "Everton": [
+      "https://www.evertonfc.com/news/2026/september/11/where-to-go-for-live-coverage---highlights-of-tottenham-v-everton",
+      "https://www.evertonfc.com/news/2026/september/11/watch-moyes--press-conference---follow-live-blog",
+      "https://www.evertonfc.com/news/2026/september/10/mastermind--dewsbury-hall-takes-on-harry-potter-questions-",
       "https://www.evertonfc.com/news/2026/september/10/watch--blues--intense-training-session-for-spurs-test",
       "https://www.evertonfc.com/news/2026/september/10/three-of-everton-s-festive-fixtures-moved-for-live-television-coverage",
       "https://www.evertonfc.com/news/2026/september/10/gallery--blues-in-training-for-spurs-clash",
@@ -3099,6 +3107,9 @@
       "https://www.fulhamfc.com/news/2025/may/20/hudl-become-official-player-performance-insights-partner"
     ],
     "Hull City": [
+      "https://www.wearehullcity.co.uk/news/2026/september/11/club-statement-fa-charge",
+      "https://www.wearehullcity.co.uk/news/2026/september/11/club-statement-sorba-thomas",
+      "https://www.wearehullcity.co.uk/news/2026/september/11/mcvitie-s-player-of-the-month--august-2026-nominees",
       "https://www.wearehullcity.co.uk/news/2026/september/11/goodman-togetherness-got-us-through",
       "https://www.wearehullcity.co.uk/news/2026/september/10/Fantasy-Football-Scout-Gameweek-4-Hints-and-tips",
       "https://www.wearehullcity.co.uk/news/2026/september/10/expert-view-nobel-mendy",
@@ -3196,17 +3207,18 @@
       "https://www.liverpoolfc.com/news/podcast-reaction-and-analysis-champions-league-win-over-atletico",
       "https://www.liverpoolfc.com/news/liverpool-2-1-atletico-madrid-watch-extended-highlights-and-full-match",
       "https://www.liverpoolfc.com/news/liverpool-2-1-atletico-madrid-watch-andoni-iraolas-post-match-press-conference",
-      "https://www.liverpoolfc.com/news/andoni-iraola-press-conference-players-have-shown-big-character",
+      "https://www.liverpoolfc.com/news/bradley-barcola-cody-gakpo-and-milos-kerkez-fitness-update",
       "https://www.liverpoolfc.com/news/revealed-liverpools-carlsberg-player-match-v-atletico-madrid",
-      "https://www.liverpoolfc.com/news/alexis-mac-allister-we-showed-our-desire-we-want-meet-expectations",
+      "https://www.liverpoolfc.com/news/andoni-iraola-press-conference-players-have-shown-big-character",
       "https://www.liverpoolfc.com/news/friday-watch-andoni-iraolas-liverpool-v-fulham-press-conference-live",
-      "https://www.liverpoolfc.com/news/bradley-barcola-cody-gakpo-and-milos-kerkez-fitness-update"
+      "https://www.liverpoolfc.com/news/alexis-mac-allister-we-showed-our-desire-we-want-meet-expectations"
     ],
     "Manchester City": [
       "https://www.mancity.com/news/mens",
       "https://www.mancity.com/news/womens",
       "https://www.mancity.com/news/eds-academy",
       "https://www.mancity.com/news/club",
+      "https://www.mancity.com/news/mens/enzo-maresca-manchester-united-preview-september-2026-63924714",
       "https://www.mancity.com/news/mens/enzo-maresca-manchester-united-v-city-team-news-update-63924715",
       "https://www.mancity.com/news/womens/aoba-fujino-contract-extension-2030-man-city-63924708",
       "https://www.mancity.com/news/womens/aoba-fujino-new-contract-much-more-to-come-63924708",
@@ -3215,15 +3227,15 @@
       "https://www.mancity.com/news/womens/aoba-fujino-man-city-career-gallery-63924709",
       "https://www.mancity.com/news/mens/man-utd-v-city-match-preview-pl-13-sep-63924475",
       "https://www.mancity.com/news/womens/aston-villa-wsl-match-preview-september-2026-63924452",
-      "https://www.mancity.com/news/mens/one-moment-in-time-manchester-united-v-city-benjani-2008-63924644",
-      "https://www.mancity.com/news/womens/real-madrid-psg-womens-champions-league-tickets-man-city-63924572",
+      "https://www.mancity.com/news/womens/womens-training-9-september-63924570",
       "https://www.mancity.com/news/mens/city-new-year-and-christmas-fixtures-63924639",
       "https://www.mancity.com/news/mens/city-men-champions-league-recovery-gallery-63924574",
-      "https://www.mancity.com/news/mens/manchester-united-manchester-city-last-five-meetings-63924632",
-      "https://www.mancity.com/news/mens/manchester-united-opta-analysis-september-2026-63924477",
       "https://www.mancity.com/news/club/city-in-the-community-s-inaugural-gala-dinner-63924561",
       "https://www.mancity.com/news/mens/haaland-embargo-fc-porto-63924578",
-      "https://www.mancity.com/news/womens/womens-training-9-september-63924570"
+      "https://www.mancity.com/news/mens/one-moment-in-time-manchester-united-v-city-benjani-2008-63924644",
+      "https://www.mancity.com/news/womens/real-madrid-psg-womens-champions-league-tickets-man-city-63924572",
+      "https://www.mancity.com/news/mens/manchester-united-opta-analysis-september-2026-63924477",
+      "https://www.mancity.com/news/mens/manchester-united-manchester-city-last-five-meetings-63924632"
     ],
     "Manchester United Press Conference": [
       "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
@@ -3350,9 +3362,14 @@
       "https://www.nottinghamforest.co.uk/news/2026/september/03/latest-photos---spurs-prep",
       "https://www.nottinghamforest.co.uk/news/2026/september/03/forest-s-2026-27-premier-league-squad-confirmed",
       "https://www.nottinghamforest.co.uk/news/2026/september/03/key-dates-for-the-2026-27-season",
+      "https://www.nottinghamforest.co.uk/news/2026/september/03/ticket-info---burnley-women",
+      "https://www.nottinghamforest.co.uk/news/2026/september/03/why-is-mu-oz-wearing-a-mask-in-training-",
+      "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-follow---forest-v-spurs",
       "https://www.nottinghamforest.co.uk/news/2026/september/03/how-to-watch-glasner-s-pre-spurs-press-conference"
     ],
     "Sunderland": [
+      "https://www.safc.com/news/2026/september/11/preview--safc-women-travel-to-burnley-in-wsl2-action",
+      "https://www.safc.com/news/2026/september/11/sunderland-afc-and-shuffle-join-forces-in-new-global-sleeve-partnership",
       "https://www.safc.com/news/2026/september/10/fantasy-football-scout--spotlight-on-ballard",
       "https://www.safc.com/news/2026/september/10/reay---it-s-a-fantastic-start---but-we-remain-grounded-",
       "https://www.safc.com/news/2026/september/10/liverpool-and-manchester-united-fixtures-selected-for-sky-sports-coverage",
@@ -3389,7 +3406,8 @@
       "https://www.safc.com/news/2026/september/03/supporters--guide--sunderland-women-v-bristol-city",
       "https://www.safc.com/news/2026/september/03/sunderland-confirm-europa-league-squad-list",
       "https://www.safc.com/news/2026/september/02/sunderland-afc---wolf-competitions-agree--new-multi-year-partnership",
-      "https://www.safc.com/news/2026/september/02/adingra-agrees-ajax-loan"
+      "https://www.safc.com/news/2026/september/02/adingra-agrees-ajax-loan",
+      "https://www.safc.com/news/2026/september/01/sunderland-afc-sign-young-starlet-angulo"
     ],
     "Tottenham Hotspur": [
       "https://www.tottenhamhotspur.com/news/2026/february/tottenham-hotspur-announces-partnership-with-infinox",
@@ -3424,7 +3442,9 @@
       "https://www.tottenhamhotspur.com/news/984865/solanke-we-need-to-find-consistency",
       "https://www.tottenhamhotspur.com/news/985048/vilahamn-provides-injury-update-on-england",
       "https://www.tottenhamhotspur.com/news/984694/spurs-0-1-brighton-wsl-roberts-verdict",
-      "https://www.tottenhamhotspur.com/news/983793/bartrip-reaches-100-spurs-appearances"
+      "https://www.tottenhamhotspur.com/news/983793/bartrip-reaches-100-spurs-appearances",
+      "https://www.tottenhamhotspur.com/news/984997/brighton-escape-with-the-points-in-wsl",
+      "https://www.tottenhamhotspur.com/news/984054/presser-points-fulham-2-0-spurs-ange-postecoglou"
     ]
   },
   "sitemap_fallback_baselined": true,
