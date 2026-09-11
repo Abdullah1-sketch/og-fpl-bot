@@ -3,10 +3,6 @@ name: OG FPL Bot
 on:
   schedule:
     - cron: "*/15 * * * *"
-    # Extra fast-price starts. bot.py checks Europe/London time and only one
-    # of these runs is active, depending on UK daylight-saving time.
-    - cron: "55 22 * * *"
-    - cron: "55 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -41,7 +37,6 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DRY_RUN: "false"
-          RUN_TRIGGER: ${{ github.event.schedule }}
         run: python bot.py
 
       - name: Save bot state
@@ -54,13 +49,11 @@ jobs:
             exit 0
           fi
 
-          # Preserve the state created by this run.
           cp state.json /tmp/og-fpl-state.json
 
           git config user.name "og-fpl-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          # Retry a few times in case main changes while this run is finishing.
           for attempt in 1 2 3; do
             echo "State save attempt ${attempt}/3"
 
