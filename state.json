@@ -2740,31 +2740,53 @@
   "recent_news_updates": {},
   "news_seen": {
     "AFC Bournemouth": [
+      "https://www.afcb.co.uk/news/2026/september/10/rayan-named-in-latest-brazil-squad",
       "https://www.afcb.co.uk/news/2026/september/05/tavernier-newcastle-draw-reaction"
     ],
-    "Arsenal": [],
+    "Arsenal": [
+      "https://www.arsenal.com/news/all/1"
+    ],
     "Aston Villa": [
+      "https://avfc.co.uk/news/2026/september/10/matchday-guide--aston-villa-vs-manchester-city",
       "https://avfc.co.uk/news/2026/september/08/postmatch-unai-emery-club-brugge-reaction"
     ],
-    "Brentford": [],
+    "Brentford": [
+      "https://www.brentfordfc.com/en/news/article/international-jordan-henderson-england-2026-fifa-world-cup"
+    ],
     "Brighton Press Conferences": [],
     "Brighton": [],
     "Chelsea": [
+      "https://www.chelseafc.com/en/news/article/joao-pedro-signs-new-chelsea-contract",
       "https://www.chelseafc.com/en/news/article/key-talking-points-from-sonia-bompastors-pre-man-utd-press-conference"
     ],
-    "Coventry City": [],
-    "Crystal Palace": [],
-    "Everton": [],
-    "Fulham": [],
-    "Hull City": [],
-    "Ipswich Town": [],
-    "Leeds United": [],
+    "Coventry City": [
+      "https://www.ccfc.co.uk/news/2026/september/10/three-festive-fixtures-selected-for-live-broadcast-"
+    ],
+    "Crystal Palace": [
+      "https://www.cpfc.co.uk/news/club/palace-back-together-against-suicide-campaign-partner-life-and-progress"
+    ],
+    "Everton": [
+      "https://www.evertonfc.com/news/2026/september/10/watch--blues--intense-training-session-for-spurs-test"
+    ],
+    "Fulham": [
+      "https://www.fulhamfc.com/news/2026/september/10/motspur-parklife-liverpool-prep"
+    ],
+    "Hull City": [
+      "https://www.wearehullcity.co.uk/news/2026/september/10/Fantasy-Football-Scout-Gameweek-4-Hints-and-tips"
+    ],
+    "Ipswich Town": [
+      "https://www.itfc.co.uk/news/2026/september/10/kick-off-changes-for-chelsea-and-coventry"
+    ],
+    "Leeds United": [
+      "https://www.leedsunited.com/en/news/listing/academy"
+    ],
     "Liverpool": [
       "https://www.liverpoolfc.com/news/friday-watch-andoni-iraolas-liverpool-v-fulham-press-conference-live",
       "https://www.liverpoolfc.com/news/rio-ngumoha-way-anfield-roars-its-crazy-and-its-special",
       "https://www.liverpoolfc.com/news/podcast-reaction-and-analysis-champions-league-win-over-atletico",
       "https://www.liverpoolfc.com/news/liverpool-2-1-atletico-madrid-watch-andoni-iraolas-post-match-press-conference",
-      "https://www.liverpoolfc.com/news/andoni-iraola-press-conference-players-have-shown-big-character"
+      "https://www.liverpoolfc.com/news/andoni-iraola-press-conference-players-have-shown-big-character",
+      "https://www.liverpoolfc.com/news/alexis-mac-allister-we-showed-our-desire-we-want-meet-expectations"
     ],
     "Manchester City": [],
     "Manchester United Press Conference": [
@@ -2777,7 +2799,13 @@
       "https://www.manutd.com/ar/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
       "https://www.manutd.com/ko/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
       "https://www.manutd.com/ar/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo",
-      "https://www.manutd.com/ko/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo"
+      "https://www.manutd.com/ko/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo",
+      "https://www.manutd.com/ar/news/sesko-a-perfect-night-for-everyone-sabah-win",
+      "https://www.manutd.com/ko/news/sesko-a-perfect-night-for-everyone-sabah-win",
+      "https://www.manutd.com/ar/news/your-chance-to-get-tickets-to-see-united",
+      "https://www.manutd.com/ko/news/your-chance-to-get-tickets-to-see-united",
+      "https://www.manutd.com/ar/news/vote-for-your-player-of-the-match-v-sabah",
+      "https://www.manutd.com/ko/news/vote-for-your-player-of-the-match-v-sabah"
     ],
     "Manchester United": [
       "https://www.manutd.com/ar/news/manchester-united-4-sabah-0",
@@ -2789,12 +2817,19 @@
       "https://www.manutd.com/ar/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
       "https://www.manutd.com/ko/news/martinez-and-dorgu-share-delight-following-man-utd-sabah-victory",
       "https://www.manutd.com/ar/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo",
-      "https://www.manutd.com/ko/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo"
+      "https://www.manutd.com/ko/news/michael-carrick-says-it-is-a-joy-to-have-kobbie-mainoo",
+      "https://www.manutd.com/ar/news/sesko-a-perfect-night-for-everyone-sabah-win",
+      "https://www.manutd.com/ko/news/sesko-a-perfect-night-for-everyone-sabah-win",
+      "https://www.manutd.com/ar/news/your-chance-to-get-tickets-to-see-united",
+      "https://www.manutd.com/ko/news/your-chance-to-get-tickets-to-see-united",
+      "https://www.manutd.com/ar/news/vote-for-your-player-of-the-match-v-sabah",
+      "https://www.manutd.com/ko/news/vote-for-your-player-of-the-match-v-sabah"
     ],
     "Newcastle United": [],
     "Nottingham Forest": [
       "https://www.nottinghamforest.co.uk/news/2026/september/10/live-blog---pre-aston-villa-press-conference",
-      "https://www.nottinghamforest.co.uk/news/2026/september/10/how-to-follow-glasner-s-pre-villa-press-conference"
+      "https://www.nottinghamforest.co.uk/news/2026/september/10/how-to-follow-glasner-s-pre-villa-press-conference",
+      "https://www.nottinghamforest.co.uk/news/2026/september/05/glasner-s-spurs-reaction"
     ],
     "Sunderland": [],
     "Tottenham Hotspur": []
