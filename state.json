@@ -4568,7 +4568,7 @@
         "assists": 0
       },
       "94": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "95": {
@@ -5543,6 +5543,18 @@
           "delta": 1
         },
         "detected_at": "2026-09-12T14:36:33.173050+00:00"
+      }
+    ],
+    "32": [
+      {
+        "change": {
+          "pid": "94",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-12T14:37:18.188443+00:00"
       }
     ]
   }
