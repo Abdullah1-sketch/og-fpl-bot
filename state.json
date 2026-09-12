@@ -49,6 +49,11 @@
       "name": "Palmer",
       "prediction": 89.0,
       "alerted_at": "2026-09-12T10:32:57.628917+00:00"
+    },
+    "68": {
+      "name": "Tavernier",
+      "prediction": 86.8,
+      "alerted_at": "2026-09-12T11:01:01.259314+00:00"
     }
   },
   "alerted_fall": {
@@ -514,6 +519,11 @@
       "name": "Dibling",
       "prediction": -85.1,
       "alerted_at": "2026-09-12T10:46:08.689953+00:00"
+    },
+    "201": {
+      "name": "Muñoz",
+      "prediction": -85.7,
+      "alerted_at": "2026-09-12T11:01:01.259314+00:00"
     }
   },
   "last_prices": {
