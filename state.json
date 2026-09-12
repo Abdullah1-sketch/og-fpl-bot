@@ -454,6 +454,16 @@
       "name": "Amad",
       "prediction": -85.2,
       "alerted_at": "2026-09-12T09:01:09.518872+00:00"
+    },
+    "308": {
+      "name": "Furlong",
+      "prediction": -87.0,
+      "alerted_at": "2026-09-12T09:20:58.584020+00:00"
+    },
+    "536": {
+      "name": "Reinildo",
+      "prediction": -85.6,
+      "alerted_at": "2026-09-12T09:20:58.584020+00:00"
     }
   },
   "last_prices": {
