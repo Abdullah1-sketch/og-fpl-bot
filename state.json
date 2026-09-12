@@ -4474,7 +4474,7 @@
         "assists": 0
       },
       "68": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0,
         "yellow_cards": 1
       },
@@ -4520,7 +4520,7 @@
       },
       "79": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 1
       },
       "80": {
         "goals_scored": 0,
@@ -5630,9 +5630,14 @@
       "status": "sent",
       "text": "🏟️ أستون فيلا 1 - 1 نوتنغهام فورست\n🟨 إنذار | McAtee\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T15:46:09.595059+00:00"
+    },
+    "32:25": {
+      "status": "pending",
+      "text": "🏟️ بورنموث [2] - 2 برينتفورد\n⚽️ هدف | Tavernier\n🅰️ صناعة | Evanilson\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T15:46:09.595059+00:00"
     }
   },
-  "match_revision": 24,
+  "match_revision": 25,
   "pending_goals": {
     "34": [],
     "32": [
