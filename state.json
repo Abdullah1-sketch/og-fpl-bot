@@ -4818,7 +4818,7 @@
         "assists": 0
       },
       "286": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "287": {
@@ -5526,5 +5526,19 @@
       "at": "2026-09-12T14:26:14.809145+00:00"
     }
   },
-  "match_revision": 5
+  "match_revision": 5,
+  "pending_goals": {
+    "33": [
+      {
+        "change": {
+          "pid": "286",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-12T14:30:48.188909+00:00"
+      }
+    ]
+  }
 }
