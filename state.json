@@ -424,6 +424,11 @@
       "name": "Kesler-Hayden",
       "prediction": -86.3,
       "alerted_at": "2026-09-12T07:20:06.988986+00:00"
+    },
+    "102": {
+      "name": "Yarmoliuk",
+      "prediction": -86.4,
+      "alerted_at": "2026-09-12T07:46:07.665789+00:00"
     }
   },
   "last_prices": {
