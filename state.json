@@ -5013,7 +5013,7 @@
       },
       "214": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 1
       },
       "215": {
         "goals_scored": 0,
@@ -5196,7 +5196,7 @@
         "assists": 0
       },
       "588": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "591": {
@@ -5509,7 +5509,12 @@
       "status": "sent",
       "text": "🏟️تشيلسي × هال سيتي\n🅰️ صناعة | جواو بيدرو\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T14:12:27.221546+00:00"
+    },
+    "34:3": {
+      "status": "pending",
+      "text": "🏟️كريستال بالاس × إيبسويتش\n⚽️ هدف | Khalaili\n🅰️ صناعة | Kamada\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T14:17:27.321893+00:00"
     }
   },
-  "match_revision": 2
+  "match_revision": 3
 }
