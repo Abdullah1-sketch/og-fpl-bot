@@ -4575,7 +4575,7 @@
         "assists": 0
       },
       "94": {
-        "goals_scored": 1,
+        "goals_scored": 2,
         "assists": 0
       },
       "95": {
@@ -5635,7 +5635,17 @@
   "match_revision": 24,
   "pending_goals": {
     "34": [],
-    "32": [],
-    "31": []
+    "32": [
+      {
+        "change": {
+          "pid": "94",
+          "stat": "goals_scored",
+          "old": 1,
+          "new": 2,
+          "delta": 1
+        },
+        "detected_at": "2026-09-12T15:46:09.595059+00:00"
+      }
+    ]
   }
 }
