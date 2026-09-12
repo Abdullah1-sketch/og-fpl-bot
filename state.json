@@ -429,6 +429,11 @@
       "name": "Yarmoliuk",
       "prediction": -86.4,
       "alerted_at": "2026-09-12T07:46:07.665789+00:00"
+    },
+    "95": {
+      "name": "O.Dango",
+      "prediction": -87.1,
+      "alerted_at": "2026-09-12T08:01:08.946418+00:00"
     }
   },
   "last_prices": {
