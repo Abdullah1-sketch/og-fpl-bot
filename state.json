@@ -44,6 +44,11 @@
       "name": "White",
       "prediction": 85.6,
       "alerted_at": "2026-09-12T09:01:09.518872+00:00"
+    },
+    "154": {
+      "name": "Palmer",
+      "prediction": 89.0,
+      "alerted_at": "2026-09-12T10:32:57.628917+00:00"
     }
   },
   "alerted_fall": {
