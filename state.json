@@ -479,6 +479,16 @@
       "name": "Ndiaye",
       "prediction": -85.4,
       "alerted_at": "2026-09-12T09:46:13.209691+00:00"
+    },
+    "357": {
+      "name": "Frimpong",
+      "prediction": -85.2,
+      "alerted_at": "2026-09-12T10:00:55.331845+00:00"
+    },
+    "577": {
+      "name": "Tomiyasu",
+      "prediction": -85.1,
+      "alerted_at": "2026-09-12T10:00:55.331845+00:00"
     }
   },
   "last_prices": {
