@@ -394,6 +394,11 @@
       "name": "Tóth.A",
       "prediction": -89.9,
       "alerted_at": "2026-09-12T01:47:17.428829+00:00"
+    },
+    "612": {
+      "name": "Methalie",
+      "prediction": -110.9,
+      "alerted_at": "2026-09-12T05:46:25.136936+00:00"
     }
   },
   "last_prices": {
