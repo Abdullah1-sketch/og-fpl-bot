@@ -464,6 +464,16 @@
       "name": "Reinildo",
       "prediction": -85.6,
       "alerted_at": "2026-09-12T09:20:58.584020+00:00"
+    },
+    "550": {
+      "name": "Jocelin.T",
+      "prediction": -127.5,
+      "alerted_at": "2026-09-12T09:33:27.860288+00:00"
+    },
+    "206": {
+      "name": "Chadi Riad",
+      "prediction": -89.9,
+      "alerted_at": "2026-09-12T09:33:27.860288+00:00"
     }
   },
   "last_prices": {
