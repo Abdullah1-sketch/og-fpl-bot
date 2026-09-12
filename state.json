@@ -4803,7 +4803,7 @@
       },
       "282": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 1
       },
       "283": {
         "goals_scored": 0,
@@ -5524,21 +5524,15 @@
       "status": "sent",
       "text": "🏟️كريستال بالاس × إيبسويتش\n⚽️ هدف | Emersonn\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T14:26:14.809145+00:00"
+    },
+    "33:6": {
+      "status": "pending",
+      "text": "🏟️تشيلسي × هال سيتي\n⚽️ هدف | Belloumi\n🅰️ صناعة | Giles\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T14:31:33.171347+00:00"
     }
   },
-  "match_revision": 5,
+  "match_revision": 6,
   "pending_goals": {
-    "33": [
-      {
-        "change": {
-          "pid": "286",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-12T14:30:48.188909+00:00"
-      }
-    ]
+    "33": []
   }
 }
