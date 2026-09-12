@@ -494,6 +494,26 @@
       "name": "Tomiyasu",
       "prediction": -85.1,
       "alerted_at": "2026-09-12T10:00:55.331845+00:00"
+    },
+    "84": {
+      "name": "Collins",
+      "prediction": -89.8,
+      "alerted_at": "2026-09-12T10:46:08.689953+00:00"
+    },
+    "398": {
+      "name": "Foden",
+      "prediction": -87.8,
+      "alerted_at": "2026-09-12T10:46:08.689953+00:00"
+    },
+    "123": {
+      "name": "Hinshelwood",
+      "prediction": -85.7,
+      "alerted_at": "2026-09-12T10:46:08.689953+00:00"
+    },
+    "245": {
+      "name": "Dibling",
+      "prediction": -85.1,
+      "alerted_at": "2026-09-12T10:46:08.689953+00:00"
     }
   },
   "last_prices": {
