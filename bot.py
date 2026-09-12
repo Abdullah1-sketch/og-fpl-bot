@@ -7,7 +7,7 @@ import copy
 import subprocess
 import signal
 import threading
-from concurrent.futures import ThreadPoolExecutor
+from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
@@ -46,8 +46,7 @@ FAST_PRICE_END_MINUTES_AFTER = int(os.getenv("FAST_PRICE_END_MINUTES_AFTER", "20
 
 NEWS_LOGIC_VERSION = 8
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
-# Keep automated activity natural even when several match events arrive close
-# together, while FPL remains polled every 15 seconds in the background.
+# Optional pacing between X posts. Zero publishes each ready event immediately.
 X_POST_MIN_INTERVAL_SECONDS = max(0, int(os.getenv("X_POST_MIN_INTERVAL_SECONDS", "0")))
 X_POST_LOCK = threading.Lock()
 LAST_X_POST_AT = None
@@ -1792,7 +1791,7 @@ def post_to_x(text):
         print("Posted:", r.json())
 
 
-LIVE_POLL_SECONDS = max(15, int(os.getenv('LIVE_POLL_SECONDS', '15')))
+LIVE_POLL_SECONDS = max(5, int(os.getenv('LIVE_POLL_SECONDS', '5')))
 ASSIST_WAIT_SECONDS = max(0, int(os.getenv('ASSIST_WAIT_SECONDS', '60')))
 LIVE_PRESTART_MINUTES = 20
 LIVE_POSTMATCH_SECONDS = 300
@@ -1867,7 +1866,7 @@ def match_window(fixtures, state, now):
             finished_at = parse_iso_datetime(finishes.setdefault(fid, now.isoformat()))
             if (now - finished_at).total_seconds() <= LIVE_POSTMATCH_SECONDS:
                 active.append(f)
-        elif f.get('started') or age < 3 * 3600:
+        elif age < 3 * 3600:
             finishes.pop(fid, None)
             active.append(f)
     return active
@@ -2128,6 +2127,7 @@ def run_once():
                  'conference_schedule', 'ffscout_sections')
     executor = ThreadPoolExecutor(max_workers=1)
     failures = 0
+    idle_news_started = False
     def news_task(b, f, snapshot):
         scan_news(b, f, snapshot)
         return snapshot
@@ -2168,23 +2168,48 @@ def run_once():
                 time.sleep(delay)
                 continue
             process_matches(active, live, bootstrap, state)
+            fast_window, _ = london_fast_window(now)
             if time.monotonic() >= next_prices:
+                # Around the official midnight-London update, bypass caches and
+                # check every few seconds. At other times retain the 15-minute
+                # price schedule, including while conference work is running.
+                bootstrap = fetch_official_fpl(fresh=fast_window)
                 regular_prices(bootstrap, state)
-                next_prices = time.monotonic() + 900
-            if cycle >= next_regular and news_future is None:
+                next_prices = time.monotonic() + (
+                    FAST_PRICE_POLL_SECONDS if fast_window else 900
+                )
+            if (cycle >= next_regular and news_future is None
+                    and (active or not idle_news_started)):
                 # Existing conference logic runs in background, not in the
-                # 15-second goal/assist polling path. Only its own keys merge.
+                # goal/assist polling path. Only its own keys merge.
                 news_future = executor.submit(news_task, copy.deepcopy(bootstrap),
                                               copy.deepcopy(fixtures), copy.deepcopy(state))
                 next_regular = cycle + 900
+                if not active:
+                    idle_news_started = True
             if not active:
-                print('IDLE: no live/upcoming matches; return to 15-minute GitHub schedule')
-                break
+                # Do not let a long conference scan block the next scheduled
+                # price update. Stay responsive while it finishes, and remain
+                # alive through the official fast-price window.
+                if news_future is not None:
+                    try:
+                        updated = news_future.result(timeout=5)
+                    except FutureTimeoutError:
+                        updated = None
+                    if updated is not None:
+                        for key in news_keys:
+                            if key in updated:
+                                state[key] = updated[key]
+                        checkpoint(state)
+                        news_future = None
+                if news_future is None and not fast_window:
+                    print('IDLE: no live/upcoming matches; return to 15-minute GitHub schedule')
+                    break
+                print('IDLE: waiting for conference scan or official price window')
+                continue
             print('LIVE:', ','.join(str(f['id']) for f in active),
                   f'poll target={LIVE_POLL_SECONDS}s')
             time.sleep(max(0, LIVE_POLL_SECONDS - (time.monotonic()-cycle)))
-            if time.monotonic() >= next_prices:
-                bootstrap = fetch_official_fpl()
     finally:
         # Allow the existing bounded news scan to finish before final checkpoint.
         executor.shutdown(wait=True)
