@@ -534,6 +534,26 @@
       "name": "Núñez",
       "prediction": -89.7,
       "alerted_at": "2026-09-12T11:31:56.680521+00:00"
+    },
+    "344": {
+      "name": "Gruev",
+      "prediction": -96.4,
+      "alerted_at": "2026-09-12T11:46:07.937791+00:00"
+    },
+    "130": {
+      "name": "Wieffer",
+      "prediction": -87.7,
+      "alerted_at": "2026-09-12T11:46:07.937791+00:00"
+    },
+    "426": {
+      "name": "B.Fernandes",
+      "prediction": -86.0,
+      "alerted_at": "2026-09-12T11:46:07.937791+00:00"
+    },
+    "16": {
+      "name": "Madueke",
+      "prediction": -85.9,
+      "alerted_at": "2026-09-12T11:46:07.937791+00:00"
     }
   },
   "last_prices": {
