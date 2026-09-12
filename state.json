@@ -474,6 +474,11 @@
       "name": "Chadi Riad",
       "prediction": -89.9,
       "alerted_at": "2026-09-12T09:33:27.860288+00:00"
+    },
+    "237": {
+      "name": "Ndiaye",
+      "prediction": -85.4,
+      "alerted_at": "2026-09-12T09:46:13.209691+00:00"
     }
   },
   "last_prices": {
