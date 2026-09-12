@@ -48,7 +48,7 @@ NEWS_LOGIC_VERSION = 8
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
 # Keep automated activity natural even when several match events arrive close
 # together, while FPL remains polled every 15 seconds in the background.
-X_POST_MIN_INTERVAL_SECONDS = max(0, int(os.getenv("X_POST_MIN_INTERVAL_SECONDS", "45")))
+X_POST_MIN_INTERVAL_SECONDS = max(0, int(os.getenv("X_POST_MIN_INTERVAL_SECONDS", "0")))
 X_POST_LOCK = threading.Lock()
 LAST_X_POST_AT = None
 
