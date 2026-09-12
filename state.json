@@ -4267,7 +4267,7 @@
         "yellow_cards": 1
       },
       "167": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "201": {
@@ -4296,7 +4296,7 @@
       },
       "472": {
         "goals_scored": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 1
       },
       "473": {
@@ -5602,11 +5602,17 @@
       "status": "uncertain",
       "text": "🏟️ بورنموث 1 - 1 برينتفورد\n🟨 إنذار | Thiago\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T15:07:33.543250+00:00"
+    },
+    "31:20": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا 0 - [1] نوتنغهام فورست\n⚽️ هدف | Delap\n🅰️ صناعة | Murillo\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T15:20:21.015882+00:00"
     }
   },
-  "match_revision": 19,
+  "match_revision": 20,
   "pending_goals": {
     "34": [],
-    "32": []
+    "32": [],
+    "31": []
   }
 }
