@@ -5656,7 +5656,7 @@
         "red_cards": 0
       },
       "452": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0,
         "red_cards": 0
       },
@@ -5990,6 +5990,18 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "36": [
+      {
+        "change": {
+          "pid": "452",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-12T20:18:06.768902+00:00"
+      }
+    ]
   }
 }
