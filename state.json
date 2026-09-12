@@ -5547,7 +5547,5 @@
     }
   },
   "match_revision": 9,
-  "pending_goals": {
-    "32": []
-  }
+  "pending_goals": {}
 }
