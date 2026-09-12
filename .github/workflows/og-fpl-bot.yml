@@ -48,6 +48,7 @@ jobs:
           DRY_RUN: "false"
           BOT_GIT_CHECKPOINT: "true"
           LIVE_POLL_SECONDS: "15"
+          ASSIST_WAIT_SECONDS: "60"
           PYTHONUNBUFFERED: "1"
         run: python -u bot.py
 
