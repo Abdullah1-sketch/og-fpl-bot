@@ -379,6 +379,11 @@
       "name": "Koumas",
       "prediction": -87.6,
       "alerted_at": "2026-09-12T00:19:06.675632+00:00"
+    },
+    "126": {
+      "name": "O'Riley",
+      "prediction": -87.3,
+      "alerted_at": "2026-09-12T00:28:14.080387+00:00"
     }
   },
   "last_prices": {
