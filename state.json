@@ -39,6 +39,11 @@
       "name": "Gvardiol",
       "prediction": 85.3,
       "alerted_at": "2026-09-12T06:50:47.887610+00:00"
+    },
+    "10": {
+      "name": "White",
+      "prediction": 85.6,
+      "alerted_at": "2026-09-12T09:01:09.518872+00:00"
     }
   },
   "alerted_fall": {
@@ -439,6 +444,16 @@
       "name": "Struijk",
       "prediction": -89.6,
       "alerted_at": "2026-09-12T08:22:11.596916+00:00"
+    },
+    "159": {
+      "name": "Caicedo",
+      "prediction": -86.4,
+      "alerted_at": "2026-09-12T09:01:09.518872+00:00"
+    },
+    "431": {
+      "name": "Amad",
+      "prediction": -85.2,
+      "alerted_at": "2026-09-12T09:01:09.518872+00:00"
     }
   },
   "last_prices": {
