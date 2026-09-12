@@ -5137,7 +5137,7 @@
       },
       "316": {
         "goals_scored": 1,
-        "assists": 0
+        "assists": 1
       },
       "317": {
         "goals_scored": 0,
@@ -5544,9 +5544,14 @@
       "status": "sent",
       "text": "🏟️بورنموث × برينتفورد\n⚽️ هدف | Kluivert\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T14:41:18.176374+00:00"
+    },
+    "34:10": {
+      "status": "pending",
+      "text": "🏟️كريستال بالاس × إيبسويتش\n🅰️ صناعة | Emersonn\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T14:49:01.003421+00:00"
     }
   },
-  "match_revision": 9,
+  "match_revision": 10,
   "pending_goals": {
     "34": [
       {
