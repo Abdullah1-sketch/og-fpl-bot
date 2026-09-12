@@ -4855,7 +4855,7 @@
       },
       "295": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 1
       },
       "296": {
         "goals_scored": 0,
@@ -5529,22 +5529,16 @@
       "status": "sent",
       "text": "🏟️تشيلسي × هال سيتي\n⚽️ هدف | Belloumi\n🅰️ صناعة | Giles\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T14:31:33.171347+00:00"
+    },
+    "33:7": {
+      "status": "pending",
+      "text": "🏟️تشيلسي × هال سيتي\n⚽️ هدف | Belloumi\n🅰️ صناعة | McBurnie\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T14:37:18.188443+00:00"
     }
   },
-  "match_revision": 6,
+  "match_revision": 7,
   "pending_goals": {
-    "33": [
-      {
-        "change": {
-          "pid": "286",
-          "stat": "goals_scored",
-          "old": 1,
-          "new": 2,
-          "delta": 1
-        },
-        "detected_at": "2026-09-12T14:36:33.173050+00:00"
-      }
-    ],
+    "33": [],
     "32": [
       {
         "change": {
