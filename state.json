@@ -4650,7 +4650,7 @@
         "assists": 0
       },
       "40": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "101": {
@@ -5499,5 +5499,12 @@
       }
     }
   },
-  "match_outbox": {}
+  "match_outbox": {
+    "33:1": {
+      "status": "pending",
+      "text": "🏟️تشيلسي × هال سيتي\n⚽️ هدف | روجرز\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T14:11:42.221506+00:00"
+    }
+  },
+  "match_revision": 1
 }
