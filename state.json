@@ -364,6 +364,11 @@
       "name": "McConnell",
       "prediction": -87.6,
       "alerted_at": "2026-09-11T23:46:00.833154+00:00"
+    },
+    "438": {
+      "name": "Fletcher",
+      "prediction": -85.5,
+      "alerted_at": "2026-09-12T00:01:02.894508+00:00"
     }
   },
   "last_prices": {
