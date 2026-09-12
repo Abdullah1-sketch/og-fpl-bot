@@ -4476,7 +4476,7 @@
         "assists": 0
       },
       "70": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "71": {
@@ -5543,6 +5543,17 @@
   },
   "match_revision": 8,
   "pending_goals": {
-    "32": []
+    "32": [
+      {
+        "change": {
+          "pid": "70",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-12T14:40:18.173948+00:00"
+      }
+    ]
   }
 }
