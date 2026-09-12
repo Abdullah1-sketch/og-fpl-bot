@@ -414,6 +414,16 @@
       "name": "Andrey Santos",
       "prediction": -86.2,
       "alerted_at": "2026-09-12T06:25:53.620880+00:00"
+    },
+    "549": {
+      "name": "Talbi",
+      "prediction": -87.1,
+      "alerted_at": "2026-09-12T07:20:06.988986+00:00"
+    },
+    "177": {
+      "name": "Kesler-Hayden",
+      "prediction": -86.3,
+      "alerted_at": "2026-09-12T07:20:06.988986+00:00"
     }
   },
   "last_prices": {
