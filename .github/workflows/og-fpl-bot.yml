@@ -47,7 +47,7 @@ jobs:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DRY_RUN: "false"
           BOT_GIT_CHECKPOINT: "true"
-          LIVE_POLL_SECONDS: "15"
+          LIVE_POLL_SECONDS: "5"
           ASSIST_WAIT_SECONDS: "60"
           PYTHONUNBUFFERED: "1"
         run: python -u bot.py
