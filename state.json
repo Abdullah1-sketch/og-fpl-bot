@@ -529,6 +529,11 @@
       "name": "Rodon",
       "prediction": -85.9,
       "alerted_at": "2026-09-12T11:20:13.620558+00:00"
+    },
+    "309": {
+      "name": "Núñez",
+      "prediction": -89.7,
+      "alerted_at": "2026-09-12T11:31:56.680521+00:00"
     }
   },
   "last_prices": {
