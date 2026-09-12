@@ -4613,7 +4613,8 @@
       },
       "106": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 0,
+        "yellow_cards": 1
       },
       "107": {
         "goals_scored": 0,
@@ -5596,9 +5597,14 @@
       "status": "uncertain",
       "text": "🏟️ بورنموث 1 - 1 برينتفورد\n🟨 إنذار | Tavernier\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T15:01:35.942132+00:00"
+    },
+    "32:19": {
+      "status": "pending",
+      "text": "🏟️ بورنموث 1 - 1 برينتفورد\n🟨 إنذار | Thiago\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T15:07:33.543250+00:00"
     }
   },
-  "match_revision": 18,
+  "match_revision": 19,
   "pending_goals": {
     "34": [],
     "32": []
