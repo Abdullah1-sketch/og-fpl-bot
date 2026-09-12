@@ -15,11 +15,15 @@ concurrency:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 350
+    env:
+      BOT_STATE_BRANCH: ${{ github.event.repository.default_branch }}
     steps:
       - name: Get files
         uses: actions/checkout@v4
         with:
           fetch-depth: 0
+          ref: ${{ github.event.repository.default_branch }}
 
       - name: Set up Python
         uses: actions/setup-python@v5
@@ -29,6 +33,11 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements.txt
 
+      - name: Configure state checkpoints
+        run: |
+          git config user.name "og-fpl-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
       - name: Run OG FPL Bot
         env:
           X_API_KEY: ${{ secrets.X_API_KEY }}
@@ -37,46 +46,46 @@ jobs:
           X_ACCESS_TOKEN_SECRET: ${{ secrets.X_ACCESS_TOKEN_SECRET }}
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
           DRY_RUN: "false"
-        run: python bot.py
+          BOT_GIT_CHECKPOINT: "true"
+          LIVE_POLL_SECONDS: "15"
+          PYTHONUNBUFFERED: "1"
+        run: python -u bot.py
 
       - name: Save bot state
+        if: always()
         shell: bash
         run: |
           set -euo pipefail
 
-          if git diff --quiet -- state.json; then
-            echo "No state changes"
+          if [ ! -f state.json ]; then
+            echo "No state file was created"
             exit 0
           fi
-
-          cp state.json /tmp/og-fpl-state.json
-
           git config user.name "og-fpl-bot"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
-
+          git add -- state.json
+          if ! git diff --cached --quiet -- state.json; then
+            git commit -m "Update bot state [skip ci]"
+          fi
           for attempt in 1 2 3; do
             echo "State save attempt ${attempt}/3"
-
-            git fetch origin main
-            git reset --hard origin/main
-            cp /tmp/og-fpl-state.json state.json
-
-            if git diff --quiet -- state.json; then
-              echo "State already current"
-              exit 0
-            fi
-
-            git add state.json
-            git commit -m "Update bot state"
-
-            if git push origin HEAD:main; then
+            if git push origin "HEAD:${BOT_STATE_BRANCH}"; then
               echo "State saved successfully"
               exit 0
             fi
 
-            echo "Push was rejected; refreshing main and retrying..."
+            git pull --rebase origin "${BOT_STATE_BRANCH}"
             sleep 2
           done
 
           echo "Failed to save state after 3 attempts"
           exit 1
+
+      - name: Preserve state for recovery
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: bot-state-recovery-${{ github.run_id }}
+          path: state.json
+          if-no-files-found: ignore
+          retention-days: 7
