@@ -399,6 +399,11 @@
       "name": "Methalie",
       "prediction": -110.9,
       "alerted_at": "2026-09-12T05:46:25.136936+00:00"
+    },
+    "162": {
+      "name": "Andrey Santos",
+      "prediction": -86.2,
+      "alerted_at": "2026-09-12T06:25:53.620880+00:00"
     }
   },
   "last_prices": {
