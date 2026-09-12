@@ -1768,7 +1768,11 @@ def post_to_x(text):
         json={"text": text},
         timeout=20
     )
-    r.raise_for_status()
+    if not r.ok:
+        # X returns the actionable reason in its response body (for example,
+        # duplicate content or an account/API restriction). Never log secrets.
+        detail = (r.text or '').replace('\n', ' ').strip()[:1200]
+        raise RuntimeError(f'X rejected post ({r.status_code}): {detail or "no response body"}')
     print("Posted:", r.json())
 
 
