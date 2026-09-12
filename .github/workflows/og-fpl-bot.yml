@@ -49,6 +49,7 @@ jobs:
           BOT_GIT_CHECKPOINT: "true"
           LIVE_POLL_SECONDS: "5"
           ASSIST_WAIT_SECONDS: "60"
+          X_POST_MIN_INTERVAL_SECONDS: "0"
           PYTHONUNBUFFERED: "1"
         run: python -u bot.py
 
