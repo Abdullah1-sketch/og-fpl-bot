@@ -4211,7 +4211,7 @@
       },
       "45": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 1
       },
       "46": {
         "goals_scored": 0,
@@ -4238,7 +4238,7 @@
         "assists": 0
       },
       "52": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0
       },
       "53": {
@@ -5613,9 +5613,14 @@
       "status": "uncertain",
       "text": "🏟️ أستون فيلا 0 - 1 نوتنغهام فورست\n🟨 إنذار | Schlager\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T15:32:30.965607+00:00"
+    },
+    "31:22": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا [1] - 1 نوتنغهام فورست\n⚽️ هدف | Alysson\n🅰️ صناعة | McGinn\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T15:46:09.595059+00:00"
     }
   },
-  "match_revision": 21,
+  "match_revision": 22,
   "pending_goals": {
     "34": [],
     "32": [],
