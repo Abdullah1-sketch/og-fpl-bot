@@ -29,6 +29,16 @@
       "name": "Rogers",
       "prediction": 101.1,
       "alerted_at": "2026-09-11T23:01:00.393204+00:00"
+    },
+    "229": {
+      "name": "Tarkowski",
+      "prediction": 85.3,
+      "alerted_at": "2026-09-12T06:50:47.887610+00:00"
+    },
+    "391": {
+      "name": "Gvardiol",
+      "prediction": 85.3,
+      "alerted_at": "2026-09-12T06:50:47.887610+00:00"
     }
   },
   "alerted_fall": {
