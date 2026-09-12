@@ -4378,7 +4378,8 @@
       },
       "558": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 0,
+        "yellow_cards": 1
       },
       "581": {
         "goals_scored": 0,
@@ -5607,9 +5608,14 @@
       "status": "uncertain",
       "text": "🏟️ أستون فيلا 0 - [1] نوتنغهام فورست\n⚽️ هدف | Delap\n🅰️ صناعة | Murillo\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T15:20:21.015882+00:00"
+    },
+    "31:21": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا 0 - 1 نوتنغهام فورست\n🟨 إنذار | Schlager\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T15:32:30.965607+00:00"
     }
   },
-  "match_revision": 20,
+  "match_revision": 21,
   "pending_goals": {
     "34": [],
     "32": [],
