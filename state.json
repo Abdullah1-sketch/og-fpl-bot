@@ -5129,7 +5129,8 @@
       },
       "313": {
         "goals_scored": 0,
-        "assists": 0
+        "assists": 0,
+        "yellow_cards": 1
       },
       "314": {
         "goals_scored": 0,
@@ -5578,9 +5579,14 @@
       "status": "uncertain",
       "text": "🏟️ كريستال بالاس 1 - 1 إيبسويتش\n🟥 طرد | Disasi\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-12T14:50:17.959874+00:00"
+    },
+    "34:16": {
+      "status": "pending",
+      "text": "🏟️ كريستال بالاس 1 - 1 إيبسويتش\n🟨 إنذار | Clarke\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-12T14:50:46.768514+00:00"
     }
   },
-  "match_revision": 15,
+  "match_revision": 16,
   "pending_goals": {
     "34": []
   }
