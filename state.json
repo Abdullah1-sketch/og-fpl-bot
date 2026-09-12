@@ -5092,7 +5092,7 @@
         "assists": 0
       },
       "305": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 1
       },
       "306": {
@@ -5547,5 +5547,18 @@
     }
   },
   "match_revision": 9,
-  "pending_goals": {}
+  "pending_goals": {
+    "34": [
+      {
+        "change": {
+          "pid": "305",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-12T14:48:00.989685+00:00"
+      }
+    ]
+  }
 }
