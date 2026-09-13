@@ -54,6 +54,11 @@
       "name": "Tavernier",
       "prediction": 86.8,
       "alerted_at": "2026-09-12T11:01:01.259314+00:00"
+    },
+    "94": {
+      "name": "Schade",
+      "prediction": 102.5,
+      "alerted_at": "2026-09-13T23:21:03.201122+00:00"
     }
   },
   "alerted_fall": {
