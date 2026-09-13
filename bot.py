@@ -6,8 +6,7 @@ import time
 import copy
 import subprocess
 import signal
-import threading
-from concurrent.futures import ThreadPoolExecutor, TimeoutError as FutureTimeoutError
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 from datetime import datetime, timezone, timedelta
 from zoneinfo import ZoneInfo
@@ -46,10 +45,6 @@ FAST_PRICE_END_MINUTES_AFTER = int(os.getenv("FAST_PRICE_END_MINUTES_AFTER", "20
 
 NEWS_LOGIC_VERSION = 8
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
-# Optional pacing between X posts. Zero publishes each ready event immediately.
-X_POST_MIN_INTERVAL_SECONDS = max(0, int(os.getenv("X_POST_MIN_INTERVAL_SECONDS", "0")))
-X_POST_LOCK = threading.Lock()
-LAST_X_POST_AT = None
 
 # Keep API use controlled.
 MAX_NEWS_AI_CALLS_PER_RUN = int(os.getenv("MAX_NEWS_AI_CALLS_PER_RUN", "12"))
@@ -103,6 +98,7 @@ TEAM_AR = {
     "Brighton": "برايتون",
     "Chelsea": "تشيلسي",
     "Coventry": "كوفنتري",
+    "Coventry City": "كوفنتري",
     "Crystal Palace": "كريستال بالاس",
     "Everton": "إيفرتون",
     "Fulham": "فولهام",
@@ -1754,44 +1750,30 @@ def fast_price_watch(state):
         time.sleep(FAST_PRICE_POLL_SECONDS)
 
 def post_to_x(text):
-    global LAST_X_POST_AT
     if DRY_RUN:
         print("\n--- DRY RUN / لن يتم النشر ---")
         print(text)
         print("--- END ---\n")
         return
 
-    # One lock covers the match loop and the background news scan, so they
-    # cannot create an API-posting burst together.
-    with X_POST_LOCK:
-        if LAST_X_POST_AT is not None:
-            wait = X_POST_MIN_INTERVAL_SECONDS - (time.monotonic() - LAST_X_POST_AT)
-            if wait > 0:
-                print(f'X post pacing: waiting {wait:.0f}s before the next post')
-                time.sleep(wait)
+    api_key = os.environ["X_API_KEY"]
+    api_secret = os.environ["X_API_SECRET"]
+    access_token = os.environ["X_ACCESS_TOKEN"]
+    access_secret = os.environ["X_ACCESS_TOKEN_SECRET"]
 
-        api_key = os.environ["X_API_KEY"]
-        api_secret = os.environ["X_API_SECRET"]
-        access_token = os.environ["X_ACCESS_TOKEN"]
-        access_secret = os.environ["X_ACCESS_TOKEN_SECRET"]
-        auth = OAuth1(api_key, api_secret, access_token, access_secret)
+    auth = OAuth1(api_key, api_secret, access_token, access_secret)
 
-        r = requests.post(
-            X_POST_URL,
-            auth=auth,
-            json={"text": text},
-            timeout=20
-        )
-        if not r.ok:
-            # X returns the actionable reason in its response body (for example,
-            # duplicate content or an account/API restriction). Never log secrets.
-            detail = (r.text or '').replace('\n', ' ').strip()[:1200]
-            raise RuntimeError(f'X rejected post ({r.status_code}): {detail or "no response body"}')
-        LAST_X_POST_AT = time.monotonic()
-        print("Posted:", r.json())
+    r = requests.post(
+        X_POST_URL,
+        auth=auth,
+        json={"text": text},
+        timeout=20
+    )
+    r.raise_for_status()
+    print("Posted:", r.json())
 
 
-LIVE_POLL_SECONDS = max(5, int(os.getenv('LIVE_POLL_SECONDS', '5')))
+LIVE_POLL_SECONDS = max(15, int(os.getenv('LIVE_POLL_SECONDS', '15')))
 ASSIST_WAIT_SECONDS = max(0, int(os.getenv('ASSIST_WAIT_SECONDS', '60')))
 LIVE_PRESTART_MINUTES = 20
 LIVE_POSTMATCH_SECONDS = 300
@@ -1866,7 +1848,7 @@ def match_window(fixtures, state, now):
             finished_at = parse_iso_datetime(finishes.setdefault(fid, now.isoformat()))
             if (now - finished_at).total_seconds() <= LIVE_POSTMATCH_SECONDS:
                 active.append(f)
-        elif age < 3 * 3600:
+        elif f.get('started') or age < 3 * 3600:
             finishes.pop(fid, None)
             active.append(f)
     return active
@@ -1895,26 +1877,31 @@ def match_counts(live, fixtures, players):
             values = {
                 'goals_scored': 0,
                 'assists': 0,
+                'yellow_cards': 0,
                 'red_cards': 0,
             }
             for entry in part['stats']:
                 if entry.get('identifier') in values:
                     value = entry.get('value')
                     if not isinstance(value, int) or isinstance(value, bool) or value < 0:
-                        raise ValueError('Invalid FPL live event count')
+                        raise ValueError('Invalid FPL goal/assist count')
                     values[entry['identifier']] = value
             counts[str(fid)][pid] = values
     return counts
 
 
-def match_post(fixture, changes, players, teams):
-    """Format only pairings established from the same official FPL fixture."""
+def match_post(fixture, changes, players, teams, current_counts=None):
+    """Format only pairings established from the same official FPL fixture.
+
+    The fixtures endpoint can lag a few seconds behind the live player stats.
+    For a newly detected goal, never show a score lower than the total goals
+    already credited to that team in the same FPL live response.
+    """
     home = team_ar(teams.get(fixture['team_h'], str(fixture['team_h'])))
     away = team_ar(teams.get(fixture['team_a'], str(fixture['team_a'])))
     # Additional current official team name variants.
     home = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(home, home)
     away = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(away, away)
-    # The fixtures endpoint is FPL's official current match score.
     home_score = fixture.get('team_h_score')
     away_score = fixture.get('team_a_score')
     home_score = home_score if isinstance(home_score, int) else 0
@@ -1923,6 +1910,27 @@ def match_post(fixture, changes, players, teams):
         players[change['pid']]['team'] for change in changes
         if change['delta'] > 0 and change['stat'] == 'goals_scored'
     }
+
+    # A goal can appear in /event/{gw}/live/ before /fixtures/ updates the score.
+    # Use the live credited-goal total as a floor only for the team that has just
+    # scored. max() also preserves own-goal scores already present in fixtures.
+    if current_counts:
+        credited = {fixture['team_h']: 0, fixture['team_a']: 0}
+        for pid, values in current_counts.items():
+            player = players.get(pid)
+            if not player:
+                continue
+            team_id = player.get('team')
+            if team_id not in credited:
+                continue
+            goals = values.get('goals_scored', 0)
+            if isinstance(goals, int) and not isinstance(goals, bool) and goals > 0:
+                credited[team_id] += goals
+        if fixture['team_h'] in scoring_teams:
+            home_score = max(home_score, credited[fixture['team_h']])
+        if fixture['team_a'] in scoring_teams:
+            away_score = max(away_score, credited[fixture['team_a']])
+
     home_score_text = f'[{home_score}]' if fixture['team_h'] in scoring_teams else str(home_score)
     away_score_text = f'[{away_score}]' if fixture['team_a'] in scoring_teams else str(away_score)
     lines = [f'🏟️ {home} {home_score_text} - {away_score_text} {away}']
@@ -1934,6 +1942,7 @@ def match_post(fixture, changes, players, teams):
             label = {
                 'goals_scored': '⚽️ هدف',
                 'assists': '🅰️ صناعة',
+                'yellow_cards': '🟨 إنذار',
                 'red_cards': '🟥 طرد',
             }[change['stat']]
             suffix = '' if change['delta'] == 1 else f" ×{change['delta']}"
@@ -1942,16 +1951,17 @@ def match_post(fixture, changes, players, teams):
             label = {
                 'goals_scored': 'الأهداف',
                 'assists': 'الصناعة',
+                'yellow_cards': 'الإنذارات',
                 'red_cards': 'حالات الطرد',
             }[change['stat']]
             lines.append(f"⚠️ تصحيح FPL | {name}: {label} المحتسبة {change['new']}")
     return '\n'.join(lines + ['', '#FPL', '#فانتزي_البريميرليغ'])
 
 
-def _publish_match_batch(fixture, batch, players, teams, previous, state, outbox, now):
+def _publish_match_batch(fixture, batch, players, teams, current_counts, previous, state, outbox, now):
     revision = int(state.get('match_revision', 0)) + 1
     key = f"{fixture['id']}:{revision}"
-    post = match_post(fixture, batch, players, teams)
+    post = match_post(fixture, batch, players, teams, current_counts)
     if len(post) > 280:
         raise ValueError('Match post exceeds limit; event retained for review')
     # Reserve BEFORE X call. If the response is lost, do not blindly retry a
@@ -2075,7 +2085,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                 used.add(id(change))
 
         for batch in batches:
-            _publish_match_batch(fixture, batch, players, teams, previous,
+            _publish_match_batch(fixture, batch, players, teams, current, previous,
                                  state, outbox, now)
 
         # Publish a held goal alone once the official assist waiting window ends.
@@ -2083,7 +2093,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             detected = parse_iso_datetime(held.get('detected_at'))
             if detected and (now - detected).total_seconds() >= ASSIST_WAIT_SECONDS:
                 pending.remove(held)
-                _publish_match_batch(fixture, [held['change']], players, teams,
+                _publish_match_batch(fixture, [held['change']], players, teams, current,
                                      previous, state, outbox, now)
 
         if not pending:
@@ -2127,7 +2137,6 @@ def run_once():
                  'conference_schedule', 'ffscout_sections')
     executor = ThreadPoolExecutor(max_workers=1)
     failures = 0
-    idle_news_started = False
     def news_task(b, f, snapshot):
         scan_news(b, f, snapshot)
         return snapshot
@@ -2168,48 +2177,23 @@ def run_once():
                 time.sleep(delay)
                 continue
             process_matches(active, live, bootstrap, state)
-            fast_window, _ = london_fast_window(now)
             if time.monotonic() >= next_prices:
-                # Around the official midnight-London update, bypass caches and
-                # check every few seconds. At other times retain the 15-minute
-                # price schedule, including while conference work is running.
-                bootstrap = fetch_official_fpl(fresh=fast_window)
                 regular_prices(bootstrap, state)
-                next_prices = time.monotonic() + (
-                    FAST_PRICE_POLL_SECONDS if fast_window else 900
-                )
-            if (cycle >= next_regular and news_future is None
-                    and (active or not idle_news_started)):
+                next_prices = time.monotonic() + 900
+            if cycle >= next_regular and news_future is None:
                 # Existing conference logic runs in background, not in the
-                # goal/assist polling path. Only its own keys merge.
+                # 15-second goal/assist polling path. Only its own keys merge.
                 news_future = executor.submit(news_task, copy.deepcopy(bootstrap),
                                               copy.deepcopy(fixtures), copy.deepcopy(state))
                 next_regular = cycle + 900
-                if not active:
-                    idle_news_started = True
             if not active:
-                # Do not let a long conference scan block the next scheduled
-                # price update. Stay responsive while it finishes, and remain
-                # alive through the official fast-price window.
-                if news_future is not None:
-                    try:
-                        updated = news_future.result(timeout=5)
-                    except FutureTimeoutError:
-                        updated = None
-                    if updated is not None:
-                        for key in news_keys:
-                            if key in updated:
-                                state[key] = updated[key]
-                        checkpoint(state)
-                        news_future = None
-                if news_future is None and not fast_window:
-                    print('IDLE: no live/upcoming matches; return to 15-minute GitHub schedule')
-                    break
-                print('IDLE: waiting for conference scan or official price window')
-                continue
+                print('IDLE: no live/upcoming matches; return to 15-minute GitHub schedule')
+                break
             print('LIVE:', ','.join(str(f['id']) for f in active),
                   f'poll target={LIVE_POLL_SECONDS}s')
             time.sleep(max(0, LIVE_POLL_SECONDS - (time.monotonic()-cycle)))
+            if time.monotonic() >= next_prices:
+                bootstrap = fetch_official_fpl()
     finally:
         # Allow the existing bounded news scan to finish before final checkpoint.
         executor.shutdown(wait=True)
