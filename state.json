@@ -6042,7 +6042,7 @@
       "492": {
         "goals_scored": 0,
         "assists": 0,
-        "red_cards": 0
+        "red_cards": 1
       },
       "504": {
         "goals_scored": 0,
@@ -6296,9 +6296,14 @@
       "status": "sent",
       "text": "🏟️ Coventry City 0 - [1] برايتون\n⚽️ هدف | Yalcouyé\n🅰️ صناعة | De Cuyper\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-13T14:10:47.273171+00:00"
+    },
+    "38:37": {
+      "status": "pending",
+      "text": "🏟️ Coventry City 0 - 1 برايتون\n🟥 طرد | Awoniyi\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-13T14:13:22.277669+00:00"
     }
   },
-  "match_revision": 36,
+  "match_revision": 37,
   "pending_goals": {
     "34": [],
     "32": [
@@ -6314,6 +6319,7 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "38": []
   }
 }
