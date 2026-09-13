@@ -5830,7 +5830,7 @@
         "red_cards": 0
       },
       "124": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 1,
         "red_cards": 0
       },
@@ -5891,7 +5891,7 @@
       },
       "138": {
         "goals_scored": 1,
-        "assists": 0,
+        "assists": 1,
         "red_cards": 0
       },
       "139": {
@@ -6301,9 +6301,14 @@
       "status": "sent",
       "text": "🏟️ Coventry City 0 - 1 برايتون\n🟥 طرد | Awoniyi\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-13T14:13:22.277669+00:00"
+    },
+    "38:38": {
+      "status": "pending",
+      "text": "🏟️ كوفنتري 0 - [3] برايتون\n⚽️ هدف | Groß\n🅰️ صناعة | Kostoulas\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-13T14:30:11.437320+00:00"
     }
   },
-  "match_revision": 37,
+  "match_revision": 38,
   "pending_goals": {
     "34": [],
     "32": [
@@ -6319,6 +6324,7 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "38": []
   }
 }
