@@ -1801,6 +1801,8 @@ PLAYER_AR = {
     'Szoboszlai': 'سوبوسلاي', 'Frimpong': 'فريمبونغ',
     'Robertson': 'روبرتسون', 'Van Dijk': 'فان دايك',
     'Wissa': 'ويسا', 'Schade': 'شادي', 'Igor Thiago': 'إيغور تياغو',
+    'Gvardiol': 'غفارديول', 'Matheus N.': 'نونيز', 'Nunes': 'نونيز',
+    'Guéhi': 'غويهي', 'Guehi': 'غويهي',
 }
 
 
@@ -1945,22 +1947,23 @@ def bonus_points_for_fixture(fixture, live, players):
     return sorted(result.items(), key=lambda item: (-item[1], players[item[0]].get('web_name', '')))
 
 
-def _bonus_points_ar(points):
-    return {1: 'نقطة', 2: 'نقطتان', 3: '3 نقاط'}.get(points, f'{points} نقاط')
-
-
 def format_bonus_post(fixture, bonus_rows, players, teams):
+    """Format official FPL bonus exactly as a live/provisional bonus table.
+
+    The number at the start of each player line is the actual FPL bonus value,
+    not a unique rank. Therefore ties intentionally repeat the same number.
+    Example: two players on 1 bonus point are both shown as "1 - name".
+    """
     home = team_ar(teams.get(fixture['team_h'], str(fixture['team_h'])))
     away = team_ar(teams.get(fixture['team_a'], str(fixture['team_a'])))
-    home = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(home, home)
-    away = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(away, away)
-    lines = [f'⭐ بونص المباراة | {home} × {away}', '']
-    icons = {3: '3️⃣', 2: '2️⃣', 1: '1️⃣'}
+    home = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش', 'Coventry City': 'كوفنتري'}.get(home, home)
+    away = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش', 'Coventry City': 'كوفنتري'}.get(away, away)
+    lines = ['⭐ بونص المباراة حتى هذه اللحظة |', f'{home} × {away}', '']
     for pid, points in bonus_rows:
         name = players[pid].get('web_name') or players[pid].get('second_name') or 'Player'
         name = PLAYER_AR.get(name, name)
-        lines.append(f"{icons[points]} {name} — {_bonus_points_ar(points)}")
-    lines += ['', '#FPL', '#فانتزي_البريميرليغ']
+        lines.append(f'{points} - {name}')
+    lines += ['#FPL', '#فانتزي_البريميرليغ']
     return '\n'.join(lines)
 
 
