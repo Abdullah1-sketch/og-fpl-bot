@@ -5855,7 +5855,7 @@
         "red_cards": 0
       },
       "129": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0,
         "red_cards": 0
       },
@@ -6330,6 +6330,17 @@
     ],
     "33": [],
     "31": [],
-    "38": []
+    "38": [
+      {
+        "change": {
+          "pid": "129",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-13T14:53:56.525525+00:00"
+      }
+    ]
   }
 }
