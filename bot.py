@@ -1775,8 +1775,11 @@ def post_to_x(text):
 
 LIVE_POLL_SECONDS = max(15, int(os.getenv('LIVE_POLL_SECONDS', '15')))
 ASSIST_WAIT_SECONDS = max(0, int(os.getenv('ASSIST_WAIT_SECONDS', '60')))
+BONUS_STABLE_SECONDS = max(30, int(os.getenv('BONUS_STABLE_SECONDS', '60')))
+BONUS_MIN_POSTMATCH_SECONDS = max(60, int(os.getenv('BONUS_MIN_POSTMATCH_SECONDS', '120')))
 LIVE_PRESTART_MINUTES = 20
-LIVE_POSTMATCH_SECONDS = 300
+# Keep following a finished match long enough for FPL's official bonus to settle.
+LIVE_POSTMATCH_SECONDS = max(600, int(os.getenv('LIVE_POSTMATCH_SECONDS', '900')))
 LIVE_MAX_SECONDS = 300 * 60
 STOP_REQUESTED = False
 PLAYER_AR = {
@@ -1888,6 +1891,135 @@ def match_counts(live, fixtures, players):
                     values[entry['identifier']] = value
             counts[str(fid)][pid] = values
     return counts
+
+
+def bonus_points_for_fixture(fixture, live, players):
+    """Return official per-fixture FPL bonus values as [(pid, points), ...].
+
+    Prefer /fixtures/ because it is already scoped to this exact match. Fall back
+    to the per-fixture `explain` rows in /event/{gw}/live/ when needed. This
+    deliberately never derives bonus from BPS, so tie rules stay FPL's decision.
+    """
+    fid = int(fixture['id'])
+    result = {}
+
+    # Preferred source: fixture.stats -> identifier == "bonus".
+    stats = fixture.get('stats')
+    if isinstance(stats, list):
+        for stat in stats:
+            if not isinstance(stat, dict) or stat.get('identifier') != 'bonus':
+                continue
+            for side, team_key in (('h', 'team_h'), ('a', 'team_a')):
+                rows = stat.get(side) or []
+                if not isinstance(rows, list):
+                    continue
+                for row in rows:
+                    if not isinstance(row, dict):
+                        continue
+                    pid = str(row.get('element'))
+                    value = row.get('value')
+                    player = players.get(pid)
+                    if (not player or player.get('team') != fixture[team_key]
+                            or not isinstance(value, int) or isinstance(value, bool)
+                            or value not in (1, 2, 3)):
+                        continue
+                    result[pid] = value
+
+    # Fallback: per-fixture explain rows from the event live endpoint.
+    if not result and isinstance(live, dict) and isinstance(live.get('elements'), list):
+        for row in live['elements']:
+            pid = str(row.get('id'))
+            player = players.get(pid)
+            if not player or player.get('team') not in (fixture['team_h'], fixture['team_a']):
+                continue
+            for part in row.get('explain', []):
+                if not isinstance(part, dict) or part.get('fixture') != fid:
+                    continue
+                for entry in part.get('stats', []):
+                    if not isinstance(entry, dict) or entry.get('identifier') != 'bonus':
+                        continue
+                    value = entry.get('value')
+                    if isinstance(value, int) and not isinstance(value, bool) and value in (1, 2, 3):
+                        result[pid] = value
+
+    return sorted(result.items(), key=lambda item: (-item[1], players[item[0]].get('web_name', '')))
+
+
+def _bonus_points_ar(points):
+    return {1: 'نقطة', 2: 'نقطتان', 3: '3 نقاط'}.get(points, f'{points} نقاط')
+
+
+def format_bonus_post(fixture, bonus_rows, players, teams):
+    home = team_ar(teams.get(fixture['team_h'], str(fixture['team_h'])))
+    away = team_ar(teams.get(fixture['team_a'], str(fixture['team_a'])))
+    home = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(home, home)
+    away = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(away, away)
+    lines = [f'⭐ بونص المباراة | {home} × {away}', '']
+    icons = {3: '3️⃣', 2: '2️⃣', 1: '1️⃣'}
+    for pid, points in bonus_rows:
+        name = players[pid].get('web_name') or players[pid].get('second_name') or 'Player'
+        name = PLAYER_AR.get(name, name)
+        lines.append(f"{icons[points]} {name} — {_bonus_points_ar(points)}")
+    lines += ['', '#FPL', '#فانتزي_البريميرليغ']
+    return '\n'.join(lines)
+
+
+def maybe_post_match_bonus(fixture, live, players, teams, state, now):
+    """Post one settled official bonus update after a finished match.
+
+    A snapshot must remain unchanged briefly and the fixture must have been marked
+    finished for a minimum period. This avoids tweeting a provisional BPS/bonus
+    reshuffle while still publishing shortly after full time.
+    """
+    if not (fixture.get('finished') or fixture.get('finished_provisional')):
+        return
+
+    fid = str(fixture['id'])
+    posts = state.setdefault('bonus_posts', {})
+    if fid in posts:
+        return
+
+    finished_at = parse_iso_datetime(state.setdefault('match_finished_at', {}).get(fid))
+    if not finished_at:
+        # match_window normally creates this first. Fail closed if it is absent.
+        return
+    if (now - finished_at).total_seconds() < BONUS_MIN_POSTMATCH_SECONDS:
+        return
+
+    rows = bonus_points_for_fixture(fixture, live, players)
+    if not rows:
+        return
+
+    # Require the official bonus snapshot to remain identical for a short window.
+    signature = '|'.join(f'{pid}:{points}' for pid, points in rows)
+    candidates = state.setdefault('bonus_candidates', {})
+    candidate = candidates.get(fid)
+    if not isinstance(candidate, dict) or candidate.get('signature') != signature:
+        candidates[fid] = {'signature': signature, 'first_seen': now.isoformat()}
+        checkpoint(state)
+        return
+
+    first_seen = parse_iso_datetime(candidate.get('first_seen'))
+    if not first_seen or (now - first_seen).total_seconds() < BONUS_STABLE_SECONDS:
+        return
+
+    post = format_bonus_post(fixture, rows, players, teams)
+    if len(post) > 280:
+        raise ValueError('Bonus post exceeds X limit')
+
+    # Reserve before the X call so an unknown network result cannot duplicate it.
+    posts[fid] = {'status': 'pending', 'text': post, 'at': now.isoformat(), 'signature': signature}
+    checkpoint(state)
+    try:
+        post_to_x(post)
+    except Exception as exc:
+        posts[fid]['status'] = 'uncertain'
+        checkpoint(state)
+        print(f'Bonus post {fid} requires manual review: {type(exc).__name__}; NOT retried')
+        raise
+    posts[fid]['status'] = 'sent' if not DRY_RUN else 'dry_run'
+    candidates.pop(fid, None)
+    checkpoint(state)
 
 
 def match_post(fixture, changes, players, teams, current_counts=None):
@@ -2098,6 +2230,9 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
 
         if not pending:
             pending_by_fixture.pop(fid, None)
+
+        # Once the match is over, publish FPL's settled official bonus exactly once.
+        maybe_post_match_bonus(fixture, live, players, teams, state, now)
 
         # Keep enough history for review without unbounded state growth.
         if len(outbox) > 500:
