@@ -564,6 +564,11 @@
       "name": "Wilson",
       "prediction": -88.0,
       "alerted_at": "2026-09-12T12:37:10.550818+00:00"
+    },
+    "393": {
+      "name": "Khusanov",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-13T18:04:29.570089+00:00"
     }
   },
   "last_prices": {
