@@ -7219,18 +7219,13 @@
       "signature": "391:3|411:2|389:1"
     },
     "40": {
-      "status": "pending",
+      "status": "sent",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nليدز يونايتد × نيوكاسل\n\n3 - Bogle\n2 - Calvert-Lewin\n1 - Okafor\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T21:04:55.588938+00:00",
       "signature": "330:3|346:2|336:1"
     }
   },
-  "bonus_candidates": {
-    "40": {
-      "signature": "330:3|346:2|336:1",
-      "first_seen": "2026-09-14T21:03:50.601037+00:00"
-    }
-  },
+  "bonus_candidates": {},
   "pending_assists": {},
   "revised_recredits": {}
 }
