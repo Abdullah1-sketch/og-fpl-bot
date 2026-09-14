@@ -6768,7 +6768,7 @@
       "457": {
         "goals_scored": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "458": {
@@ -7170,9 +7170,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد 3 - 0 نيوكاسل\n⚠️ تصحيح FPL | Calvert-Lewin: الأهداف المحتسبة 1\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T20:01:59.103415+00:00"
+    },
+    "40:55": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد 3 - 0 نيوكاسل\n🟨 إنذار | J.Murphy\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-14T20:15:06.987595+00:00"
     }
   },
-  "match_revision": 54,
+  "match_revision": 55,
   "pending_goals": {
     "34": [],
     "32": [
@@ -7188,7 +7193,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "40": []
   },
   "bonus_posts": {
     "39": {
@@ -7199,5 +7205,7 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {}
+  "pending_assists": {
+    "40": []
+  }
 }
