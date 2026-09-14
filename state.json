@@ -636,7 +636,7 @@
     },
     "14": {
       "name": "Eze",
-      "price": 6.4
+      "price": 6.3
     },
     "15": {
       "name": "Ødegaard",
@@ -648,7 +648,7 @@
     },
     "17": {
       "name": "Merino",
-      "price": 5.9
+      "price": 5.8
     },
     "18": {
       "name": "Martinelli",
@@ -656,7 +656,7 @@
     },
     "19": {
       "name": "Zubimendi",
-      "price": 5.4
+      "price": 5.3
     },
     "20": {
       "name": "Dowman",
@@ -680,7 +680,7 @@
     },
     "26": {
       "name": "Havertz",
-      "price": 7.5
+      "price": 7.6
     },
     "27": {
       "name": "G.Jesus",
@@ -688,11 +688,11 @@
     },
     "31": {
       "name": "Konsa",
-      "price": 4.4
+      "price": 4.5
     },
     "452": {
       "name": "Bruno G.",
-      "price": 6.8
+      "price": 6.7
     },
     "557": {
       "name": "Tzolis",
@@ -760,7 +760,7 @@
     },
     "48": {
       "name": "Onana",
-      "price": 5.0
+      "price": 4.9
     },
     "49": {
       "name": "Iling Jr",
@@ -796,7 +796,7 @@
     },
     "160": {
       "name": "Garnacho",
-      "price": 5.9
+      "price": 5.8
     },
     "166": {
       "name": "N.Jackson",
@@ -804,7 +804,7 @@
     },
     "582": {
       "name": "Madjo",
-      "price": 5.5
+      "price": 5.4
     },
     "596": {
       "name": "Ruggeri",
@@ -864,7 +864,7 @@
     },
     "63": {
       "name": "Milosavljević",
-      "price": 5.0
+      "price": 4.9
     },
     "64": {
       "name": "Smith",
@@ -884,7 +884,7 @@
     },
     "68": {
       "name": "Tavernier",
-      "price": 6.0
+      "price": 6.1
     },
     "69": {
       "name": "Scott",
@@ -944,7 +944,7 @@
     },
     "573": {
       "name": "Sanchez",
-      "price": 4.5
+      "price": 4.4
     },
     "608": {
       "name": "Jebbison",
@@ -984,7 +984,7 @@
     },
     "89": {
       "name": "Henry",
-      "price": 4.5
+      "price": 4.4
     },
     "90": {
       "name": "Hickey",
@@ -1012,7 +1012,7 @@
     },
     "97": {
       "name": "Jensen",
-      "price": 5.5
+      "price": 5.4
     },
     "98": {
       "name": "Janelt",
@@ -1032,11 +1032,11 @@
     },
     "103": {
       "name": "Dasilva",
-      "price": 5.0
+      "price": 4.9
     },
     "105": {
       "name": "Anthony",
-      "price": 6.0
+      "price": 5.9
     },
     "106": {
       "name": "Thiago",
@@ -1056,6 +1056,10 @@
     },
     "620": {
       "name": "Diouf",
+      "price": 4.5
+    },
+    "657": {
+      "name": "Nunes",
       "price": 4.5
     },
     "109": {
@@ -1108,7 +1112,7 @@
     },
     "123": {
       "name": "Hinshelwood",
-      "price": 6.0
+      "price": 5.9
     },
     "124": {
       "name": "Groß",
@@ -1116,7 +1120,7 @@
     },
     "125": {
       "name": "Georginio",
-      "price": 5.5
+      "price": 5.4
     },
     "126": {
       "name": "O'Riley",
@@ -1156,7 +1160,7 @@
     },
     "137": {
       "name": "Tzimas",
-      "price": 5.5
+      "price": 5.4
     },
     "138": {
       "name": "Kostoulas",
@@ -1202,13 +1206,17 @@
       "name": "Azeez",
       "price": 5.5
     },
+    "658": {
+      "name": "Ibrahim",
+      "price": 4.5
+    },
     "28": {
       "name": "Martinez",
       "price": 5.0
     },
     "40": {
       "name": "Rogers",
-      "price": 7.6
+      "price": 7.7
     },
     "101": {
       "name": "Henderson",
@@ -1264,7 +1272,7 @@
     },
     "152": {
       "name": "Palestra",
-      "price": 5.4
+      "price": 5.3
     },
     "154": {
       "name": "Palmer",
@@ -1276,7 +1284,7 @@
     },
     "157": {
       "name": "Estêvão",
-      "price": 6.4
+      "price": 6.3
     },
     "158": {
       "name": "Gittens",
@@ -1296,11 +1304,11 @@
     },
     "164": {
       "name": "Quenda",
-      "price": 5.4
+      "price": 5.3
     },
     "165": {
       "name": "João Pedro",
-      "price": 7.7
+      "price": 7.8
     },
     "168": {
       "name": "Marc Guiu",
@@ -1320,7 +1328,7 @@
     },
     "560": {
       "name": "Penders",
-      "price": 4.5
+      "price": 4.4
     },
     "561": {
       "name": "Anselmino",
@@ -1400,7 +1408,7 @@
     },
     "184": {
       "name": "Grimes",
-      "price": 5.0
+      "price": 4.9
     },
     "185": {
       "name": "Sakamoto",
@@ -1524,7 +1532,7 @@
     },
     "208": {
       "name": "Sarr",
-      "price": 6.3
+      "price": 6.2
     },
     "210": {
       "name": "Wharton",
@@ -1580,7 +1588,7 @@
     },
     "223": {
       "name": "Mateta",
-      "price": 6.4
+      "price": 6.3
     },
     "224": {
       "name": "Nketiah",
@@ -1648,7 +1656,7 @@
     },
     "229": {
       "name": "Tarkowski",
-      "price": 6.0
+      "price": 6.1
     },
     "230": {
       "name": "Branthwaite",
@@ -1656,7 +1664,7 @@
     },
     "231": {
       "name": "Keane",
-      "price": 4.9
+      "price": 4.8
     },
     "232": {
       "name": "O'Brien",
@@ -1692,7 +1700,7 @@
     },
     "243": {
       "name": "Alcaraz",
-      "price": 5.0
+      "price": 4.9
     },
     "244": {
       "name": "Armstrong",
@@ -1704,7 +1712,7 @@
     },
     "246": {
       "name": "Röhl",
-      "price": 5.0
+      "price": 4.9
     },
     "247": {
       "name": "Hackney",
@@ -1772,7 +1780,7 @@
     },
     "263": {
       "name": "Kevin",
-      "price": 5.4
+      "price": 5.3
     },
     "264": {
       "name": "Bobb",
@@ -1780,7 +1788,7 @@
     },
     "265": {
       "name": "Berge",
-      "price": 5.0
+      "price": 4.9
     },
     "266": {
       "name": "Cairney",
@@ -1792,11 +1800,11 @@
     },
     "269": {
       "name": "Sessegnon",
-      "price": 4.5
+      "price": 4.4
     },
     "270": {
       "name": "Reed",
-      "price": 4.5
+      "price": 4.4
     },
     "271": {
       "name": "Muniz",
@@ -1812,7 +1820,7 @@
     },
     "570": {
       "name": "Palacios",
-      "price": 5.5
+      "price": 5.4
     },
     "580": {
       "name": "Charles",
@@ -1864,11 +1872,11 @@
     },
     "278": {
       "name": "Hughes",
-      "price": 4.0
+      "price": 3.9
     },
     "279": {
       "name": "Ajayi",
-      "price": 4.1
+      "price": 4.2
     },
     "280": {
       "name": "Coyle",
@@ -2020,7 +2028,7 @@
     },
     "300": {
       "name": "Walton",
-      "price": 4.5
+      "price": 4.4
     },
     "301": {
       "name": "Palmer",
@@ -2032,7 +2040,7 @@
     },
     "303": {
       "name": "Kipré",
-      "price": 4.0
+      "price": 3.9
     },
     "304": {
       "name": "O'Shea",
@@ -2072,7 +2080,7 @@
     },
     "313": {
       "name": "Clarke",
-      "price": 5.5
+      "price": 5.4
     },
     "314": {
       "name": "Ogbene",
@@ -2196,7 +2204,7 @@
     },
     "336": {
       "name": "Okafor",
-      "price": 5.9
+      "price": 5.8
     },
     "337": {
       "name": "Aaronson",
@@ -2204,7 +2212,7 @@
     },
     "338": {
       "name": "Ampadu",
-      "price": 5.5
+      "price": 5.4
     },
     "339": {
       "name": "Longstaff",
@@ -2220,7 +2228,7 @@
     },
     "343": {
       "name": "James",
-      "price": 5.0
+      "price": 4.9
     },
     "344": {
       "name": "Gruev",
@@ -2316,7 +2324,7 @@
     },
     "359": {
       "name": "Gomez",
-      "price": 5.0
+      "price": 4.9
     },
     "360": {
       "name": "Bradley",
@@ -2376,7 +2384,7 @@
     },
     "374": {
       "name": "Endo",
-      "price": 5.0
+      "price": 4.9
     },
     "375": {
       "name": "Nyoni",
@@ -2456,7 +2464,7 @@
     },
     "391": {
       "name": "Gvardiol",
-      "price": 5.6
+      "price": 5.7
     },
     "392": {
       "name": "Aït-Nouri",
@@ -2472,7 +2480,7 @@
     },
     "395": {
       "name": "Lewis",
-      "price": 4.5
+      "price": 4.4
     },
     "396": {
       "name": "Vitor Reis",
@@ -2560,11 +2568,11 @@
     },
     "131": {
       "name": "Baleba",
-      "price": 5.0
+      "price": 4.9
     },
     "162": {
       "name": "Andrey Santos",
-      "price": 4.9
+      "price": 4.8
     },
     "325": {
       "name": "Darlow",
@@ -2572,7 +2580,7 @@
     },
     "412": {
       "name": "Lammens",
-      "price": 5.0
+      "price": 4.9
     },
     "413": {
       "name": "Bayindir",
@@ -2724,7 +2732,7 @@
     },
     "449": {
       "name": "Hall",
-      "price": 5.1
+      "price": 5.2
     },
     "450": {
       "name": "Livramento",
@@ -2740,7 +2748,7 @@
     },
     "454": {
       "name": "Elanga",
-      "price": 6.1
+      "price": 6.2
     },
     "456": {
       "name": "J.Ramsey",
@@ -2806,6 +2814,10 @@
       "name": "Fernandez-Pardo",
       "price": 6.0
     },
+    "659": {
+      "name": "Miley",
+      "price": 4.5
+    },
     "167": {
       "name": "Delap",
       "price": 5.5
@@ -2860,7 +2872,7 @@
     },
     "478": {
       "name": "Netz",
-      "price": 4.5
+      "price": 4.4
     },
     "479": {
       "name": "Bindon",
@@ -2872,7 +2884,7 @@
     },
     "482": {
       "name": "Hudson-Odoi",
-      "price": 5.9
+      "price": 5.8
     },
     "483": {
       "name": "Ndoye",
@@ -2904,11 +2916,11 @@
     },
     "490": {
       "name": "Wood",
-      "price": 5.9
+      "price": 5.8
     },
     "491": {
       "name": "Igor Jesus",
-      "price": 5.9
+      "price": 5.8
     },
     "493": {
       "name": "Kalimuendo",
@@ -2964,7 +2976,7 @@
     },
     "498": {
       "name": "Senesi",
-      "price": 5.9
+      "price": 5.8
     },
     "499": {
       "name": "Pedro Porro",
@@ -2976,7 +2988,7 @@
     },
     "502": {
       "name": "Robertson",
-      "price": 4.5
+      "price": 4.4
     },
     "503": {
       "name": "Van de Ven",
@@ -3016,7 +3028,7 @@
     },
     "513": {
       "name": "Xavi",
-      "price": 6.0
+      "price": 5.9
     },
     "514": {
       "name": "Tel",
@@ -3052,7 +3064,7 @@
     },
     "522": {
       "name": "Gray",
-      "price": 5.0
+      "price": 4.9
     },
     "523": {
       "name": "Moore",
@@ -3060,7 +3072,7 @@
     },
     "524": {
       "name": "Olusesi",
-      "price": 4.5
+      "price": 4.4
     },
     "525": {
       "name": "Fernandes",
@@ -3092,7 +3104,7 @@
     },
     "529": {
       "name": "Roefs",
-      "price": 5.0
+      "price": 4.9
     },
     "530": {
       "name": "Patterson",
@@ -3108,7 +3120,7 @@
     },
     "533": {
       "name": "Mukiele",
-      "price": 5.5
+      "price": 5.4
     },
     "534": {
       "name": "Hume",
@@ -3144,7 +3156,7 @@
     },
     "542": {
       "name": "E.Le Fée",
-      "price": 5.9
+      "price": 5.8
     },
     "543": {
       "name": "Diarra",
@@ -3172,7 +3184,7 @@
     },
     "549": {
       "name": "Talbi",
-      "price": 5.4
+      "price": 5.3
     },
     "550": {
       "name": "Jocelin.T",
@@ -3184,7 +3196,7 @@
     },
     "552": {
       "name": "Brobbey",
-      "price": 5.9
+      "price": 5.8
     },
     "553": {
       "name": "Isidor",
@@ -7227,5 +7239,6 @@
   },
   "bonus_candidates": {},
   "pending_assists": {},
-  "revised_recredits": {}
+  "revised_recredits": {},
+  "confirmed_price_logic_version": 2
 }
