@@ -6652,7 +6652,7 @@
         "red_cards": 0
       },
       "346": {
-        "goals_scored": 2,
+        "goals_scored": 1,
         "assists": 1,
         "yellow_cards": 1,
         "red_cards": 0
@@ -7165,9 +7165,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد 3 - 0 نيوكاسل\n⚠️ تصحيح FPL | Justin: الصناعة المحتسبة 0\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T20:01:59.103415+00:00"
+    },
+    "40:54": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد 3 - 0 نيوكاسل\n⚠️ تصحيح FPL | Calvert-Lewin: الأهداف المحتسبة 1\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-14T20:01:59.103415+00:00"
     }
   },
-  "match_revision": 53,
+  "match_revision": 54,
   "pending_goals": {
     "34": [],
     "32": [
