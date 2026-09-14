@@ -6598,7 +6598,7 @@
         "red_cards": 0
       },
       "336": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0,
         "yellow_cards": 0,
         "red_cards": 0
@@ -6611,7 +6611,7 @@
       },
       "338": {
         "goals_scored": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -7175,9 +7175,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد 3 - 0 نيوكاسل\n🟨 إنذار | J.Murphy\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T20:15:06.987595+00:00"
+    },
+    "40:56": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد [4] - 0 نيوكاسل\n⚽️ هدف | Okafor\n🅰️ صناعة | Ampadu\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-14T20:20:06.999209+00:00"
     }
   },
-  "match_revision": 55,
+  "match_revision": 56,
   "pending_goals": {
     "34": [],
     "32": [
