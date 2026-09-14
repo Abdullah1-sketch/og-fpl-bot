@@ -2079,7 +2079,9 @@ def match_post(fixture, changes, players, teams, current_counts=None):
 
     home_score_text = f'[{home_score}]' if fixture['team_h'] in scoring_teams else str(home_score)
     away_score_text = f'[{away_score}]' if fixture['team_a'] in scoring_teams else str(away_score)
-    lines = [f'🏟️ {home} {home_score_text} - {away_score_text} {away}']
+    correction_post = any(change['delta'] < 0 for change in changes)
+    lines = ([] if not correction_post else ['⚠️ تعديل رسمي من FPL'])
+    lines.append(f'🏟️ {home} {home_score_text} - {away_score_text} {away}')
     for change in changes:
         name = players[change['pid']]['web_name']
         name = PLAYER_AR.get(name, name)  # Official spelling if no verified Arabic alias.
@@ -2095,14 +2097,21 @@ def match_post(fixture, changes, players, teams, current_counts=None):
             suffix = '' if change['delta'] == 1 else f" ×{change['delta']}"
             lines.append(f'{label} | {name}{suffix}')
         else:
-            label = {
-                'goals_scored': 'الأهداف',
-                'own_goals': 'الأهداف العكسية',
-                'assists': 'الصناعة',
-                'yellow_cards': 'الإنذارات',
-                'red_cards': 'حالات الطرد',
-            }[change['stat']]
-            lines.append(f"⚠️ تصحيح FPL | {name}: {label} المحتسبة {change['new']}")
+            if change['stat'] == 'assists':
+                if change['new'] == 0:
+                    lines += [f'🅰️ تم إلغاء صناعة | {name}',
+                              '↳ الهدف الآن بدون صناعة محتسبة']
+                else:
+                    lines += [f'🅰️ تعديل صناعة | {name}',
+                              f"↳ الصناعات المحتسبة الآن: {change['new']}"]
+            elif change['stat'] == 'goals_scored':
+                lines += [f'⚽️ تم إلغاء هدف | {name}',
+                          '↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل']
+            elif change['stat'] == 'own_goals':
+                lines += [f'⚽️ تم إلغاء هدف عكسي | {name}',
+                          '↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل']
+            else:
+                lines.append(f'⚠️ تعديل FPL | {name}: القيمة المحتسبة الآن {change["new"]}')
     return '\n'.join(lines + ['', '#FPL', '#فانتزي_البريميرليغ'])
 
 
@@ -2141,6 +2150,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
     # the scorer/fixture score, so retain it briefly and use it only with a
     # newly detected goal from the same team.
     pending_assists_by_fixture = state.setdefault('pending_assists', {})
+    revised_recredits_by_fixture = state.setdefault('revised_recredits', {})
     for fixture in fixtures:
         live = live_by_gw.get(fixture['event'])
         if live is None:
@@ -2158,6 +2168,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
         previous = stored[fid]
         pending = pending_by_fixture.setdefault(fid, [])
         pending_assists = pending_assists_by_fixture.setdefault(fid, [])
+        revised_recredits = revised_recredits_by_fixture.setdefault(fid, {})
         changes = []
         for pid, values in current.items():
             if pid not in previous:
@@ -2174,6 +2185,16 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
         # a goal followed by a correction. Other official corrections stay visible.
         remaining = []
         for change in changes:
+            recredit_key = f"{change['pid']}:{change['stat']}"
+            if (change['stat'] in ('goals_scored', 'own_goals', 'assists')
+                    and change['delta'] > 0
+                    and revised_recredits.get(recredit_key) == change['new']):
+                # The correction was already published; do not send the same
+                # event a second time if FPL restores it.
+                previous[change['pid']][change['stat']] = change['new']
+                revised_recredits.pop(recredit_key, None)
+                checkpoint(state)
+                continue
             if change['stat'] == 'goals_scored' and change['delta'] < 0:
                 held = [p for p in pending if p['change']['pid'] == change['pid']]
                 if held:
@@ -2182,15 +2203,20 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                     checkpoint(state)
                     continue
             if change['stat'] == 'assists' and change['delta'] < 0:
-                # A never-published queued assist was removed by FPL: cancel it
-                # silently rather than creating a misleading correction post.
-                held = [p for p in pending_assists if p['change']['pid'] == change['pid']]
-                if held:
-                    pending_assists[:] = [p for p in pending_assists
-                                           if p['change']['pid'] != change['pid']]
+                # A queued assist was never public, so a later reversal remains
+                # quiet. A published assist continues below as a clear update.
+                queued_assist = any(p['change']['pid'] == change['pid']
+                                    and p['change']['stat'] == change['stat']
+                                    for p in pending_assists)
+                pending_assists[:] = [p for p in pending_assists
+                                      if not (p['change']['pid'] == change['pid']
+                                              and p['change']['stat'] == change['stat'])]
+                if queued_assist:
                     previous[change['pid']]['assists'] = change['new']
                     checkpoint(state)
                     continue
+            if change['stat'] in ('goals_scored', 'own_goals', 'assists') and change['delta'] < 0:
+                revised_recredits[recredit_key] = change['old']
             remaining.append(change)
         changes = remaining
 
@@ -2312,6 +2338,8 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             pending_by_fixture.pop(fid, None)
         if not pending_assists:
             pending_assists_by_fixture.pop(fid, None)
+        if not revised_recredits:
+            revised_recredits_by_fixture.pop(fid, None)
 
         # Once the match is over, publish FPL's settled official bonus exactly once.
         maybe_post_match_bonus(fixture, live, players, teams, state, now)
