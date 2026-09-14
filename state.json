@@ -6781,7 +6781,8 @@
         "goals_scored": 0,
         "assists": 0,
         "yellow_cards": 0,
-        "red_cards": 0
+        "red_cards": 0,
+        "own_goals": 1
       },
       "460": {
         "goals_scored": 0,
@@ -7149,9 +7150,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد [2] - 0 نيوكاسل\n⚽️ هدف | Calvert-Lewin\n🅰️ صناعة | Muharemović\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T19:48:54.152364+00:00"
+    },
+    "40:51": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد [3] - 0 نيوكاسل\n⚽️ هدف عكسي | L.Miley\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-14T20:00:59.030542+00:00"
     }
   },
-  "match_revision": 50,
+  "match_revision": 51,
   "pending_goals": {
     "34": [],
     "32": [
@@ -7167,7 +7173,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "40": []
   },
   "bonus_posts": {
     "39": {
@@ -7177,5 +7184,8 @@
       "signature": "391:3|411:2|389:1"
     }
   },
-  "bonus_candidates": {}
+  "bonus_candidates": {},
+  "pending_assists": {
+    "40": []
+  }
 }
