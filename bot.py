@@ -1773,7 +1773,7 @@ def post_to_x(text):
     print("Posted:", r.json())
 
 
-LIVE_POLL_SECONDS = max(15, int(os.getenv('LIVE_POLL_SECONDS', '15')))
+LIVE_POLL_SECONDS = max(5, int(os.getenv('LIVE_POLL_SECONDS', '5')))
 ASSIST_WAIT_SECONDS = max(0, int(os.getenv('ASSIST_WAIT_SECONDS', '60')))
 BONUS_STABLE_SECONDS = max(30, int(os.getenv('BONUS_STABLE_SECONDS', '60')))
 BONUS_MIN_POSTMATCH_SECONDS = max(60, int(os.getenv('BONUS_MIN_POSTMATCH_SECONDS', '120')))
@@ -1881,6 +1881,7 @@ def match_counts(live, fixtures, players):
                 continue
             values = {
                 'goals_scored': 0,
+                'own_goals': 0,
                 'assists': 0,
                 'yellow_cards': 0,
                 'red_cards': 0,
@@ -2041,10 +2042,16 @@ def match_post(fixture, changes, players, teams, current_counts=None):
     away_score = fixture.get('team_a_score')
     home_score = home_score if isinstance(home_score, int) else 0
     away_score = away_score if isinstance(away_score, int) else 0
-    scoring_teams = {
-        players[change['pid']]['team'] for change in changes
-        if change['delta'] > 0 and change['stat'] == 'goals_scored'
-    }
+    scoring_teams = set()
+    for change in changes:
+        if change['delta'] <= 0:
+            continue
+        player_team = players[change['pid']]['team']
+        if change['stat'] == 'goals_scored':
+            scoring_teams.add(player_team)
+        elif change['stat'] == 'own_goals':
+            scoring_teams.add(fixture['team_a'] if player_team == fixture['team_h']
+                              else fixture['team_h'])
 
     # A goal can appear in /event/{gw}/live/ before /fixtures/ updates the score.
     # Use the live credited-goal total as a floor only for the team that has just
@@ -2061,6 +2068,10 @@ def match_post(fixture, changes, players, teams, current_counts=None):
             goals = values.get('goals_scored', 0)
             if isinstance(goals, int) and not isinstance(goals, bool) and goals > 0:
                 credited[team_id] += goals
+            own_goals = values.get('own_goals', 0)
+            if isinstance(own_goals, int) and not isinstance(own_goals, bool) and own_goals > 0:
+                beneficiary = fixture['team_a'] if team_id == fixture['team_h'] else fixture['team_h']
+                credited[beneficiary] += own_goals
         if fixture['team_h'] in scoring_teams:
             home_score = max(home_score, credited[fixture['team_h']])
         if fixture['team_a'] in scoring_teams:
@@ -2076,6 +2087,7 @@ def match_post(fixture, changes, players, teams, current_counts=None):
         if change['delta'] > 0:
             label = {
                 'goals_scored': '⚽️ هدف',
+                'own_goals': '⚽️ هدف عكسي',
                 'assists': '🅰️ صناعة',
                 'yellow_cards': '🟨 إنذار',
                 'red_cards': '🟥 طرد',
@@ -2085,6 +2097,7 @@ def match_post(fixture, changes, players, teams, current_counts=None):
         else:
             label = {
                 'goals_scored': 'الأهداف',
+                'own_goals': 'الأهداف العكسية',
                 'assists': 'الصناعة',
                 'yellow_cards': 'الإنذارات',
                 'red_cards': 'حالات الطرد',
@@ -2124,6 +2137,10 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
     stored = state.setdefault('match_counts', {})
     outbox = state.setdefault('match_outbox', {})
     pending_by_fixture = state.setdefault('pending_goals', {})
+    # An assist is never a standalone post.  FPL can surface the assist before
+    # the scorer/fixture score, so retain it briefly and use it only with a
+    # newly detected goal from the same team.
+    pending_assists_by_fixture = state.setdefault('pending_assists', {})
     for fixture in fixtures:
         live = live_by_gw.get(fixture['event'])
         if live is None:
@@ -2140,6 +2157,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             continue
         previous = stored[fid]
         pending = pending_by_fixture.setdefault(fid, [])
+        pending_assists = pending_assists_by_fixture.setdefault(fid, [])
         changes = []
         for pid, values in current.items():
             if pid not in previous:
@@ -2163,10 +2181,21 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                     previous[change['pid']]['goals_scored'] = change['new']
                     checkpoint(state)
                     continue
+            if change['stat'] == 'assists' and change['delta'] < 0:
+                # A never-published queued assist was removed by FPL: cancel it
+                # silently rather than creating a misleading correction post.
+                held = [p for p in pending_assists if p['change']['pid'] == change['pid']]
+                if held:
+                    pending_assists[:] = [p for p in pending_assists
+                                           if p['change']['pid'] != change['pid']]
+                    previous[change['pid']]['assists'] = change['new']
+                    checkpoint(state)
+                    continue
             remaining.append(change)
         changes = remaining
 
         positive_goals = [c for c in changes if c['stat'] == 'goals_scored' and c['delta'] > 0]
+        positive_own_goals = [c for c in changes if c['stat'] == 'own_goals' and c['delta'] > 0]
         positive_assists = [c for c in changes if c['stat'] == 'assists' and c['delta'] > 0]
         used = set()
 
@@ -2180,6 +2209,25 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             if len(team_goals) == len(team_assists) == 1:
                 batches.append([team_goals[0], team_assists[0]])
                 used.update((id(team_goals[0]), id(team_assists[0])))
+
+        # An assist can reach FPL before the goal. Pair it only when there is
+        # exactly one waiting assist and exactly one new goal for that team;
+        # ambiguity is deliberately held rather than guessed.
+        for team_id in (fixture['team_h'], fixture['team_a']):
+            team_goals = [c for c in positive_goals
+                          if id(c) not in used and c['delta'] == 1
+                          and players[c['pid']]['team'] == team_id]
+            waiting_assists = []
+            for held in pending_assists:
+                detected = parse_iso_datetime(held.get('detected_at'))
+                if (detected and players[held['change']['pid']]['team'] == team_id
+                        and (now - detected).total_seconds() <= ASSIST_WAIT_SECONDS):
+                    waiting_assists.append(held)
+            if len(team_goals) == len(waiting_assists) == 1:
+                held = waiting_assists[0]
+                pending_assists.remove(held)
+                batches.append([team_goals[0], held['change']])
+                used.add(id(team_goals[0]))
 
         # FPL sometimes credits the assist after the goal. Join it to exactly one
         # still-held goal from the same team, but never guess when ambiguous.
@@ -2200,6 +2248,16 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                 batches.append([held['change'], assist])
                 used.add(id(assist))
 
+        # Keep a newly credited assist quiet until a matching goal appears.
+        # Mark the counter as seen now so it is not rediscovered on every poll.
+        for assist in positive_assists:
+            if id(assist) in used:
+                continue
+            previous[assist['pid']]['assists'] = assist['new']
+            pending_assists.append({'change': assist, 'detected_at': now.isoformat()})
+            used.add(id(assist))
+            checkpoint(state)
+
         # Hold unmatched single goals briefly to allow the official assist value
         # to catch up. Larger jumps are summaries and are posted immediately.
         for goal in positive_goals:
@@ -2213,9 +2271,19 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                 batches.append([goal])
                 used.add(id(goal))
 
-        # Unpaired assists and official corrections are sent on their own.
+        # FPL own-goal credit is already final enough to publish as one event;
+        # it is never paired with, or mislabeled as, an assist.
+        for own_goal in positive_own_goals:
+            if id(own_goal) not in used:
+                batches.append([own_goal])
+                used.add(id(own_goal))
+
+        # Positive assists must never become their own tweets. Other official
+        # corrections (for example a red-card correction) retain their current
+        # behaviour.
         for change in changes:
-            if id(change) not in used and change not in positive_goals:
+            if (id(change) not in used and change not in positive_goals
+                    and not (change['stat'] == 'assists' and change['delta'] > 0)):
                 batches.append([change])
                 used.add(id(change))
 
@@ -2231,8 +2299,19 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                 _publish_match_batch(fixture, [held['change']], players, teams, current,
                                      previous, state, outbox, now)
 
+        # A queued assist with no matching goal is discarded after the same
+        # window. This covers own-goal/temporary FPL updates without producing
+        # a misleading standalone "assist" tweet.
+        for held in list(pending_assists):
+            detected = parse_iso_datetime(held.get('detected_at'))
+            if not detected or (now - detected).total_seconds() >= ASSIST_WAIT_SECONDS:
+                pending_assists.remove(held)
+                checkpoint(state)
+
         if not pending:
             pending_by_fixture.pop(fid, None)
+        if not pending_assists:
+            pending_assists_by_fixture.pop(fid, None)
 
         # Once the match is over, publish FPL's settled official bonus exactly once.
         maybe_post_match_bonus(fixture, live, players, teams, state, now)
