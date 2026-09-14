@@ -42,6 +42,8 @@ PREDICTION_POST_MINUTE = int(os.getenv("PREDICTION_POST_MINUTE", "30"))
 FAST_PRICE_POLL_SECONDS = int(os.getenv("FAST_PRICE_POLL_SECONDS", "15"))
 FAST_PRICE_START_MINUTES_BEFORE = int(os.getenv("FAST_PRICE_START_MINUTES_BEFORE", "5"))
 FAST_PRICE_END_MINUTES_AFTER = int(os.getenv("FAST_PRICE_END_MINUTES_AFTER", "20"))
+CONFIRMED_PRICE_LOGIC_VERSION = 2
+CONFIRMED_PRICE_CONFIRM_SECONDS = int(os.getenv("CONFIRMED_PRICE_CONFIRM_SECONDS", "15"))
 
 NEWS_LOGIC_VERSION = 8
 DRY_RUN = os.getenv("DRY_RUN", "true").lower() == "true"
@@ -1700,23 +1702,67 @@ def maybe_post_prediction_crossings(bootstrap, state):
                 "alerted_at": now_iso,
             }
 
-def check_and_post_confirmed_prices(bootstrap, state):
+def check_and_post_confirmed_prices(bootstrap, state, allow_post=True):
+    """Publish real official price changes only after a safe baseline and two matches.
+
+    ``allow_post`` is true only around FPL's official London-midnight update.
+    Outside that window, a changed snapshot is ignored without replacing the
+    last trusted baseline. This prevents an old/cached bootstrap response from
+    being announced as a new official change.
+    """
     new_prices = current_official_prices(bootstrap)
+
+    # Safe migration for this fix (and safe first-ever startup): trust the
+    # current official snapshot as a baseline, but never announce it.
+    if state.get("confirmed_price_logic_version") != CONFIRMED_PRICE_LOGIC_VERSION:
+        state["last_prices"] = new_prices
+        state["confirmed_price_logic_version"] = CONFIRMED_PRICE_LOGIC_VERSION
+        state.pop("pending_confirmed_prices", None)
+        print("Confirmed-price baseline initialized; no post on migration")
+        return "baseline"
+
     old_prices = state.get("last_prices", {})
-    changed = False
-    if old_prices:
-        rises, falls = find_confirmed_changes(old_prices, new_prices)
-        if rises or falls:
-            for r_chunk, f_chunk in confirmed_price_chunks(rises, falls):
-                post_to_x(format_confirmed_post(r_chunk, f_chunk))
-            changed = True
-            # Other players changing price must NOT re-arm this player's alert.
-            for pid, price in new_prices.items():
-                if pid in old_prices and old_prices[pid]['price'] != price['price']:
-                    state.setdefault('alerted_rise', {}).pop(pid, None)
-                    state.setdefault('alerted_fall', {}).pop(pid, None)
+    if not old_prices:
+        state["last_prices"] = new_prices
+        state.pop("pending_confirmed_prices", None)
+        return "baseline"
+
+    rises, falls = find_confirmed_changes(old_prices, new_prices)
+    if not rises and not falls:
+        state["last_prices"] = new_prices
+        state.pop("pending_confirmed_prices", None)
+        return "unchanged"
+
+    if not allow_post:
+        state.pop("pending_confirmed_prices", None)
+        print("Price difference seen outside the official update window; ignored")
+        return "outside_window"
+
+    # A second identical fresh response is required before posting. The compact
+    # signature contains only official player IDs and prices, not display text.
+    signature = hashlib.sha256(json.dumps(
+        {pid: row["price"] for pid, row in sorted(new_prices.items())},
+        sort_keys=True,
+    ).encode("utf-8")).hexdigest()
+    pending = state.get("pending_confirmed_prices", {})
+    if pending.get("signature") != signature:
+        state["pending_confirmed_prices"] = {
+            "signature": signature,
+            "first_seen_at": datetime.now(timezone.utc).isoformat(),
+        }
+        return "pending"
+
+    for r_chunk, f_chunk in confirmed_price_chunks(rises, falls):
+        post_to_x(format_confirmed_post(r_chunk, f_chunk))
+
+    # Other players changing price must NOT re-arm this player's alert.
+    for pid, price in new_prices.items():
+        if pid in old_prices and old_prices[pid]['price'] != price['price']:
+            state.setdefault('alerted_rise', {}).pop(pid, None)
+            state.setdefault('alerted_fall', {}).pop(pid, None)
     state["last_prices"] = new_prices
-    return changed
+    state.pop("pending_confirmed_prices", None)
+    return "posted"
 
 
 def london_fast_window(now_utc=None):
@@ -1737,7 +1783,7 @@ def fast_price_watch(state):
     print(f"Fast official-price watch active until {end_local.isoformat()}")
     while True:
         bootstrap = fetch_official_fpl(fresh=True)
-        if check_and_post_confirmed_prices(bootstrap, state):
+        if check_and_post_confirmed_prices(bootstrap, state) == "posted":
             save_state(state)
             print("Confirmed price changes detected and posted in fast mode")
             return True
@@ -2355,16 +2401,28 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
 
 def regular_prices(bootstrap, state):
 
-    # Official confirmed price changes: compare every run so the update is posted
-    # on the first GitHub Actions cycle after the official 02:00 Saudi update.
+    # Never use the bootstrap captured when a long live-match process started.
+    # Price confirmation always gets a fresh official response.
     try:
-        check_and_post_confirmed_prices(bootstrap, state)
+        fresh_bootstrap = fetch_official_fpl(fresh=True)
+        in_official_window, _ = london_fast_window()
+        result = check_and_post_confirmed_prices(
+            fresh_bootstrap, state, allow_post=in_official_window
+        )
+        if result == "pending":
+            # Confirm the exact same official snapshot twice before tweeting.
+            checkpoint(state)
+            time.sleep(CONFIRMED_PRICE_CONFIRM_SECONDS)
+            fresh_bootstrap = fetch_official_fpl(fresh=True)
+            check_and_post_confirmed_prices(
+                fresh_bootstrap, state, allow_post=in_official_window
+            )
     except Exception as exc:
         print("Confirmed price check failed:", exc)
 
     # Official FPL predictor: textual status only, no percentage threshold.
     try:
-        maybe_post_prediction_crossings(bootstrap, state)
+        maybe_post_prediction_crossings(fresh_bootstrap, state)
     except Exception as exc:
         print("Official predictor failed:", exc)
 
