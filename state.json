@@ -59,6 +59,21 @@
       "name": "Schade",
       "prediction": 102.5,
       "alerted_at": "2026-09-13T23:21:03.201122+00:00"
+    },
+    "124": {
+      "name": "Groß",
+      "prediction": 109.2,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "286": {
+      "name": "Belloumi",
+      "prediction": 106.6,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "480": {
+      "name": "Gibbs-White",
+      "prediction": 104.1,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
     }
   },
   "alerted_fall": {
@@ -133,10 +148,6 @@
     "17": {
       "name": "Merino",
       "prediction": -0.94
-    },
-    "506": {
-      "name": "Udogie",
-      "prediction": -0.936
     },
     "338": {
       "name": "Ampadu",
@@ -300,11 +311,6 @@
       "prediction": -85.6,
       "alerted_at": "2026-09-11T15:34:56.528701+00:00"
     },
-    "568": {
-      "name": "Barco",
-      "prediction": -85.0,
-      "alerted_at": "2026-09-11T16:23:56.899298+00:00"
-    },
     "89": {
       "name": "Henry",
       "prediction": -85.7,
@@ -340,11 +346,6 @@
       "prediction": -89.1,
       "alerted_at": "2026-09-11T23:01:00.393204+00:00"
     },
-    "212": {
-      "name": "Hughes",
-      "prediction": -87.0,
-      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
-    },
     "270": {
       "name": "Reed",
       "prediction": -86.1,
@@ -354,16 +355,6 @@
       "name": "Aina",
       "prediction": -86.1,
       "alerted_at": "2026-09-11T23:01:00.393204+00:00"
-    },
-    "526": {
-      "name": "Solanke",
-      "prediction": -85.2,
-      "alerted_at": "2026-09-11T23:01:00.393204+00:00"
-    },
-    "43": {
-      "name": "Tielemans",
-      "prediction": -86.9,
-      "alerted_at": "2026-09-11T23:19:44.584897+00:00"
     },
     "533": {
       "name": "Mukiele",
@@ -388,11 +379,6 @@
     "587": {
       "name": "Rulli",
       "prediction": -91.0,
-      "alerted_at": "2026-09-11T23:46:00.833154+00:00"
-    },
-    "378": {
-      "name": "McConnell",
-      "prediction": -87.6,
       "alerted_at": "2026-09-11T23:46:00.833154+00:00"
     },
     "438": {
@@ -445,25 +431,10 @@
       "prediction": -86.3,
       "alerted_at": "2026-09-12T07:20:06.988986+00:00"
     },
-    "102": {
-      "name": "Yarmoliuk",
-      "prediction": -86.4,
-      "alerted_at": "2026-09-12T07:46:07.665789+00:00"
-    },
     "95": {
       "name": "O.Dango",
       "prediction": -87.1,
       "alerted_at": "2026-09-12T08:01:08.946418+00:00"
-    },
-    "328": {
-      "name": "Struijk",
-      "prediction": -89.6,
-      "alerted_at": "2026-09-12T08:22:11.596916+00:00"
-    },
-    "159": {
-      "name": "Caicedo",
-      "prediction": -86.4,
-      "alerted_at": "2026-09-12T09:01:09.518872+00:00"
     },
     "431": {
       "name": "Amad",
@@ -535,11 +506,6 @@
       "prediction": -85.9,
       "alerted_at": "2026-09-12T11:20:13.620558+00:00"
     },
-    "309": {
-      "name": "Núñez",
-      "prediction": -89.7,
-      "alerted_at": "2026-09-12T11:31:56.680521+00:00"
-    },
     "344": {
       "name": "Gruev",
       "prediction": -96.4,
@@ -553,11 +519,6 @@
     "426": {
       "name": "B.Fernandes",
       "prediction": -86.0,
-      "alerted_at": "2026-09-12T11:46:07.937791+00:00"
-    },
-    "16": {
-      "name": "Madueke",
-      "prediction": -85.9,
       "alerted_at": "2026-09-12T11:46:07.937791+00:00"
     },
     "232": {
@@ -579,6 +540,26 @@
       "name": "Guessand",
       "prediction": -105.7,
       "alerted_at": "2026-09-13T23:47:31.330278+00:00"
+    },
+    "618": {
+      "name": "Goretzka",
+      "prediction": -103.4,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "32": {
+      "name": "Cash",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "189": {
+      "name": "Shepherd",
+      "prediction": -95.7,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "519": {
+      "name": "Gallagher",
+      "prediction": -96.2,
+      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
     }
   },
   "last_prices": {
@@ -644,7 +625,7 @@
     },
     "16": {
       "name": "Madueke",
-      "price": 6.3
+      "price": 6.2
     },
     "17": {
       "name": "Merino",
@@ -1028,7 +1009,7 @@
     },
     "102": {
       "name": "Yarmoliuk",
-      "price": 4.9
+      "price": 4.8
     },
     "103": {
       "name": "Dasilva",
@@ -1172,7 +1153,7 @@
     },
     "328": {
       "name": "Struijk",
-      "price": 5.0
+      "price": 4.9
     },
     "504": {
       "name": "Vuskovic",
@@ -1292,7 +1273,7 @@
     },
     "159": {
       "name": "Caicedo",
-      "price": 5.4
+      "price": 5.3
     },
     "161": {
       "name": "Lavia",
@@ -1336,7 +1317,7 @@
     },
     "568": {
       "name": "Barco",
-      "price": 5.5
+      "price": 5.4
     },
     "583": {
       "name": "Chavarria",
@@ -1544,7 +1525,7 @@
     },
     "212": {
       "name": "Hughes",
-      "price": 4.5
+      "price": 4.4
     },
     "213": {
       "name": "Lerma",
@@ -2064,7 +2045,7 @@
     },
     "309": {
       "name": "Núñez",
-      "price": 5.0
+      "price": 4.9
     },
     "310": {
       "name": "Matusiwa",
@@ -2400,7 +2381,7 @@
     },
     "378": {
       "name": "McConnell",
-      "price": 4.5
+      "price": 4.4
     },
     "379": {
       "name": "Isak",
@@ -2564,7 +2545,7 @@
     },
     "43": {
       "name": "Tielemans",
-      "price": 5.9
+      "price": 5.8
     },
     "131": {
       "name": "Baleba",
@@ -3000,7 +2981,7 @@
     },
     "506": {
       "name": "Udogie",
-      "price": 4.5
+      "price": 4.4
     },
     "507": {
       "name": "Phillips",
@@ -3080,7 +3061,7 @@
     },
     "526": {
       "name": "Solanke",
-      "price": 5.9
+      "price": 5.8
     },
     "527": {
       "name": "Richarlison",
@@ -7240,9 +7221,5 @@
   "bonus_candidates": {},
   "pending_assists": {},
   "revised_recredits": {},
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "1584e6e08f50120a77888bcdaaeba8133a5f76e3cfa12b6e4d73dd22bf832877",
-    "first_seen_at": "2026-09-14T23:03:30.802318+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
