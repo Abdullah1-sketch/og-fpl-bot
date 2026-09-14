@@ -6562,7 +6562,7 @@
         "red_cards": 0
       },
       "330": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "assists": 0,
         "yellow_cards": 0,
         "red_cards": 0
@@ -6653,7 +6653,7 @@
       },
       "346": {
         "goals_scored": 2,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 1,
         "red_cards": 0
       },
@@ -7155,9 +7155,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد [3] - 0 نيوكاسل\n⚽️ هدف عكسي | L.Miley\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T20:00:59.030542+00:00"
+    },
+    "40:52": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد [3] - 0 نيوكاسل\n⚽️ هدف | Bogle\n🅰️ صناعة | Calvert-Lewin\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-14T20:01:59.103415+00:00"
     }
   },
-  "match_revision": 51,
+  "match_revision": 52,
   "pending_goals": {
     "34": [],
     "32": [
@@ -7173,7 +7178,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "40": []
   },
   "bonus_posts": {
     "39": {
@@ -7184,5 +7190,7 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {}
+  "pending_assists": {
+    "40": []
+  }
 }
