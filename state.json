@@ -74,6 +74,11 @@
       "name": "Gibbs-White",
       "prediction": 104.1,
       "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "330": {
+      "name": "Bogle",
+      "prediction": 104.6,
+      "alerted_at": "2026-09-14T23:21:44.711593+00:00"
     }
   },
   "alerted_fall": {
@@ -560,6 +565,16 @@
       "name": "Gallagher",
       "prediction": -96.2,
       "alerted_at": "2026-09-14T23:03:48.616630+00:00"
+    },
+    "185": {
+      "name": "Sakamoto",
+      "prediction": -96.0,
+      "alerted_at": "2026-09-14T23:21:44.711593+00:00"
+    },
+    "312": {
+      "name": "Taylor",
+      "prediction": -97.0,
+      "alerted_at": "2026-09-14T23:21:44.711593+00:00"
     }
   },
   "last_prices": {
