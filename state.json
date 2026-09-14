@@ -7173,8 +7173,7 @@
       }
     ],
     "33": [],
-    "31": [],
-    "40": []
+    "31": []
   },
   "bonus_posts": {
     "39": {
@@ -7185,7 +7184,5 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {
-    "40": []
-  }
+  "pending_assists": {}
 }
