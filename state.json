@@ -6738,7 +6738,7 @@
       "450": {
         "goals_scored": 0,
         "assists": 1,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "451": {
@@ -7185,9 +7185,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد 4 - [1] نيوكاسل\n⚽️ هدف | Touré\n🅰️ صناعة | Livramento\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T20:50:50.553052+00:00"
+    },
+    "40:58": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد 4 - 1 نيوكاسل\n🟨 إنذار | Livramento\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-14T20:52:50.608294+00:00"
     }
   },
-  "match_revision": 57,
+  "match_revision": 58,
   "pending_goals": {
     "34": [],
     "32": [
@@ -7203,7 +7208,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "40": []
   },
   "bonus_posts": {
     "39": {
@@ -7214,6 +7220,10 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
-  "revised_recredits": {}
+  "pending_assists": {
+    "40": []
+  },
+  "revised_recredits": {
+    "40": {}
+  }
 }
