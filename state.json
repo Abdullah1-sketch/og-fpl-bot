@@ -511,6 +511,11 @@
       "name": "Wirtz",
       "prediction": -96.7,
       "alerted_at": "2026-09-15T23:03:56.648304+00:00"
+    },
+    "315": {
+      "name": "Fatawu",
+      "prediction": -96.1,
+      "alerted_at": "2026-09-15T23:21:40.329116+00:00"
     }
   },
   "last_prices": {
