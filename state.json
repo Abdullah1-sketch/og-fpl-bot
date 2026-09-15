@@ -79,6 +79,11 @@
       "name": "Bogle",
       "prediction": 104.6,
       "alerted_at": "2026-09-14T23:21:44.711593+00:00"
+    },
+    "115": {
+      "name": "De Cuyper",
+      "prediction": 95.0,
+      "alerted_at": "2026-09-15T07:06:47.807321+00:00"
     }
   },
   "alerted_fall": {
