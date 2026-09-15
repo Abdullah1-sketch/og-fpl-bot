@@ -7296,5 +7296,9 @@
   "bonus_candidates": {},
   "pending_assists": {},
   "revised_recredits": {},
-  "confirmed_price_logic_version": 2
+  "confirmed_price_logic_version": 2,
+  "pending_confirmed_prices": {
+    "signature": "c3cfc455189883fd43e0dd2a6bc0b18bea9ddafa1948cd2740b2283fd455a1ce",
+    "first_seen_at": "2026-09-15T23:03:38.520532+00:00"
+  }
 }
