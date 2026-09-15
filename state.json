@@ -575,6 +575,11 @@
       "name": "Taylor",
       "prediction": -97.0,
       "alerted_at": "2026-09-14T23:21:44.711593+00:00"
+    },
+    "521": {
+      "name": "Kulusevski",
+      "prediction": -95.7,
+      "alerted_at": "2026-09-15T06:55:05.158446+00:00"
     }
   },
   "last_prices": {
