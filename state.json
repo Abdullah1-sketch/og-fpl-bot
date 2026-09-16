@@ -516,6 +516,11 @@
       "name": "Fatawu",
       "prediction": -96.1,
       "alerted_at": "2026-09-15T23:21:40.329116+00:00"
+    },
+    "444": {
+      "name": "Jaouen",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-16T06:05:00.890182+00:00"
     }
   },
   "last_prices": {
