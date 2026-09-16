@@ -521,6 +521,11 @@
       "name": "Jaouen",
       "prediction": -95.5,
       "alerted_at": "2026-09-16T06:05:00.890182+00:00"
+    },
+    "188": {
+      "name": "Torp",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-16T14:25:08.187802+00:00"
     }
   },
   "last_prices": {
