@@ -576,6 +576,11 @@
       "name": "Mehmeti",
       "prediction": -101.2,
       "alerted_at": "2026-09-17T07:37:20.659306+00:00"
+    },
+    "508": {
+      "name": "Davies",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-17T09:37:41.256273+00:00"
     }
   },
   "last_prices": {
