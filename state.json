@@ -551,6 +551,11 @@
       "name": "Osula",
       "prediction": -95.4,
       "alerted_at": "2026-09-17T05:50:36.521794+00:00"
+    },
+    "200": {
+      "name": "Lacroix",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-17T06:30:16.485564+00:00"
     }
   },
   "last_prices": {
