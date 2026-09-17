@@ -55,20 +55,10 @@
       "prediction": 86.8,
       "alerted_at": "2026-09-12T11:01:01.259314+00:00"
     },
-    "330": {
-      "name": "Bogle",
-      "prediction": 104.6,
-      "alerted_at": "2026-09-14T23:21:44.711593+00:00"
-    },
-    "411": {
-      "name": "Haaland",
-      "prediction": 98.6,
-      "alerted_at": "2026-09-16T23:04:02.044484+00:00"
-    },
-    "15": {
-      "name": "Ødegaard",
-      "prediction": 95.0,
-      "alerted_at": "2026-09-17T05:50:36.521794+00:00"
+    "453": {
+      "name": "Barnes",
+      "prediction": 108.1,
+      "alerted_at": "2026-09-17T23:03:24.635015+00:00"
     }
   },
   "alerted_fall": {
@@ -392,11 +382,6 @@
       "prediction": -86.3,
       "alerted_at": "2026-09-12T07:20:06.988986+00:00"
     },
-    "308": {
-      "name": "Furlong",
-      "prediction": -87.0,
-      "alerted_at": "2026-09-12T09:20:58.584020+00:00"
-    },
     "536": {
       "name": "Reinildo",
       "prediction": -85.6,
@@ -416,16 +401,6 @@
       "name": "Ndiaye",
       "prediction": -85.4,
       "alerted_at": "2026-09-12T09:46:13.209691+00:00"
-    },
-    "357": {
-      "name": "Frimpong",
-      "prediction": -85.2,
-      "alerted_at": "2026-09-12T10:00:55.331845+00:00"
-    },
-    "398": {
-      "name": "Foden",
-      "prediction": -87.8,
-      "alerted_at": "2026-09-12T10:46:08.689953+00:00"
     },
     "123": {
       "name": "Hinshelwood",
@@ -462,31 +437,6 @@
       "prediction": -85.3,
       "alerted_at": "2026-09-12T12:25:15.919406+00:00"
     },
-    "260": {
-      "name": "Wilson",
-      "prediction": -88.0,
-      "alerted_at": "2026-09-12T12:37:10.550818+00:00"
-    },
-    "42": {
-      "name": "Guessand",
-      "prediction": -105.7,
-      "alerted_at": "2026-09-13T23:47:31.330278+00:00"
-    },
-    "189": {
-      "name": "Shepherd",
-      "prediction": -95.7,
-      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
-    },
-    "519": {
-      "name": "Gallagher",
-      "prediction": -96.2,
-      "alerted_at": "2026-09-14T23:03:48.616630+00:00"
-    },
-    "185": {
-      "name": "Sakamoto",
-      "prediction": -96.0,
-      "alerted_at": "2026-09-14T23:21:44.711593+00:00"
-    },
     "312": {
       "name": "Taylor",
       "prediction": -97.0,
@@ -496,26 +446,6 @@
       "name": "Kulusevski",
       "prediction": -95.7,
       "alerted_at": "2026-09-15T06:55:05.158446+00:00"
-    },
-    "183": {
-      "name": "Rudoni",
-      "prediction": -96.8,
-      "alerted_at": "2026-09-15T09:08:20.868256+00:00"
-    },
-    "96": {
-      "name": "Damsgaard",
-      "prediction": -95.2,
-      "alerted_at": "2026-09-15T23:03:56.648304+00:00"
-    },
-    "366": {
-      "name": "Wirtz",
-      "prediction": -96.7,
-      "alerted_at": "2026-09-15T23:03:56.648304+00:00"
-    },
-    "315": {
-      "name": "Fatawu",
-      "prediction": -96.1,
-      "alerted_at": "2026-09-15T23:21:40.329116+00:00"
     },
     "444": {
       "name": "Jaouen",
@@ -537,11 +467,6 @@
       "prediction": -95.7,
       "alerted_at": "2026-09-16T23:04:02.044484+00:00"
     },
-    "499": {
-      "name": "Pedro Porro",
-      "prediction": -96.3,
-      "alerted_at": "2026-09-16T23:04:02.044484+00:00"
-    },
     "158": {
       "name": "Gittens",
       "prediction": -95.0,
@@ -556,11 +481,6 @@
       "name": "Lacroix",
       "prediction": -95.0,
       "alerted_at": "2026-09-17T06:30:16.485564+00:00"
-    },
-    "106": {
-      "name": "Thiago",
-      "prediction": -95.2,
-      "alerted_at": "2026-09-17T07:25:36.174009+00:00"
     },
     "108": {
       "name": "Wilson",
@@ -601,6 +521,16 @@
       "name": "Tonali",
       "prediction": -95.1,
       "alerted_at": "2026-09-17T18:26:43.303693+00:00"
+    },
+    "369": {
+      "name": "Ngumoha",
+      "prediction": -98.7,
+      "alerted_at": "2026-09-17T23:03:24.635015+00:00"
+    },
+    "454": {
+      "name": "Elanga",
+      "prediction": -97.2,
+      "alerted_at": "2026-09-17T23:03:24.635015+00:00"
     }
   },
   "last_prices": {
@@ -662,7 +592,7 @@
     },
     "15": {
       "name": "Ødegaard",
-      "price": 6.7
+      "price": 6.8
     },
     "16": {
       "name": "Madueke",
@@ -1030,7 +960,7 @@
     },
     "96": {
       "name": "Damsgaard",
-      "price": 5.5
+      "price": 5.4
     },
     "97": {
       "name": "Jensen",
@@ -1062,7 +992,7 @@
     },
     "106": {
       "name": "Thiago",
-      "price": 7.9
+      "price": 7.8
     },
     "107": {
       "name": "Furo",
@@ -1426,7 +1356,7 @@
     },
     "183": {
       "name": "Rudoni",
-      "price": 5.0
+      "price": 4.9
     },
     "184": {
       "name": "Grimes",
@@ -1434,7 +1364,7 @@
     },
     "185": {
       "name": "Sakamoto",
-      "price": 4.9
+      "price": 4.8
     },
     "186": {
       "name": "Mason-Clark",
@@ -1450,7 +1380,7 @@
     },
     "189": {
       "name": "Shepherd",
-      "price": 4.5
+      "price": 4.4
     },
     "190": {
       "name": "Tchaouna",
@@ -1514,7 +1444,7 @@
     },
     "42": {
       "name": "Guessand",
-      "price": 5.5
+      "price": 5.4
     },
     "153": {
       "name": "Disasi",
@@ -2082,7 +2012,7 @@
     },
     "308": {
       "name": "Furlong",
-      "price": 4.0
+      "price": 3.9
     },
     "309": {
       "name": "Núñez",
@@ -2110,7 +2040,7 @@
     },
     "315": {
       "name": "Fatawu",
-      "price": 5.5
+      "price": 5.4
     },
     "316": {
       "name": "Emersonn",
@@ -2186,7 +2116,7 @@
     },
     "260": {
       "name": "Wilson",
-      "price": 6.3
+      "price": 6.2
     },
     "326": {
       "name": "Perri",
@@ -2202,7 +2132,7 @@
     },
     "330": {
       "name": "Bogle",
-      "price": 4.5
+      "price": 4.6
     },
     "331": {
       "name": "Gudmundsson",
@@ -2338,7 +2268,7 @@
     },
     "357": {
       "name": "Frimpong",
-      "price": 5.4
+      "price": 5.3
     },
     "358": {
       "name": "Kerkez",
@@ -2374,7 +2304,7 @@
     },
     "366": {
       "name": "Wirtz",
-      "price": 7.4
+      "price": 7.3
     },
     "367": {
       "name": "Gakpo",
@@ -2514,7 +2444,7 @@
     },
     "398": {
       "name": "Foden",
-      "price": 7.0
+      "price": 6.9
     },
     "399": {
       "name": "Cherki",
@@ -2554,7 +2484,7 @@
     },
     "411": {
       "name": "Haaland",
-      "price": 15.5
+      "price": 15.6
     },
     "481": {
       "name": "Anderson",
@@ -3002,7 +2932,7 @@
     },
     "499": {
       "name": "Pedro Porro",
-      "price": 5.5
+      "price": 5.4
     },
     "500": {
       "name": "Romero",
@@ -3074,7 +3004,7 @@
     },
     "519": {
       "name": "Gallagher",
-      "price": 5.4
+      "price": 5.3
     },
     "520": {
       "name": "Bergvall",
@@ -7301,9 +7231,5 @@
   "bonus_candidates": {},
   "pending_assists": {},
   "revised_recredits": {},
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "9625a3a5a43da69a89dd1aa5c7a17693048b2271965bb09a6de2f30c2bdd26c1",
-    "first_seen_at": "2026-09-17T23:03:05.737061+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
