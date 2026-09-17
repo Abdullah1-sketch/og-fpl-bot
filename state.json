@@ -571,6 +571,11 @@
       "name": "O'Nien",
       "prediction": -95.1,
       "alerted_at": "2026-09-17T07:25:36.174009+00:00"
+    },
+    "324": {
+      "name": "Mehmeti",
+      "prediction": -101.2,
+      "alerted_at": "2026-09-17T07:37:20.659306+00:00"
     }
   },
   "last_prices": {
