@@ -556,6 +556,21 @@
       "name": "Lacroix",
       "prediction": -95.0,
       "alerted_at": "2026-09-17T06:30:16.485564+00:00"
+    },
+    "106": {
+      "name": "Thiago",
+      "prediction": -95.2,
+      "alerted_at": "2026-09-17T07:25:36.174009+00:00"
+    },
+    "108": {
+      "name": "Wilson",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-17T07:25:36.174009+00:00"
+    },
+    "539": {
+      "name": "O'Nien",
+      "prediction": -95.1,
+      "alerted_at": "2026-09-17T07:25:36.174009+00:00"
     }
   },
   "last_prices": {
