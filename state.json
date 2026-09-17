@@ -64,6 +64,11 @@
       "name": "Haaland",
       "prediction": 98.6,
       "alerted_at": "2026-09-16T23:04:02.044484+00:00"
+    },
+    "15": {
+      "name": "Ødegaard",
+      "prediction": 95.0,
+      "alerted_at": "2026-09-17T05:50:36.521794+00:00"
     }
   },
   "alerted_fall": {
@@ -541,6 +546,11 @@
       "name": "Gittens",
       "prediction": -95.0,
       "alerted_at": "2026-09-17T01:23:12.992834+00:00"
+    },
+    "465": {
+      "name": "Osula",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-17T05:50:36.521794+00:00"
     }
   },
   "last_prices": {
