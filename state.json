@@ -4117,7 +4117,9 @@
   "last_confirmed_price_date_uk": "2026-09-11",
   "news_logic_version": 8,
   "conference_schedule": {},
-  "ffscout_sections": {},
+  "ffscout_sections": {
+    "https://www.fantasyfootballscout.co.uk/2026/09/17/fpl-gameweek-5-team-news-thurs-live-injury-updates-pedro-latest": {}
+  },
   "match_finished_at": {
     "35": "2026-09-12T16:01:11.717600+00:00",
     "31": "2026-09-12T16:21:48.553003+00:00",
