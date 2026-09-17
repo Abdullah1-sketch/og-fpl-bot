@@ -536,6 +536,11 @@
       "name": "Elanga",
       "prediction": -97.2,
       "alerted_at": "2026-09-17T23:03:24.635015+00:00"
+    },
+    "203": {
+      "name": "Canvot",
+      "prediction": -96.1,
+      "alerted_at": "2026-09-17T23:32:33.734930+00:00"
     }
   },
   "last_prices": {
