@@ -581,6 +581,11 @@
       "name": "Davies",
       "prediction": -95.4,
       "alerted_at": "2026-09-17T09:37:41.256273+00:00"
+    },
+    "514": {
+      "name": "Tel",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-17T17:21:00.956800+00:00"
     }
   },
   "last_prices": {
