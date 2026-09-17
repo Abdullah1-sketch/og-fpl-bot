@@ -59,6 +59,11 @@
       "name": "Barnes",
       "prediction": 108.1,
       "alerted_at": "2026-09-17T23:03:24.635015+00:00"
+    },
+    "236": {
+      "name": "Dewsbury-Hall",
+      "prediction": 100.0,
+      "alerted_at": "2026-09-17T23:19:42.572703+00:00"
     }
   },
   "alerted_fall": {
