@@ -586,6 +586,21 @@
       "name": "Tel",
       "prediction": -95.4,
       "alerted_at": "2026-09-17T17:21:00.956800+00:00"
+    },
+    "565": {
+      "name": "M.Sangaré",
+      "prediction": -95.3,
+      "alerted_at": "2026-09-17T18:26:43.303693+00:00"
+    },
+    "440": {
+      "name": "Zirkzee",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-17T18:26:43.303693+00:00"
+    },
+    "455": {
+      "name": "Tonali",
+      "prediction": -95.1,
+      "alerted_at": "2026-09-17T18:26:43.303693+00:00"
     }
   },
   "last_prices": {
