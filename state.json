@@ -751,6 +751,11 @@
       "name": "Lerma",
       "prediction": -97.4,
       "alerted_at": "2026-09-18T16:35:56.298045+00:00"
+    },
+    "418": {
+      "name": "Maguire",
+      "prediction": -96.3,
+      "alerted_at": "2026-09-18T17:03:45.689429+00:00"
     }
   },
   "last_prices": {
