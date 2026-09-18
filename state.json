@@ -546,6 +546,11 @@
       "name": "Chiesa",
       "prediction": -97.2,
       "alerted_at": "2026-09-18T00:04:41.864742+00:00"
+    },
+    "595": {
+      "name": "Gozo",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-18T02:24:40.821147+00:00"
     }
   },
   "last_prices": {
