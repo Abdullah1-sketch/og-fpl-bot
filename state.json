@@ -616,6 +616,16 @@
       "name": "Gyabi",
       "prediction": -95.0,
       "alerted_at": "2026-09-18T11:03:50.249172+00:00"
+    },
+    "122": {
+      "name": "Minteh",
+      "prediction": -95.7,
+      "alerted_at": "2026-09-18T11:22:24.634145+00:00"
+    },
+    "562": {
+      "name": "Maeda",
+      "prediction": -95.8,
+      "alerted_at": "2026-09-18T11:22:24.634145+00:00"
     }
   },
   "last_prices": {
