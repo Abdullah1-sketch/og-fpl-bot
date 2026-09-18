@@ -611,6 +611,11 @@
       "name": "Mudryk",
       "prediction": -95.4,
       "alerted_at": "2026-09-18T10:36:14.816246+00:00"
+    },
+    "297": {
+      "name": "Gyabi",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-18T11:03:50.249172+00:00"
     }
   },
   "last_prices": {
