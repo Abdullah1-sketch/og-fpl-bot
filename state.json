@@ -561,6 +561,11 @@
       "name": "Diakité",
       "prediction": -95.0,
       "alerted_at": "2026-09-18T06:55:13.126251+00:00"
+    },
+    "67": {
+      "name": "Rayan",
+      "prediction": -95.1,
+      "alerted_at": "2026-09-18T07:35:59.992280+00:00"
     }
   },
   "last_prices": {
