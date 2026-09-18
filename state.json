@@ -566,6 +566,11 @@
       "name": "Rayan",
       "prediction": -95.1,
       "alerted_at": "2026-09-18T07:35:59.992280+00:00"
+    },
+    "471": {
+      "name": "Milenković",
+      "prediction": -95.1,
+      "alerted_at": "2026-09-18T09:23:35.520515+00:00"
     }
   },
   "last_prices": {
