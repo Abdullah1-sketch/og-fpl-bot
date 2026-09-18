@@ -551,6 +551,11 @@
       "name": "Gozo",
       "prediction": -95.5,
       "alerted_at": "2026-09-18T02:24:40.821147+00:00"
+    },
+    "371": {
+      "name": "Gravenberch",
+      "prediction": -95.3,
+      "alerted_at": "2026-09-18T06:28:16.550669+00:00"
     }
   },
   "last_prices": {
