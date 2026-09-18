@@ -636,6 +636,11 @@
       "name": "Alderete",
       "prediction": -95.3,
       "alerted_at": "2026-09-18T12:27:36.256465+00:00"
+    },
+    "7": {
+      "name": "Lewis-Skelly",
+      "prediction": -96.9,
+      "alerted_at": "2026-09-18T12:53:59.035365+00:00"
     }
   },
   "last_prices": {
