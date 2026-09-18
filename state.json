@@ -556,6 +556,11 @@
       "name": "Gravenberch",
       "prediction": -95.3,
       "alerted_at": "2026-09-18T06:28:16.550669+00:00"
+    },
+    "62": {
+      "name": "Diakité",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-18T06:55:13.126251+00:00"
     }
   },
   "last_prices": {
