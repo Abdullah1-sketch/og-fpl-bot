@@ -746,6 +746,11 @@
       "name": "Simms",
       "prediction": -96.2,
       "alerted_at": "2026-09-18T16:22:20.049436+00:00"
+    },
+    "213": {
+      "name": "Lerma",
+      "prediction": -97.4,
+      "alerted_at": "2026-09-18T16:35:56.298045+00:00"
     }
   },
   "last_prices": {
