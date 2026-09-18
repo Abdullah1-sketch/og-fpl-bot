@@ -736,6 +736,16 @@
       "name": "Burn",
       "prediction": -95.7,
       "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "9": {
+      "name": "Hincapie",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-18T16:22:20.049436+00:00"
+    },
+    "195": {
+      "name": "Simms",
+      "prediction": -96.2,
+      "alerted_at": "2026-09-18T16:22:20.049436+00:00"
     }
   },
   "last_prices": {
