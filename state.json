@@ -671,6 +671,11 @@
       "name": "Florentino",
       "prediction": -99.6,
       "alerted_at": "2026-09-18T14:04:41.137911+00:00"
+    },
+    "337": {
+      "name": "Aaronson",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-18T14:23:33.455335+00:00"
     }
   },
   "last_prices": {
