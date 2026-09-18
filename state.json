@@ -541,6 +541,11 @@
       "name": "Canvot",
       "prediction": -96.1,
       "alerted_at": "2026-09-17T23:32:33.734930+00:00"
+    },
+    "370": {
+      "name": "Chiesa",
+      "prediction": -97.2,
+      "alerted_at": "2026-09-18T00:04:41.864742+00:00"
     }
   },
   "last_prices": {
