@@ -626,6 +626,11 @@
       "name": "Maeda",
       "prediction": -95.8,
       "alerted_at": "2026-09-18T11:22:24.634145+00:00"
+    },
+    "149": {
+      "name": "Colwill",
+      "prediction": -95.8,
+      "alerted_at": "2026-09-18T12:04:38.821936+00:00"
     }
   },
   "last_prices": {
