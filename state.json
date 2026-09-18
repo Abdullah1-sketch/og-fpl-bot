@@ -99,6 +99,11 @@
       "name": "Gibbs-White",
       "prediction": 97.2,
       "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "8": {
+      "name": "Calafiori",
+      "prediction": 96.6,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
     }
   },
   "alerted_fall": {
@@ -756,6 +761,36 @@
       "name": "Maguire",
       "prediction": -96.3,
       "alerted_at": "2026-09-18T17:03:45.689429+00:00"
+    },
+    "165": {
+      "name": "João Pedro",
+      "prediction": -101.4,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
+    },
+    "358": {
+      "name": "Kerkez",
+      "prediction": -101.8,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
+    },
+    "532": {
+      "name": "Ballard",
+      "prediction": -106.8,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
+    },
+    "323": {
+      "name": "McAteer",
+      "prediction": -96.7,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
+    },
+    "488": {
+      "name": "I.Sangaré",
+      "prediction": -97.2,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
+    },
+    "525": {
+      "name": "Fernandes",
+      "prediction": -95.9,
+      "alerted_at": "2026-09-18T17:20:47.347865+00:00"
     }
   },
   "last_prices": {
