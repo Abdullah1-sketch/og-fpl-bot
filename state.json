@@ -1274,6 +1274,14 @@
       "name": "Nunes",
       "price": 4.5
     },
+    "660": {
+      "name": "Fredrick",
+      "price": 4.0
+    },
+    "661": {
+      "name": "Balcombe",
+      "price": 4.0
+    },
     "109": {
       "name": "Verbruggen",
       "price": 4.5
@@ -1553,6 +1561,10 @@
     "583": {
       "name": "Chavarria",
       "price": 4.9
+    },
+    "662": {
+      "name": "Nicoll-Jazuli",
+      "price": 4.5
     },
     "91": {
       "name": "Pinnock",
