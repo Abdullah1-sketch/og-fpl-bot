@@ -7422,7 +7422,7 @@
         "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "107": {
@@ -7972,9 +7972,14 @@
       "status": "sent",
       "text": "🏟️ برينتفورد [2] - 0 تشيلسي\n⚽️ هدف | Thiago\n🅰️ صناعة | شادي\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-18T20:42:07.997784+00:00"
+    },
+    "41:61": {
+      "status": "pending",
+      "text": "🏟️ برينتفورد 2 - 0 تشيلسي\n🟨 إنذار | Thiago\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-18T20:43:28.018252+00:00"
     }
   },
-  "match_revision": 60,
+  "match_revision": 61,
   "pending_goals": {
     "34": [],
     "32": [
