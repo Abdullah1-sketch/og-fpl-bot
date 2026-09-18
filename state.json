@@ -89,6 +89,16 @@
       "name": "Barry",
       "prediction": 96.6,
       "alerted_at": "2026-09-18T15:36:10.476447+00:00"
+    },
+    "464": {
+      "name": "Wissa",
+      "prediction": 102.0,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "480": {
+      "name": "Gibbs-White",
+      "prediction": 97.2,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
     }
   },
   "alerted_fall": {
@@ -701,6 +711,31 @@
       "name": "Cunha",
       "prediction": -95.2,
       "alerted_at": "2026-09-18T15:36:10.476447+00:00"
+    },
+    "41": {
+      "name": "Buendía",
+      "prediction": -100.2,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "557": {
+      "name": "Tzolis",
+      "prediction": -98.6,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "575": {
+      "name": "Yirenkyi",
+      "prediction": -97.2,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "387": {
+      "name": "O'Reilly",
+      "prediction": -96.2,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
+    },
+    "448": {
+      "name": "Burn",
+      "prediction": -95.7,
+      "alerted_at": "2026-09-18T16:03:32.666239+00:00"
     }
   },
   "last_prices": {
