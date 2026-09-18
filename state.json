@@ -8022,18 +8022,13 @@
       "signature": "330:3|346:2|336:1"
     },
     "41": {
-      "status": "pending",
+      "status": "sent",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nبرينتفورد × تشيلسي\n\n3 - Schuster\n2 - Anthony\n1 - Ajer\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-18T21:00:48.086530+00:00",
       "signature": "93:3|105:2|87:1"
     }
   },
-  "bonus_candidates": {
-    "41": {
-      "signature": "93:3|105:2|87:1",
-      "first_seen": "2026-09-18T20:59:43.091353+00:00"
-    }
-  },
+  "bonus_candidates": {},
   "pending_assists": {},
   "revised_recredits": {},
   "confirmed_price_logic_version": 2
