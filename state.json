@@ -641,6 +641,31 @@
       "name": "Lewis-Skelly",
       "prediction": -96.9,
       "alerted_at": "2026-09-18T12:53:59.035365+00:00"
+    },
+    "25": {
+      "name": "Gyökeres",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-18T13:22:50.665424+00:00"
+    },
+    "34": {
+      "name": "Pau",
+      "prediction": -96.0,
+      "alerted_at": "2026-09-18T13:22:50.665424+00:00"
+    },
+    "186": {
+      "name": "Mason-Clark",
+      "prediction": -95.6,
+      "alerted_at": "2026-09-18T13:22:50.665424+00:00"
+    },
+    "202": {
+      "name": "Richards",
+      "prediction": -96.4,
+      "alerted_at": "2026-09-18T13:22:50.665424+00:00"
+    },
+    "218": {
+      "name": "Doucouré",
+      "prediction": -96.2,
+      "alerted_at": "2026-09-18T13:22:50.665424+00:00"
     }
   },
   "last_prices": {
