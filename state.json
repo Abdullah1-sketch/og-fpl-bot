@@ -69,6 +69,11 @@
       "name": "Mykolenko",
       "prediction": 95.1,
       "alerted_at": "2026-09-18T09:36:07.259384+00:00"
+    },
+    "167": {
+      "name": "Delap",
+      "prediction": 95.3,
+      "alerted_at": "2026-09-18T10:36:14.816246+00:00"
     }
   },
   "alerted_fall": {
@@ -596,6 +601,16 @@
       "name": "Shaw",
       "prediction": -95.3,
       "alerted_at": "2026-09-18T10:23:27.303074+00:00"
+    },
+    "36": {
+      "name": "Maatsen",
+      "prediction": -96.0,
+      "alerted_at": "2026-09-18T10:36:14.816246+00:00"
+    },
+    "578": {
+      "name": "Mudryk",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-18T10:36:14.816246+00:00"
     }
   },
   "last_prices": {
