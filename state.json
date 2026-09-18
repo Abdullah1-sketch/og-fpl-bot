@@ -7639,7 +7639,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "568": {
@@ -7977,9 +7977,14 @@
       "status": "sent",
       "text": "🏟️ برينتفورد 2 - 0 تشيلسي\n🟨 إنذار | Thiago\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-18T20:43:28.018252+00:00"
+    },
+    "41:62": {
+      "status": "pending",
+      "text": "🏟️ برينتفورد 2 - 0 تشيلسي\n🟨 إنذار | M.Sangaré\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-18T20:44:52.997677+00:00"
     }
   },
-  "match_revision": 61,
+  "match_revision": 62,
   "pending_goals": {
     "34": [],
     "32": [
