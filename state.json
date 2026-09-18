@@ -7337,7 +7337,7 @@
       "93": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -7962,9 +7962,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد 4 - 1 نيوكاسل\n🟨 إنذار | Livramento\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-14T20:52:50.608294+00:00"
+    },
+    "41:59": {
+      "status": "pending",
+      "text": "🏟️ برينتفورد [1] - 0 تشيلسي\n⚽️ هدف | Anthony\n🅰️ صناعة | Schuster\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-18T20:21:07.923146+00:00"
     }
   },
-  "match_revision": 58,
+  "match_revision": 59,
   "pending_goals": {
     "34": [],
     "32": [
@@ -7981,18 +7986,7 @@
     ],
     "33": [],
     "31": [],
-    "41": [
-      {
-        "change": {
-          "pid": "105",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-18T20:20:37.904338+00:00"
-      }
-    ]
+    "41": []
   },
   "bonus_posts": {
     "39": {
