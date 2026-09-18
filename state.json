@@ -576,6 +576,16 @@
       "name": "Milenković",
       "prediction": -95.1,
       "alerted_at": "2026-09-18T09:23:35.520515+00:00"
+    },
+    "267": {
+      "name": "Lukić",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-18T10:04:07.665597+00:00"
+    },
+    "534": {
+      "name": "Hume",
+      "prediction": -95.6,
+      "alerted_at": "2026-09-18T10:04:07.665597+00:00"
     }
   },
   "last_prices": {
