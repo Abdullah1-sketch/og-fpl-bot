@@ -586,6 +586,16 @@
       "name": "Hume",
       "prediction": -95.6,
       "alerted_at": "2026-09-18T10:04:07.665597+00:00"
+    },
+    "187": {
+      "name": "Eccles",
+      "prediction": -98.6,
+      "alerted_at": "2026-09-18T10:23:27.303074+00:00"
+    },
+    "423": {
+      "name": "Shaw",
+      "prediction": -95.3,
+      "alerted_at": "2026-09-18T10:23:27.303074+00:00"
     }
   },
   "last_prices": {
