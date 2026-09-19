@@ -8934,7 +8934,7 @@
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
-        "red_cards": 0
+        "red_cards": 1
       },
       "316": {
         "goals_scored": 0,
@@ -10081,9 +10081,14 @@
       "status": "sent",
       "text": "⚠️ تعديل رسمي من FPL\n🏟️ إيفرتون 1 - 0 إيبسويتش\n⚠️ تعديل FPL | Fatawu: القيمة المحتسبة الآن 0\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T15:27:10.232814+00:00"
+    },
+    "43:99": {
+      "status": "pending",
+      "text": "🏟️ إيفرتون 1 - 0 إيبسويتش\n🟥 طرد | Fatawu\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T15:27:10.232814+00:00"
     }
   },
-  "match_revision": 98,
+  "match_revision": 99,
   "pending_goals": {
     "34": [],
     "32": [
