@@ -7748,7 +7748,7 @@
       "47": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -8489,9 +8489,14 @@
       "status": "sent",
       "text": "🏟️ برينتفورد [3] - 0 تشيلسي\n⚽️ هدف | Carvalho\n🅰️ صناعة | شادي\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-18T20:54:43.114220+00:00"
+    },
+    "48:64": {
+      "status": "pending",
+      "text": "🏟️ توتنهام 0 - [1] أستون فيلا\n⚽️ هدف | Manzambi\n🅰️ صناعة | Kamara\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T12:22:34.299073+00:00"
     }
   },
-  "match_revision": 63,
+  "match_revision": 64,
   "pending_goals": {
     "34": [],
     "32": [
@@ -8508,18 +8513,7 @@
     ],
     "33": [],
     "31": [],
-    "48": [
-      {
-        "change": {
-          "pid": "53",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-19T12:21:54.291561+00:00"
-      }
-    ]
+    "48": []
   },
   "bonus_posts": {
     "39": {
