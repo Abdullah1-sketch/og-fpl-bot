@@ -7840,7 +7840,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 1,
+        "yellow_cards": 0,
         "red_cards": 0
       },
       "401": {
@@ -8504,9 +8504,14 @@
       "status": "sent",
       "text": "🏟️ توتنهام 0 - 1 أستون فيلا\n🟨 إنذار | N.Jackson\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T12:41:24.470608+00:00"
+    },
+    "48:67": {
+      "status": "pending",
+      "text": "⚠️ تعديل رسمي من FPL\n🏟️ توتنهام 0 - 1 أستون فيلا\n⚠️ تعديل FPL | N.Jackson: القيمة المحتسبة الآن 0\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T12:41:34.583238+00:00"
     }
   },
-  "match_revision": 66,
+  "match_revision": 67,
   "pending_goals": {
     "34": [],
     "32": [
