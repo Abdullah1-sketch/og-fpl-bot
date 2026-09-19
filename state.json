@@ -10623,8 +10623,7 @@
       }
     ],
     "33": [],
-    "31": [],
-    "47": []
+    "31": []
   },
   "bonus_posts": {
     "39": {
@@ -10671,9 +10670,7 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {
-    "47": []
-  },
+  "pending_assists": {},
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -10681,8 +10678,7 @@
     "43": {
       "236:assists": 1,
       "249:goals_scored": 2
-    },
-    "47": {}
+    }
   },
   "confirmed_price_logic_version": 2
 }
