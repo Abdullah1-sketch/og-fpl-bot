@@ -9378,7 +9378,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "458": {
@@ -10041,9 +10041,14 @@
       "status": "sent",
       "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | Tzolakis\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:50:03.120331+00:00"
+    },
+    "46:92": {
+      "status": "pending",
+      "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | J.Murphy\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:50:54.167993+00:00"
     }
   },
-  "match_revision": 91,
+  "match_revision": 92,
   "pending_goals": {
     "34": [],
     "32": [
