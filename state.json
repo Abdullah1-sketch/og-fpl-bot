@@ -8677,7 +8677,7 @@
       "229": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -9981,9 +9981,14 @@
       "status": "sent",
       "text": "🏟️ نيوكاسل [2] - 0 هال سيتي\n⚽️ هدف | Hall\n🅰️ صناعة | Barnes\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:09:52.702765+00:00"
+    },
+    "43:81": {
+      "status": "pending",
+      "text": "🏟️ إيفرتون [1] - 0 إيبسويتش\n⚽️ هدف | Barry\n🅰️ صناعة | Tarkowski\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:13:37.812382+00:00"
     }
   },
-  "match_revision": 80,
+  "match_revision": 81,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10000,18 +10005,7 @@
     ],
     "33": [],
     "31": [],
-    "43": [
-      {
-        "change": {
-          "pid": "249",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-19T14:13:19.120289+00:00"
-      }
-    ]
+    "43": []
   },
   "bonus_posts": {
     "39": {
@@ -10040,11 +10034,14 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "43": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
-    }
+    },
+    "43": {}
   },
   "confirmed_price_logic_version": 2
 }
