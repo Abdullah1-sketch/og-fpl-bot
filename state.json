@@ -9351,7 +9351,7 @@
       "453": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 1,
+        "assists": 0,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -9971,9 +9971,14 @@
       "status": "sent",
       "text": "🏟️ نيوكاسل [1] - 0 هال سيتي\n⚽️ هدف | Willock\n🅰️ صناعة | Barnes\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:04:52.695469+00:00"
+    },
+    "46:79": {
+      "status": "pending",
+      "text": "⚠️ تعديل رسمي من FPL\n🏟️ نيوكاسل 0 - 0 هال سيتي\n🅰️ تم إلغاء صناعة | Barnes\n↳ الهدف الآن بدون صناعة محتسبة\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:05:02.841320+00:00"
     }
   },
-  "match_revision": 78,
+  "match_revision": 79,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10026,7 +10031,9 @@
     "48": {
       "512:goals_scored": 1
     },
-    "46": {}
+    "46": {
+      "453:assists": 1
+    }
   },
   "confirmed_price_logic_version": 2
 }
