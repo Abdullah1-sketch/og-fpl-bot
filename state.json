@@ -9064,7 +9064,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "649": {
@@ -10106,9 +10106,14 @@
       "status": "sent",
       "text": "🏟️ برايتون 3 - 0 أرسنال\n🟨 إنذار | De Cuyper\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T15:51:31.187878+00:00"
+    },
+    "43:103": {
+      "status": "pending",
+      "text": "🏟️ إيفرتون 1 - 0 إيبسويتش\n🟨 إنذار | Flemming\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T15:52:21.251030+00:00"
     }
   },
-  "match_revision": 102,
+  "match_revision": 103,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10125,7 +10130,7 @@
     ],
     "33": [],
     "31": [],
-    "42": []
+    "43": []
   },
   "bonus_posts": {
     "39": {
@@ -10155,7 +10160,7 @@
   },
   "bonus_candidates": {},
   "pending_assists": {
-    "42": []
+    "43": []
   },
   "revised_recredits": {
     "48": {
@@ -10164,8 +10169,7 @@
     "43": {
       "236:assists": 1,
       "249:goals_scored": 2
-    },
-    "42": {}
+    }
   },
   "confirmed_price_logic_version": 2
 }
