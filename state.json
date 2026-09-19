@@ -7979,7 +7979,7 @@
       "512": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -8026,7 +8026,7 @@
         "red_cards": 0
       },
       "519": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -8534,9 +8534,14 @@
       "status": "sent",
       "text": "🏟️ توتنهام 0 - [3] أستون فيلا\n⚽️ هدف | Buendía\n🅰️ صناعة | McGinn\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T13:15:42.897587+00:00"
+    },
+    "48:73": {
+      "status": "pending",
+      "text": "🏟️ توتنهام [1] - 3 أستون فيلا\n⚽️ هدف | Gallagher\n🅰️ صناعة | Kudus\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T13:22:57.898830+00:00"
     }
   },
-  "match_revision": 72,
+  "match_revision": 73,
   "pending_goals": {
     "34": [],
     "32": [
