@@ -8387,7 +8387,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "114": {
@@ -10031,9 +10031,14 @@
       "status": "sent",
       "text": "🏟️ برايتون [2] - 0 أرسنال\n⚽️ هدف | Kostoulas\n🅰️ صناعة | Gomez\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:49:13.088533+00:00"
+    },
+    "42:90": {
+      "status": "pending",
+      "text": "🏟️ برايتون 2 - 0 أرسنال\n🟨 إنذار | F.Kadıoğlu\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:50:03.120331+00:00"
     }
   },
-  "match_revision": 89,
+  "match_revision": 90,
   "pending_goals": {
     "34": [],
     "32": [
