@@ -8600,18 +8600,13 @@
       "signature": "93:3|105:2|87:1"
     },
     "48": {
-      "status": "pending",
+      "status": "sent",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nتوتنهام × أستون فيلا\n\n3 - Buendía\n2 - Manzambi\n1 - N.Jackson\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T13:38:02.517640+00:00",
       "signature": "41:3|53:2|166:1"
     }
   },
-  "bonus_candidates": {
-    "48": {
-      "signature": "41:3|53:2|166:1",
-      "first_seen": "2026-09-19T13:37:02.516218+00:00"
-    }
-  },
+  "bonus_candidates": {},
   "pending_assists": {},
   "revised_recredits": {
     "48": {
