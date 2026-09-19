@@ -8711,7 +8711,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "234": {
@@ -10021,9 +10021,14 @@
       "status": "sent",
       "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | Belloumi\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:41:32.963619+00:00"
+    },
+    "43:88": {
+      "status": "pending",
+      "text": "🏟️ إيفرتون 1 - 0 إيبسويتش\n🟨 إنذار | Mykolenko\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:45:43.289234+00:00"
     }
   },
-  "match_revision": 87,
+  "match_revision": 88,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10039,7 +10044,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "43": []
   },
   "bonus_posts": {
     "39": {
@@ -10068,11 +10074,14 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "43": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
-    }
+    },
+    "43": {}
   },
   "confirmed_price_logic_version": 2
 }
