@@ -9476,7 +9476,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "574": {
@@ -10036,9 +10036,14 @@
       "status": "sent",
       "text": "🏟️ برايتون 2 - 0 أرسنال\n🟨 إنذار | F.Kadıoğlu\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:50:03.120331+00:00"
+    },
+    "46:91": {
+      "status": "pending",
+      "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | Tzolakis\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:50:03.120331+00:00"
     }
   },
-  "match_revision": 90,
+  "match_revision": 91,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10055,7 +10060,7 @@
     ],
     "33": [],
     "31": [],
-    "42": []
+    "46": []
   },
   "bonus_posts": {
     "39": {
@@ -10085,13 +10090,13 @@
   },
   "bonus_candidates": {},
   "pending_assists": {
-    "42": []
+    "46": []
   },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
     },
-    "42": {}
+    "46": {}
   },
   "confirmed_price_logic_version": 2
 }
