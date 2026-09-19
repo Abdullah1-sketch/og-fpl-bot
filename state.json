@@ -9328,7 +9328,7 @@
         "red_cards": 0
       },
       "449": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -9351,7 +9351,7 @@
       "453": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 1,
+        "assists": 2,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -9976,9 +9976,14 @@
       "status": "sent",
       "text": "⚠️ تعديل رسمي من FPL\n🏟️ نيوكاسل 0 - 0 هال سيتي\n🅰️ تم إلغاء صناعة | Barnes\n↳ الهدف الآن بدون صناعة محتسبة\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:05:02.841320+00:00"
+    },
+    "46:80": {
+      "status": "pending",
+      "text": "🏟️ نيوكاسل [2] - 0 هال سيتي\n⚽️ هدف | Hall\n🅰️ صناعة | Barnes\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:09:52.702765+00:00"
     }
   },
-  "match_revision": 79,
+  "match_revision": 80,
   "pending_goals": {
     "34": [],
     "32": [
