@@ -9624,7 +9624,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "171": {
@@ -10600,9 +10600,14 @@
       "status": "sent",
       "text": "🏟️ نوتنغهام فورست 0 - [1] كوفنتري\n⚽️ هدف | Dasilva\n🅰️ صناعة | Rushworth\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T17:44:45.746597+00:00"
+    },
+    "47:107": {
+      "status": "pending",
+      "text": "🏟️ نوتنغهام فورست 0 - 1 كوفنتري\n🟨 إنذار | Delap\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T17:48:25.770158+00:00"
     }
   },
-  "match_revision": 106,
+  "match_revision": 107,
   "pending_goals": {
     "34": [],
     "32": [
