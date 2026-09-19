@@ -9147,7 +9147,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "283": {
@@ -10046,9 +10046,14 @@
       "status": "sent",
       "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | J.Murphy\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:50:54.167993+00:00"
+    },
+    "46:93": {
+      "status": "pending",
+      "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | Giles\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T15:13:04.365418+00:00"
     }
   },
-  "match_revision": 92,
+  "match_revision": 93,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10064,7 +10069,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "46": []
   },
   "bonus_posts": {
     "39": {
@@ -10093,11 +10099,14 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "46": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
-    }
+    },
+    "46": {}
   },
   "confirmed_price_logic_version": 2
 }
