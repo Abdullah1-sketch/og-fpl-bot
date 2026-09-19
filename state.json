@@ -801,6 +801,11 @@
       "name": "Fernandes",
       "prediction": -95.9,
       "alerted_at": "2026-09-18T17:20:47.347865+00:00"
+    },
+    "247": {
+      "name": "Hackney",
+      "prediction": -95.2,
+      "alerted_at": "2026-09-19T15:28:57.266071+00:00"
     }
   },
   "last_prices": {
