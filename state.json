@@ -109,6 +109,11 @@
       "name": "Groß",
       "prediction": 115.4,
       "alerted_at": "2026-09-19T14:43:39.348306+00:00"
+    },
+    "138": {
+      "name": "Kostoulas",
+      "prediction": 107.1,
+      "alerted_at": "2026-09-19T15:13:50.610127+00:00"
     }
   },
   "alerted_fall": {
