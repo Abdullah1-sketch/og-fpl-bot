@@ -8542,7 +8542,7 @@
       "138": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -9996,9 +9996,14 @@
       "status": "sent",
       "text": "🏟️ نيوكاسل 2 - 0 هال سيتي\n🟨 إنذار | Crooks\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T14:32:27.920935+00:00"
+    },
+    "42:84": {
+      "status": "pending",
+      "text": "🏟️ برايتون [1] - 0 أرسنال\n⚽️ هدف | Groß\n🅰️ صناعة | Kostoulas\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T14:34:07.962429+00:00"
     }
   },
-  "match_revision": 83,
+  "match_revision": 84,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10015,18 +10020,7 @@
     ],
     "33": [],
     "31": [],
-    "42": [
-      {
-        "change": {
-          "pid": "124",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-19T14:33:17.896989+00:00"
-      }
-    ]
+    "42": []
   },
   "bonus_posts": {
     "39": {
