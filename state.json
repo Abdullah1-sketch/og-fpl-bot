@@ -7840,7 +7840,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "401": {
@@ -8499,9 +8499,14 @@
       "status": "sent",
       "text": "🏟️ توتنهام 0 - 0 أستون فيلا\n🟨 إنذار | Van Hecke\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T12:24:44.341236+00:00"
+    },
+    "48:66": {
+      "status": "pending",
+      "text": "🏟️ توتنهام 0 - 1 أستون فيلا\n🟨 إنذار | N.Jackson\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T12:41:24.470608+00:00"
     }
   },
-  "match_revision": 65,
+  "match_revision": 66,
   "pending_goals": {
     "34": [],
     "32": [
@@ -8517,7 +8522,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "48": []
   },
   "bonus_posts": {
     "39": {
@@ -8540,7 +8546,11 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
-  "revised_recredits": {},
+  "pending_assists": {
+    "48": []
+  },
+  "revised_recredits": {
+    "48": {}
+  },
   "confirmed_price_logic_version": 2
 }
