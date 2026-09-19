@@ -7790,7 +7790,7 @@
       "53": {
         "goals_scored": 1,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -7837,7 +7837,7 @@
         "red_cards": 0
       },
       "166": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 1,
@@ -8524,9 +8524,14 @@
       "status": "sent",
       "text": "⚠️ تعديل رسمي من FPL\n🏟️ توتنهام 0 - 1 أستون فيلا\n⚽️ تم إلغاء هدف | Kudus\n↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T12:56:52.726052+00:00"
+    },
+    "48:71": {
+      "status": "pending",
+      "text": "🏟️ توتنهام 0 - [2] أستون فيلا\n⚽️ هدف | N.Jackson\n🅰️ صناعة | Manzambi\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T13:03:32.783829+00:00"
     }
   },
-  "match_revision": 70,
+  "match_revision": 71,
   "pending_goals": {
     "34": [],
     "32": [
@@ -8542,7 +8547,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "48": []
   },
   "bonus_posts": {
     "39": {
@@ -8565,7 +8571,9 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "48": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
