@@ -7816,7 +7816,7 @@
         "red_cards": 0
       },
       "112": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 1,
@@ -8573,7 +8573,18 @@
     ],
     "33": [],
     "31": [],
-    "48": []
+    "48": [
+      {
+        "change": {
+          "pid": "112",
+          "stat": "goals_scored",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-19T13:34:02.455607+00:00"
+      }
+    ]
   },
   "bonus_posts": {
     "39": {
