@@ -9616,7 +9616,7 @@
       "110": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -10595,9 +10595,14 @@
       "status": "sent",
       "text": "🏟️ برايتون 3 - 0 أرسنال\n🟨 إنذار | رايس\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T15:57:56.253222+00:00"
+    },
+    "47:106": {
+      "status": "pending",
+      "text": "🏟️ نوتنغهام فورست 0 - [1] كوفنتري\n⚽️ هدف | Dasilva\n🅰️ صناعة | Rushworth\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T17:44:45.746597+00:00"
     }
   },
-  "match_revision": 105,
+  "match_revision": 106,
   "pending_goals": {
     "34": [],
     "32": [
@@ -10614,18 +10619,7 @@
     ],
     "33": [],
     "31": [],
-    "47": [
-      {
-        "change": {
-          "pid": "176",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-19T17:44:20.840807+00:00"
-      }
-    ]
+    "47": []
   },
   "bonus_posts": {
     "39": {
@@ -10672,7 +10666,9 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "47": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -10680,7 +10676,8 @@
     "43": {
       "236:assists": 1,
       "249:goals_scored": 2
-    }
+    },
+    "47": {}
   },
   "confirmed_price_logic_version": 2
 }
