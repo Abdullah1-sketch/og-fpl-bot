@@ -10618,9 +10618,5 @@
       "491:goals_scored": 1
     }
   },
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "b0deeb1c04dcc2cb38c555537904b21ae1e70cd00fffd6284670d7002f84f221",
-    "first_seen_at": "2026-09-19T23:03:28.649001+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
