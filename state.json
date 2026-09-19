@@ -8777,7 +8777,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "245": {
@@ -10111,9 +10111,14 @@
       "status": "sent",
       "text": "🏟️ إيفرتون 1 - 0 إيبسويتش\n🟨 إنذار | Flemming\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T15:52:21.251030+00:00"
+    },
+    "43:104": {
+      "status": "pending",
+      "text": "🏟️ إيفرتون 1 - 0 إيبسويتش\n🟨 إنذار | Armstrong\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T15:57:36.256323+00:00"
     }
   },
-  "match_revision": 103,
+  "match_revision": 104,
   "pending_goals": {
     "34": [],
     "32": [
