@@ -7665,7 +7665,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "33": {
@@ -8539,9 +8539,14 @@
       "status": "sent",
       "text": "🏟️ توتنهام [1] - 3 أستون فيلا\n⚽️ هدف | Gallagher\n🅰️ صناعة | Kudus\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T13:22:57.898830+00:00"
+    },
+    "48:74": {
+      "status": "pending",
+      "text": "🏟️ توتنهام 1 - 3 أستون فيلا\n🟨 إنذار | Cash\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T13:27:07.903341+00:00"
     }
   },
-  "match_revision": 73,
+  "match_revision": 74,
   "pending_goals": {
     "34": [],
     "32": [
