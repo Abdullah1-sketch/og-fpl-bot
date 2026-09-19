@@ -7665,7 +7665,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "33": {
@@ -8549,9 +8549,14 @@
       "status": "sent",
       "text": "⚠️ تعديل رسمي من FPL\n🏟️ توتنهام 1 - 3 أستون فيلا\n⚠️ تعديل FPL | Cash: القيمة المحتسبة الآن 0\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-19T13:27:22.939578+00:00"
+    },
+    "48:76": {
+      "status": "pending",
+      "text": "🏟️ توتنهام 1 - 3 أستون فيلا\n🟨 إنذار | Cash\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-19T13:27:47.972098+00:00"
     }
   },
-  "match_revision": 75,
+  "match_revision": 76,
   "pending_goals": {
     "34": [],
     "32": [
@@ -8567,7 +8572,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "48": []
   },
   "bonus_posts": {
     "39": {
@@ -8590,7 +8596,9 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "48": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
