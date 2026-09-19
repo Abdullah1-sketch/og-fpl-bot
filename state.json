@@ -9351,7 +9351,7 @@
       "453": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -10031,9 +10031,7 @@
     "48": {
       "512:goals_scored": 1
     },
-    "46": {
-      "453:assists": 1
-    }
+    "46": {}
   },
   "confirmed_price_logic_version": 2
 }
