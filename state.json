@@ -806,6 +806,11 @@
       "name": "Hackney",
       "prediction": -95.2,
       "alerted_at": "2026-09-19T15:28:57.266071+00:00"
+    },
+    "35": {
+      "name": "Bogarde",
+      "prediction": -95.7,
+      "alerted_at": "2026-09-20T04:23:19.945642+00:00"
     }
   },
   "last_prices": {
