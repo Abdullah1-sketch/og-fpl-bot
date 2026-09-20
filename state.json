@@ -11023,7 +11023,7 @@
       "397": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -11035,7 +11035,7 @@
         "red_cards": 0
       },
       "399": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -11930,9 +11930,14 @@
       "status": "sent",
       "text": "🏟️ مانشستر سيتي 1 - [1] سندرلاند\n⚽️ هدف | Brobbey\n🅰️ صناعة | E.Le Fée\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T13:15:29.217309+00:00"
+    },
+    "45:114": {
+      "status": "pending",
+      "text": "🏟️ مانشستر سيتي [2] - 1 سندرلاند\n⚽️ هدف | شرقي\n🅰️ صناعة | سيمينيو\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T13:33:34.459128+00:00"
     }
   },
-  "match_revision": 113,
+  "match_revision": 114,
   "pending_goals": {
     "34": [],
     "32": [
@@ -11948,7 +11953,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "45": []
   },
   "bonus_posts": {
     "39": {
@@ -12001,7 +12007,9 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "45": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12012,7 +12020,8 @@
     },
     "47": {
       "491:goals_scored": 1
-    }
+    },
+    "45": {}
   },
   "confirmed_price_logic_version": 2
 }
