@@ -11476,7 +11476,7 @@
       "257": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -12527,7 +12527,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "50": []
   },
   "bonus_posts": {
     "39": {
@@ -12603,7 +12604,20 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "50": [
+      {
+        "change": {
+          "pid": "257",
+          "stat": "assists",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-20T17:09:33.081375+00:00"
+      }
+    ]
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12618,7 +12632,8 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    }
+    },
+    "50": {}
   },
   "confirmed_price_logic_version": 2
 }
