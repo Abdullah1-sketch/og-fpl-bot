@@ -856,6 +856,11 @@
       "name": "Rashford",
       "prediction": -95.5,
       "alerted_at": "2026-09-20T17:34:19.377996+00:00"
+    },
+    "437": {
+      "name": "Bendito Mantato",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-20T17:38:12.083945+00:00"
     }
   },
   "last_prices": {
