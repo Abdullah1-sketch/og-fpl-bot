@@ -11622,7 +11622,7 @@
       },
       "419": {
         "goals_scored": 0,
-        "own_goals": 0,
+        "own_goals": 1,
         "assists": 0,
         "yellow_cards": 0,
         "red_cards": 0
@@ -12504,9 +12504,14 @@
       "status": "sent",
       "text": "🏟️ فولهام 0 - 0 مانشستر يونايتد\n🟨 إنذار | Castagne\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T16:38:37.892334+00:00"
+    },
+    "50:134": {
+      "status": "pending",
+      "text": "🏟️ فولهام [1] - 0 مانشستر يونايتد\n⚽️ هدف عكسي | Martinez\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T16:50:57.984275+00:00"
     }
   },
-  "match_revision": 133,
+  "match_revision": 134,
   "pending_goals": {
     "34": [],
     "32": [
@@ -12522,7 +12527,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "50": []
   },
   "bonus_posts": {
     "39": {
@@ -12598,7 +12604,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "50": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12613,7 +12621,8 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    }
+    },
+    "50": {}
   },
   "confirmed_price_logic_version": 2
 }
