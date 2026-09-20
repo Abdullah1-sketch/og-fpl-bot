@@ -10509,7 +10509,7 @@
         "red_cards": 0
       },
       "204": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -10847,7 +10847,7 @@
       "588": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -11970,9 +11970,14 @@
       "status": "sent",
       "text": "🏟️ بورنموث 0 - 0 ليفربول\n🟨 إنذار | سوبوسلاي\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T14:04:44.775681+00:00"
+    },
+    "44:119": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد 0 - [1] كريستال بالاس\n⚽️ هدف | Mitchell\n🅰️ صناعة | Khalaili\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T14:12:49.932283+00:00"
     }
   },
-  "match_revision": 118,
+  "match_revision": 119,
   "pending_goals": {
     "34": [],
     "32": [
@@ -11988,7 +11993,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "44": []
   },
   "bonus_posts": {
     "39": {
@@ -12041,7 +12047,9 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "44": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12052,7 +12060,8 @@
     },
     "47": {
       "491:goals_scored": 1
-    }
+    },
+    "44": {}
   },
   "confirmed_price_logic_version": 2
 }
