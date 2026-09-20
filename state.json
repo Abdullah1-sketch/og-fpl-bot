@@ -846,6 +846,11 @@
       "name": "Wharton",
       "prediction": -96.3,
       "alerted_at": "2026-09-20T15:18:34.126399+00:00"
+    },
+    "531": {
+      "name": "Ellborg",
+      "prediction": -98.0,
+      "alerted_at": "2026-09-20T15:48:43.587750+00:00"
     }
   },
   "last_prices": {
