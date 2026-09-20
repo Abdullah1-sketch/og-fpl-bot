@@ -10304,7 +10304,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "369": {
@@ -11955,9 +11955,14 @@
       "status": "sent",
       "text": "🏟️ مانشستر سيتي [3] - 2 سندرلاند\n⚽️ هدف | سيمينيو\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T13:48:49.622414+00:00"
+    },
+    "49:118": {
+      "status": "pending",
+      "text": "🏟️ بورنموث 0 - 0 ليفربول\n🟨 إنذار | سوبوسلاي\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T14:04:44.775681+00:00"
     }
   },
-  "match_revision": 117,
+  "match_revision": 118,
   "pending_goals": {
     "34": [],
     "32": [
@@ -11973,7 +11978,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "49": []
   },
   "bonus_posts": {
     "39": {
@@ -12026,7 +12032,9 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {},
+  "pending_assists": {
+    "49": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12037,7 +12045,8 @@
     },
     "47": {
       "491:goals_scored": 1
-    }
+    },
+    "49": {}
   },
   "confirmed_price_logic_version": 2
 }
