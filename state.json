@@ -10547,7 +10547,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "211": {
@@ -12010,9 +12010,14 @@
       "status": "sent",
       "text": "🏟️ مانشستر سيتي 4 - [3] سندرلاند\n⚽️ هدف | Brobbey\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T14:25:25.931845+00:00"
+    },
+    "44:127": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد 0 - 0 كريستال بالاس\n🟨 إنذار | Wharton\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T14:26:36.074667+00:00"
     }
   },
-  "match_revision": 126,
+  "match_revision": 127,
   "pending_goals": {
     "34": [],
     "32": [
@@ -12029,7 +12034,7 @@
     ],
     "33": [],
     "31": [],
-    "45": []
+    "44": []
   },
   "bonus_posts": {
     "39": {
@@ -12083,7 +12088,7 @@
   },
   "bonus_candidates": {},
   "pending_assists": {
-    "45": []
+    "44": []
   },
   "revised_recredits": {
     "48": {
@@ -12099,8 +12104,7 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    },
-    "45": {}
+    }
   },
   "confirmed_price_logic_version": 2
 }
