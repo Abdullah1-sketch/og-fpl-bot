@@ -851,6 +851,11 @@
       "name": "Ellborg",
       "prediction": -98.0,
       "alerted_at": "2026-09-20T15:48:43.587750+00:00"
+    },
+    "429": {
+      "name": "Rashford",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-20T17:34:19.377996+00:00"
     }
   },
   "last_prices": {
