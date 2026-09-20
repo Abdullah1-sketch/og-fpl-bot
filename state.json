@@ -811,6 +811,11 @@
       "name": "Bogarde",
       "prediction": -95.7,
       "alerted_at": "2026-09-20T04:23:19.945642+00:00"
+    },
+    "274": {
+      "name": "Butland",
+      "prediction": -95.3,
+      "alerted_at": "2026-09-20T05:21:39.735465+00:00"
     }
   },
   "last_prices": {
