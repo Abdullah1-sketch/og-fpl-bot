@@ -12028,7 +12028,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "45": []
   },
   "bonus_posts": {
     "39": {
@@ -12082,18 +12083,7 @@
   },
   "bonus_candidates": {},
   "pending_assists": {
-    "45": [
-      {
-        "change": {
-          "pid": "551",
-          "stat": "assists",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-20T14:25:30.896635+00:00"
-      }
-    ]
+    "45": []
   },
   "revised_recredits": {
     "48": {
@@ -12109,7 +12099,8 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    }
+    },
+    "45": {}
   },
   "confirmed_price_logic_version": 2
 }
