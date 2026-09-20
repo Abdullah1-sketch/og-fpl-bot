@@ -124,6 +124,11 @@
       "name": "Brobbey",
       "prediction": 107.6,
       "alerted_at": "2026-09-20T14:41:12.347880+00:00"
+    },
+    "572": {
+      "name": "Tzolakis",
+      "prediction": 96.6,
+      "alerted_at": "2026-09-20T15:33:38.517182+00:00"
     }
   },
   "alerted_fall": {
