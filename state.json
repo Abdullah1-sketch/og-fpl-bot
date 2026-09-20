@@ -11595,7 +11595,7 @@
       "415": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -12514,9 +12514,14 @@
       "status": "sent",
       "text": "🏟️ فولهام 1 - 0 مانشستر يونايتد\n🟨 إنذار | Muniz\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T17:13:38.087046+00:00"
+    },
+    "50:136": {
+      "status": "pending",
+      "text": "🏟️ فولهام 1 - [1] مانشستر يونايتد\n⚽️ هدف | كونيا\n🅰️ صناعة | Dorgu\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T17:18:43.092927+00:00"
     }
   },
-  "match_revision": 135,
+  "match_revision": 136,
   "pending_goals": {
     "34": [],
     "32": [
@@ -12533,18 +12538,7 @@
     ],
     "33": [],
     "31": [],
-    "50": [
-      {
-        "change": {
-          "pid": "428",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-09-20T17:17:43.107009+00:00"
-      }
-    ]
+    "50": []
   },
   "bonus_posts": {
     "39": {
@@ -12620,7 +12614,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "50": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12635,7 +12631,8 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    }
+    },
+    "50": {}
   },
   "confirmed_price_logic_version": 2
 }
