@@ -10509,7 +10509,7 @@
         "red_cards": 0
       },
       "204": {
-        "goals_scored": 1,
+        "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -11975,9 +11975,14 @@
       "status": "sent",
       "text": "🏟️ ليدز يونايتد 0 - [1] كريستال بالاس\n⚽️ هدف | Mitchell\n🅰️ صناعة | Khalaili\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T14:12:49.932283+00:00"
+    },
+    "44:120": {
+      "status": "pending",
+      "text": "⚠️ تعديل رسمي من FPL\n🏟️ ليدز يونايتد 0 - 1 كريستال بالاس\n⚽️ تم إلغاء هدف | Mitchell\n↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T14:13:54.948282+00:00"
     }
   },
-  "match_revision": 119,
+  "match_revision": 120,
   "pending_goals": {
     "34": [],
     "32": [
@@ -12061,7 +12066,10 @@
     "47": {
       "491:goals_scored": 1
     },
-    "44": {}
+    "44": {
+      "204:goals_scored": 1,
+      "588:assists": 1
+    }
   },
   "confirmed_price_logic_version": 2
 }
