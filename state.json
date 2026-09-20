@@ -10559,7 +10559,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "212": {
@@ -12025,9 +12025,14 @@
       "status": "sent",
       "text": "🏟️ بورنموث 0 - 1 ليفربول\n🟨 إنذار | Silva\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T14:41:16.277717+00:00"
+    },
+    "44:129": {
+      "status": "pending",
+      "text": "🏟️ ليدز يونايتد 0 - 0 كريستال بالاس\n🟨 إنذار | Yeremy\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T14:42:16.284915+00:00"
     }
   },
-  "match_revision": 128,
+  "match_revision": 129,
   "pending_goals": {
     "34": [],
     "32": [
@@ -12044,7 +12049,7 @@
     ],
     "33": [],
     "31": [],
-    "49": []
+    "44": []
   },
   "bonus_posts": {
     "39": {
@@ -12098,7 +12103,7 @@
   },
   "bonus_candidates": {},
   "pending_assists": {
-    "49": []
+    "44": []
   },
   "revised_recredits": {
     "48": {
@@ -12114,8 +12119,7 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    },
-    "49": {}
+    }
   },
   "confirmed_price_logic_version": 2
 }
