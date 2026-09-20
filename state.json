@@ -11212,7 +11212,7 @@
       "542": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -11280,7 +11280,7 @@
         "red_cards": 0
       },
       "552": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -11925,9 +11925,14 @@
       "status": "sent",
       "text": "🏟️ مانشستر سيتي [1] - 0 سندرلاند\n⚽️ هدف | إنزو\n🅰️ صناعة | ندياي\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T13:14:24.191548+00:00"
+    },
+    "45:113": {
+      "status": "pending",
+      "text": "🏟️ مانشستر سيتي 1 - [1] سندرلاند\n⚽️ هدف | Brobbey\n🅰️ صناعة | E.Le Fée\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T13:15:29.217309+00:00"
     }
   },
-  "match_revision": 112,
+  "match_revision": 113,
   "pending_goals": {
     "34": [],
     "32": [
