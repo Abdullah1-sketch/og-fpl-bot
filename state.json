@@ -11554,7 +11554,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "272": {
@@ -12509,9 +12509,14 @@
       "status": "sent",
       "text": "🏟️ فولهام [1] - 0 مانشستر يونايتد\n⚽️ هدف عكسي | Martinez\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T16:50:57.984275+00:00"
+    },
+    "50:135": {
+      "status": "pending",
+      "text": "🏟️ فولهام 1 - 0 مانشستر يونايتد\n🟨 إنذار | Muniz\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-09-20T17:13:38.087046+00:00"
     }
   },
-  "match_revision": 134,
+  "match_revision": 135,
   "pending_goals": {
     "34": [],
     "32": [
