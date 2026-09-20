@@ -114,6 +114,11 @@
       "name": "Kostoulas",
       "prediction": 107.1,
       "alerted_at": "2026-09-19T15:13:50.610127+00:00"
+    },
+    "94": {
+      "name": "Schade",
+      "prediction": 97.9,
+      "alerted_at": "2026-09-20T14:11:01.477151+00:00"
     }
   },
   "alerted_fall": {
@@ -821,6 +826,11 @@
       "name": "Gusto",
       "prediction": -95.5,
       "alerted_at": "2026-09-20T13:40:50.990624+00:00"
+    },
+    "520": {
+      "name": "Bergvall",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-20T14:11:01.477151+00:00"
     }
   },
   "last_prices": {
