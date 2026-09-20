@@ -816,6 +816,11 @@
       "name": "Butland",
       "prediction": -95.3,
       "alerted_at": "2026-09-20T05:21:39.735465+00:00"
+    },
+    "144": {
+      "name": "Gusto",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-20T13:40:50.990624+00:00"
     }
   },
   "last_prices": {
@@ -11963,8 +11968,7 @@
       }
     ],
     "33": [],
-    "31": [],
-    "44": []
+    "31": []
   },
   "bonus_posts": {
     "39": {
@@ -12017,9 +12021,7 @@
     }
   },
   "bonus_candidates": {},
-  "pending_assists": {
-    "44": []
-  },
+  "pending_assists": {},
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -12030,8 +12032,7 @@
     },
     "47": {
       "491:goals_scored": 1
-    },
-    "44": {}
+    }
   },
   "confirmed_price_logic_version": 2
 }
