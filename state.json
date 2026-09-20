@@ -11290,7 +11290,7 @@
       "551": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -12083,7 +12083,18 @@
   },
   "bonus_candidates": {},
   "pending_assists": {
-    "45": []
+    "45": [
+      {
+        "change": {
+          "pid": "551",
+          "stat": "assists",
+          "old": 0,
+          "new": 1,
+          "delta": 1
+        },
+        "detected_at": "2026-09-20T14:25:30.896635+00:00"
+      }
+    ]
   },
   "revised_recredits": {
     "48": {
