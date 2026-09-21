@@ -866,6 +866,11 @@
       "name": "Smith Rowe",
       "prediction": -97.0,
       "alerted_at": "2026-09-20T23:21:13.257058+00:00"
+    },
+    "433": {
+      "name": "Ugarte",
+      "prediction": -99.0,
+      "alerted_at": "2026-09-21T06:05:33.811000+00:00"
     }
   },
   "last_prices": {
