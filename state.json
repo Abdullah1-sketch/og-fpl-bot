@@ -871,6 +871,11 @@
       "name": "Ugarte",
       "prediction": -99.0,
       "alerted_at": "2026-09-21T06:05:33.811000+00:00"
+    },
+    "135": {
+      "name": "Yohanna",
+      "prediction": -95.7,
+      "alerted_at": "2026-09-22T07:23:37.887308+00:00"
     }
   },
   "last_prices": {
