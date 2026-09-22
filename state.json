@@ -876,6 +876,11 @@
       "name": "Yohanna",
       "prediction": -95.7,
       "alerted_at": "2026-09-22T07:23:37.887308+00:00"
+    },
+    "626": {
+      "name": "Zepa",
+      "prediction": -95.3,
+      "alerted_at": "2026-09-22T23:20:54.344393+00:00"
     }
   },
   "last_prices": {
@@ -12662,9 +12667,5 @@
       "588:assists": 1
     }
   },
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "51654e9abc577d9bbd9d0ef0f10b1ba3f44c45936acebc17cdfb6d01e68da267",
-    "first_seen_at": "2026-09-22T23:03:25.493588+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
