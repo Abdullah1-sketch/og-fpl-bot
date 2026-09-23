@@ -906,6 +906,11 @@
       "name": "Dorgu",
       "prediction": -95.0,
       "alerted_at": "2026-09-23T23:03:31.207065+00:00"
+    },
+    "543": {
+      "name": "Diarra",
+      "prediction": -96.3,
+      "alerted_at": "2026-09-23T23:32:58.890615+00:00"
     }
   },
   "last_prices": {
@@ -12692,9 +12697,5 @@
       "588:assists": 1
     }
   },
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "39b275916d95532f2461c8fa013d3e5199f902a752781c99c340e86755eedc4e",
-    "first_seen_at": "2026-09-23T23:03:13.226631+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
