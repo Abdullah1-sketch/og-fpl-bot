@@ -129,6 +129,11 @@
       "name": "Tzolakis",
       "prediction": 96.6,
       "alerted_at": "2026-09-20T15:33:38.517182+00:00"
+    },
+    "115": {
+      "name": "De Cuyper",
+      "prediction": 95.3,
+      "alerted_at": "2026-09-23T23:03:31.207065+00:00"
     }
   },
   "alerted_fall": {
@@ -886,6 +891,21 @@
       "name": "Nørgaard",
       "prediction": -95.4,
       "alerted_at": "2026-09-23T15:24:37.411215+00:00"
+    },
+    "170": {
+      "name": "Emegha",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-23T23:03:31.207065+00:00"
+    },
+    "563": {
+      "name": "Morita",
+      "prediction": -95.3,
+      "alerted_at": "2026-09-23T23:03:31.207065+00:00"
+    },
+    "415": {
+      "name": "Dorgu",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-23T23:03:31.207065+00:00"
     }
   },
   "last_prices": {
