@@ -881,6 +881,11 @@
       "name": "Zepa",
       "prediction": -95.3,
       "alerted_at": "2026-09-22T23:20:54.344393+00:00"
+    },
+    "21": {
+      "name": "Nørgaard",
+      "prediction": -95.4,
+      "alerted_at": "2026-09-23T15:24:37.411215+00:00"
     }
   },
   "last_prices": {
