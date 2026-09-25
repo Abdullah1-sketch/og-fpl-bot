@@ -911,6 +911,11 @@
       "name": "Diarra",
       "prediction": -96.3,
       "alerted_at": "2026-09-23T23:32:58.890615+00:00"
+    },
+    "193": {
+      "name": "Wright",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-25T13:05:45.786683+00:00"
     }
   },
   "last_prices": {
