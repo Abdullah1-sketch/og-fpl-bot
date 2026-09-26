@@ -916,6 +916,11 @@
       "name": "Wright",
       "prediction": -95.0,
       "alerted_at": "2026-09-25T13:05:45.786683+00:00"
+    },
+    "421": {
+      "name": "Heaven",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-26T09:03:52.440271+00:00"
     }
   },
   "last_prices": {
