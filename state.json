@@ -921,6 +921,11 @@
       "name": "Heaven",
       "prediction": -95.0,
       "alerted_at": "2026-09-26T09:03:52.440271+00:00"
+    },
+    "392": {
+      "name": "Aït-Nouri",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-28T23:04:07.789906+00:00"
     }
   },
   "last_prices": {
