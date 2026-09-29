@@ -946,6 +946,11 @@
       "name": "Henderson",
       "prediction": -95.0,
       "alerted_at": "2026-09-29T07:53:43.491566+00:00"
+    },
+    "416": {
+      "name": "De Ligt",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-29T10:26:59.929001+00:00"
     }
   },
   "last_prices": {
