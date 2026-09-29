@@ -941,6 +941,11 @@
       "name": "Osorio",
       "prediction": -118.2,
       "alerted_at": "2026-09-29T06:05:30.716405+00:00"
+    },
+    "198": {
+      "name": "Henderson",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-29T07:53:43.491566+00:00"
     }
   },
   "last_prices": {
