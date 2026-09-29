@@ -966,6 +966,11 @@
       "name": "Szoboszlai",
       "prediction": -95.0,
       "alerted_at": "2026-09-29T18:29:37.020260+00:00"
+    },
+    "241": {
+      "name": "McNeil",
+      "prediction": -96.4,
+      "alerted_at": "2026-09-29T23:49:27.137230+00:00"
     }
   },
   "last_prices": {
