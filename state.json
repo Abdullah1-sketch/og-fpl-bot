@@ -936,6 +936,11 @@
       "name": "Longstaff",
       "prediction": -95.5,
       "alerted_at": "2026-09-29T02:23:04.588368+00:00"
+    },
+    "647": {
+      "name": "Osorio",
+      "prediction": -118.2,
+      "alerted_at": "2026-09-29T06:05:30.716405+00:00"
     }
   },
   "last_prices": {
