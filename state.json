@@ -931,6 +931,11 @@
       "name": "Mamardashvili",
       "prediction": -96.1,
       "alerted_at": "2026-09-28T23:23:15.273841+00:00"
+    },
+    "339": {
+      "name": "Longstaff",
+      "prediction": -95.5,
+      "alerted_at": "2026-09-29T02:23:04.588368+00:00"
     }
   },
   "last_prices": {
