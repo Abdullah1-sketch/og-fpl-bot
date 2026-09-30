@@ -976,6 +976,11 @@
       "name": "Drakes-Thomas",
       "prediction": -95.2,
       "alerted_at": "2026-09-30T04:26:34.454442+00:00"
+    },
+    "288": {
+      "name": "Dowell",
+      "prediction": -95.0,
+      "alerted_at": "2026-09-30T07:56:46.245143+00:00"
     }
   },
   "last_prices": {
