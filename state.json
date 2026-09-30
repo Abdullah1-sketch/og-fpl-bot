@@ -971,6 +971,11 @@
       "name": "McNeil",
       "prediction": -96.4,
       "alerted_at": "2026-09-29T23:49:27.137230+00:00"
+    },
+    "221": {
+      "name": "Drakes-Thomas",
+      "prediction": -95.2,
+      "alerted_at": "2026-09-30T04:26:34.454442+00:00"
     }
   },
   "last_prices": {
