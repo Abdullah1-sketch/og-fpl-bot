@@ -12772,9 +12772,5 @@
       "588:assists": 1
     }
   },
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "0c0269ba1c21cc95725aa5b8f0918e865785c17e048ace38992d3f422b4fcbef",
-    "first_seen_at": "2026-09-30T23:03:31.964059+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
