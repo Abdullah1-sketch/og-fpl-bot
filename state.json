@@ -986,6 +986,11 @@
       "name": "James",
       "prediction": -95.0,
       "alerted_at": "2026-09-30T23:03:51.498242+00:00"
+    },
+    "456": {
+      "name": "J.Ramsey",
+      "prediction": -95.0,
+      "alerted_at": "2026-10-02T19:05:53.525319+00:00"
     }
   },
   "last_prices": {
