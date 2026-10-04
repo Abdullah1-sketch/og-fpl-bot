@@ -1001,6 +1001,11 @@
       "name": "McAidoo",
       "prediction": -95.4,
       "alerted_at": "2026-10-04T02:24:47.977552+00:00"
+    },
+    "306": {
+      "name": "Greaves",
+      "prediction": -95.0,
+      "alerted_at": "2026-10-04T04:17:03.303335+00:00"
     }
   },
   "last_prices": {
