@@ -996,6 +996,11 @@
       "name": "J.Ramsey",
       "prediction": -95.0,
       "alerted_at": "2026-10-02T19:05:53.525319+00:00"
+    },
+    "621": {
+      "name": "McAidoo",
+      "prediction": -95.4,
+      "alerted_at": "2026-10-04T02:24:47.977552+00:00"
     }
   },
   "last_prices": {
