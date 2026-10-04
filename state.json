@@ -139,6 +139,11 @@
       "name": "Saka",
       "prediction": 95.6,
       "alerted_at": "2026-10-02T23:03:32.928227+00:00"
+    },
+    "268": {
+      "name": "King",
+      "prediction": 95.6,
+      "alerted_at": "2026-10-04T21:02:21.561809+00:00"
     }
   },
   "alerted_fall": {
