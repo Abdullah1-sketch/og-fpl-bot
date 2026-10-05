@@ -1011,6 +1011,11 @@
       "name": "Greaves",
       "prediction": -95.0,
       "alerted_at": "2026-10-04T04:17:03.303335+00:00"
+    },
+    "375": {
+      "name": "Nyoni",
+      "prediction": -95.9,
+      "alerted_at": "2026-10-05T02:07:00.738206+00:00"
     }
   },
   "last_prices": {
