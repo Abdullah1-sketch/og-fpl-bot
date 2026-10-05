@@ -1021,6 +1021,11 @@
       "name": "Mingueza",
       "prediction": -96.5,
       "alerted_at": "2026-10-05T02:41:18.496074+00:00"
+    },
+    "489": {
+      "name": "Yates",
+      "prediction": -95.0,
+      "alerted_at": "2026-10-05T09:55:11.536517+00:00"
     }
   },
   "last_prices": {
