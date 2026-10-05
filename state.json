@@ -1016,6 +1016,11 @@
       "name": "Nyoni",
       "prediction": -95.9,
       "alerted_at": "2026-10-05T02:07:00.738206+00:00"
+    },
+    "207": {
+      "name": "Mingueza",
+      "prediction": -96.5,
+      "alerted_at": "2026-10-05T02:41:18.496074+00:00"
     }
   },
   "last_prices": {
