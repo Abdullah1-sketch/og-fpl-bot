@@ -1036,6 +1036,11 @@
       "name": "Hamer",
       "prediction": -95.8,
       "alerted_at": "2026-10-07T01:54:25.889378+00:00"
+    },
+    "77": {
+      "name": "Adli",
+      "prediction": -95.0,
+      "alerted_at": "2026-10-07T03:27:00.849687+00:00"
     }
   },
   "last_prices": {
