@@ -1046,6 +1046,11 @@
       "name": "Vitor Reis",
       "prediction": -95.5,
       "alerted_at": "2026-10-07T07:54:05.356446+00:00"
+    },
+    "360": {
+      "name": "Bradley",
+      "prediction": -96.3,
+      "alerted_at": "2026-10-07T13:46:17.603764+00:00"
     }
   },
   "last_prices": {
