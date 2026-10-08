@@ -1066,6 +1066,11 @@
       "name": "Gourna-Douath",
       "prediction": -97.9,
       "alerted_at": "2026-10-08T14:31:07.777826+00:00"
+    },
+    "134": {
+      "name": "Oriola",
+      "prediction": -95.7,
+      "alerted_at": "2026-10-08T23:06:14.213084+00:00"
     }
   },
   "last_prices": {
