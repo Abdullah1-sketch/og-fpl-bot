@@ -4609,7 +4609,22 @@
   "last_confirmed_price_date_uk": "2026-09-11",
   "news_logic_version": 8,
   "conference_schedule": {},
-  "ffscout_sections": {},
+  "ffscout_sections": {
+    "https://www.fantasyfootballscout.co.uk/2026/10/08/fpl-gameweek-6-team-news-thursdays-live-injury-updates-2": {
+      "Sunderland": {
+        "hash": "2809c95f8ab319bcf0520a932d2f8f3456603adf7af5716b1ad097c36808fa5f",
+        "text": "Dan Ballard and Brian Brobbey (both hamstring) will miss out in Gameweek 6 after picking up injuries over the international break. Romaine Mundle (knee) remains on the sidelines, too, but Reinildo is back, having served a one-match ban after his dismissal for two bookable offences in Gameweek 4. Noah Sadiki shook off a scare to feature for DR Congo in their final outing of the last fortnight. Quotes to follow",
+        "checked_at": "2026-10-08T13:01:27.977343+00:00",
+        "source_title": "FPL Gameweek 6 team news: Thursday’s live injury updates mobile"
+      },
+      "Leeds": {
+        "hash": "1651fc4a4dfd7815ac52edf69b456590d82cb14bf931f5d7088e26faac890e87",
+        "text": "Harry Wilson (quad) returned to training over the international break. Young winger Jean-Matteo Bahoya , who withdrew from the France under-21 squad with an ankle injury , could also make a swift return. Joe Rodon (hamstring) and forgotten man Mateo Joseph (knee) remain on the sidelines for the Whites. Daniel James (back) has joined the injury list, too. Quotes to follow",
+        "checked_at": "2026-10-08T13:01:27.977343+00:00",
+        "source_title": "FPL Gameweek 6 team news: Thursday’s live injury updates mobile"
+      }
+    }
+  },
   "match_finished_at": {
     "35": "2026-09-12T16:01:11.717600+00:00",
     "31": "2026-09-12T16:21:48.553003+00:00",
