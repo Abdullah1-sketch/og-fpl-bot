@@ -149,6 +149,11 @@
       "name": "Emersonn",
       "prediction": 95.1,
       "alerted_at": "2026-10-08T07:00:37.961148+00:00"
+    },
+    "569": {
+      "name": "Gonzalo",
+      "prediction": 96.3,
+      "alerted_at": "2026-10-08T23:25:38.672049+00:00"
     }
   },
   "alerted_fall": {
@@ -1071,6 +1076,11 @@
       "name": "Oriola",
       "prediction": -95.7,
       "alerted_at": "2026-10-08T23:06:14.213084+00:00"
+    },
+    "50": {
+      "name": "Burrowes",
+      "prediction": -95.1,
+      "alerted_at": "2026-10-08T23:25:38.672049+00:00"
     }
   },
   "last_prices": {
@@ -12890,9 +12900,5 @@
       "588:assists": 1
     }
   },
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "46c40646aa720446e4b44e1b8736a91d0f78c67c3eb5b788fd07aeedd4842d75",
-    "first_seen_at": "2026-10-08T23:05:57.077886+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
