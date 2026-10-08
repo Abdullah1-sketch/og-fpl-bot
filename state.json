@@ -12887,7 +12887,7 @@
   },
   "confirmed_price_logic_version": 2,
   "pending_confirmed_prices": {
-    "signature": "596acfb2762dd642e83a2452387006bee36543c0514563137cbef1f6154cb10b",
-    "first_seen_at": "2026-10-08T22:55:32.620953+00:00"
+    "signature": "46c40646aa720446e4b44e1b8736a91d0f78c67c3eb5b788fd07aeedd4842d75",
+    "first_seen_at": "2026-10-08T23:05:57.077886+00:00"
   }
 }
