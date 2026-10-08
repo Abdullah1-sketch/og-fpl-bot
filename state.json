@@ -1061,6 +1061,11 @@
       "name": "Tchaouna",
       "prediction": -95.5,
       "alerted_at": "2026-10-08T00:35:36.501709+00:00"
+    },
+    "589": {
+      "name": "Gourna-Douath",
+      "prediction": -97.9,
+      "alerted_at": "2026-10-08T14:31:07.777826+00:00"
     }
   },
   "last_prices": {
