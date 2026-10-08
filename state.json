@@ -144,6 +144,11 @@
       "name": "King",
       "prediction": 95.6,
       "alerted_at": "2026-10-04T21:02:21.561809+00:00"
+    },
+    "316": {
+      "name": "Emersonn",
+      "prediction": 95.1,
+      "alerted_at": "2026-10-08T07:00:37.961148+00:00"
     }
   },
   "alerted_fall": {
