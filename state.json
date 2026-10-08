@@ -1051,6 +1051,11 @@
       "name": "Bradley",
       "prediction": -96.3,
       "alerted_at": "2026-10-07T13:46:17.603764+00:00"
+    },
+    "190": {
+      "name": "Tchaouna",
+      "prediction": -95.5,
+      "alerted_at": "2026-10-08T00:35:36.501709+00:00"
     }
   },
   "last_prices": {
