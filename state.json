@@ -1121,6 +1121,11 @@
       "name": "Latibeaudiere",
       "prediction": -96.4,
       "alerted_at": "2026-10-09T11:39:25.589526+00:00"
+    },
+    "548": {
+      "name": "Rigg",
+      "prediction": -96.6,
+      "alerted_at": "2026-10-09T13:17:22.227579+00:00"
     }
   },
   "last_prices": {
