@@ -1126,6 +1126,11 @@
       "name": "Rigg",
       "prediction": -96.6,
       "alerted_at": "2026-10-09T13:17:22.227579+00:00"
+    },
+    "643": {
+      "name": "Chilwell",
+      "prediction": -95.6,
+      "alerted_at": "2026-10-09T13:42:18.140977+00:00"
     }
   },
   "last_prices": {
