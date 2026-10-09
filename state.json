@@ -1146,6 +1146,21 @@
       "name": "Disasi",
       "prediction": -95.1,
       "alerted_at": "2026-10-09T16:58:46.843839+00:00"
+    },
+    "379": {
+      "name": "Isak",
+      "prediction": -108.6,
+      "alerted_at": "2026-10-09T23:05:13.627850+00:00"
+    },
+    "72": {
+      "name": "Gannon-Doak",
+      "prediction": -98.4,
+      "alerted_at": "2026-10-09T23:05:13.627850+00:00"
+    },
+    "544": {
+      "name": "Xhaka",
+      "prediction": -98.7,
+      "alerted_at": "2026-10-09T23:05:13.627850+00:00"
     }
   },
   "last_prices": {
