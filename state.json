@@ -1086,6 +1086,11 @@
       "name": "Bentancur",
       "prediction": -95.2,
       "alerted_at": "2026-10-09T01:03:10.082746+00:00"
+    },
+    "574": {
+      "name": "Hjertø-Dahl",
+      "prediction": -95.1,
+      "alerted_at": "2026-10-09T06:36:39.957953+00:00"
     }
   },
   "last_prices": {
