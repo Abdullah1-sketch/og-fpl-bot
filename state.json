@@ -1116,6 +1116,11 @@
       "name": "Sadiki",
       "prediction": -95.2,
       "alerted_at": "2026-10-09T10:45:43.925148+00:00"
+    },
+    "179": {
+      "name": "Latibeaudiere",
+      "prediction": -96.4,
+      "alerted_at": "2026-10-09T11:39:25.589526+00:00"
     }
   },
   "last_prices": {
