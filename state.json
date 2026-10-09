@@ -1136,6 +1136,11 @@
       "name": "White",
       "prediction": -146.7,
       "alerted_at": "2026-10-09T14:13:11.237414+00:00"
+    },
+    "154": {
+      "name": "Palmer",
+      "prediction": -96.8,
+      "alerted_at": "2026-10-09T14:57:25.552327+00:00"
     }
   },
   "last_prices": {
