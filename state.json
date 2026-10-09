@@ -1131,6 +1131,11 @@
       "name": "Chilwell",
       "prediction": -95.6,
       "alerted_at": "2026-10-09T13:42:18.140977+00:00"
+    },
+    "10": {
+      "name": "White",
+      "prediction": -146.7,
+      "alerted_at": "2026-10-09T14:13:11.237414+00:00"
     }
   },
   "last_prices": {
