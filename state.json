@@ -1081,6 +1081,11 @@
       "name": "Burrowes",
       "prediction": -95.1,
       "alerted_at": "2026-10-08T23:25:38.672049+00:00"
+    },
+    "516": {
+      "name": "Bentancur",
+      "prediction": -95.2,
+      "alerted_at": "2026-10-09T01:03:10.082746+00:00"
     }
   },
   "last_prices": {
