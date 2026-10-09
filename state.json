@@ -1141,6 +1141,11 @@
       "name": "Palmer",
       "prediction": -96.8,
       "alerted_at": "2026-10-09T14:57:25.552327+00:00"
+    },
+    "153": {
+      "name": "Disasi",
+      "prediction": -95.1,
+      "alerted_at": "2026-10-09T16:58:46.843839+00:00"
     }
   },
   "last_prices": {
