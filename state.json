@@ -1181,6 +1181,11 @@
       "name": "Dalot",
       "prediction": -97.4,
       "alerted_at": "2026-10-09T23:24:46.924529+00:00"
+    },
+    "648": {
+      "name": "Bahoya",
+      "prediction": -97.1,
+      "alerted_at": "2026-10-09T23:52:29.233812+00:00"
     }
   },
   "last_prices": {
