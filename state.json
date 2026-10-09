@@ -154,6 +154,16 @@
       "name": "Gonzalo",
       "prediction": 96.3,
       "alerted_at": "2026-10-08T23:25:38.672049+00:00"
+    },
+    "305": {
+      "name": "Davis",
+      "prediction": 102.1,
+      "alerted_at": "2026-10-09T23:24:46.924529+00:00"
+    },
+    "330": {
+      "name": "Bogle",
+      "prediction": 95.9,
+      "alerted_at": "2026-10-09T23:24:46.924529+00:00"
     }
   },
   "alerted_fall": {
@@ -1161,6 +1171,16 @@
       "name": "Xhaka",
       "prediction": -98.7,
       "alerted_at": "2026-10-09T23:05:13.627850+00:00"
+    },
+    "398": {
+      "name": "Foden",
+      "prediction": -105.4,
+      "alerted_at": "2026-10-09T23:24:46.924529+00:00"
+    },
+    "417": {
+      "name": "Dalot",
+      "prediction": -97.4,
+      "alerted_at": "2026-10-09T23:24:46.924529+00:00"
     }
   },
   "last_prices": {
@@ -12980,9 +13000,5 @@
       "588:assists": 1
     }
   },
-  "confirmed_price_logic_version": 2,
-  "pending_confirmed_prices": {
-    "signature": "6b9368d2094688ce417386916d73a09a33fee7bb3424b8b23f864e71c8bb5e3d",
-    "first_seen_at": "2026-10-09T23:04:56.764673+00:00"
-  }
+  "confirmed_price_logic_version": 2
 }
