@@ -1101,6 +1101,11 @@
       "name": "Van den Berg",
       "prediction": -95.3,
       "alerted_at": "2026-10-09T07:45:56.688463+00:00"
+    },
+    "386": {
+      "name": "Bettinelli",
+      "prediction": -98.5,
+      "alerted_at": "2026-10-09T08:06:41.939527+00:00"
     }
   },
   "last_prices": {
