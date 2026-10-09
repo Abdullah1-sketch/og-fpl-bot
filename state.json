@@ -12999,7 +12999,7 @@
   },
   "confirmed_price_logic_version": 2,
   "pending_confirmed_prices": {
-    "signature": "46c40646aa720446e4b44e1b8736a91d0f78c67c3eb5b788fd07aeedd4842d75",
-    "first_seen_at": "2026-10-09T22:55:04.325527+00:00"
+    "signature": "6b9368d2094688ce417386916d73a09a33fee7bb3424b8b23f864e71c8bb5e3d",
+    "first_seen_at": "2026-10-09T23:04:56.764673+00:00"
   }
 }
