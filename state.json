@@ -1201,6 +1201,11 @@
       "name": "Bamba",
       "prediction": -95.0,
       "alerted_at": "2026-10-10T01:55:04.807936+00:00"
+    },
+    "632": {
+      "name": "Ansah",
+      "prediction": -99.0,
+      "alerted_at": "2026-10-10T03:26:19.181321+00:00"
     }
   },
   "last_prices": {
