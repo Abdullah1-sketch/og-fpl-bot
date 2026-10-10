@@ -1251,6 +1251,26 @@
       "name": "Stroud",
       "prediction": -97.1,
       "alerted_at": "2026-10-10T07:52:22.143893+00:00"
+    },
+    "310": {
+      "name": "Matusiwa",
+      "prediction": -110.3,
+      "alerted_at": "2026-10-10T08:25:37.263384+00:00"
+    },
+    "499": {
+      "name": "Pedro Porro",
+      "prediction": -104.7,
+      "alerted_at": "2026-10-10T08:25:37.263384+00:00"
+    },
+    "182": {
+      "name": "Amenda",
+      "prediction": -96.3,
+      "alerted_at": "2026-10-10T08:25:37.263384+00:00"
+    },
+    "315": {
+      "name": "Fatawu",
+      "prediction": -99.6,
+      "alerted_at": "2026-10-10T08:25:37.263384+00:00"
     }
   },
   "last_prices": {
