@@ -1206,6 +1206,11 @@
       "name": "Ansah",
       "prediction": -99.0,
       "alerted_at": "2026-10-10T03:26:19.181321+00:00"
+    },
+    "515": {
+      "name": "Maddison",
+      "prediction": -95.2,
+      "alerted_at": "2026-10-10T05:53:01.270363+00:00"
     }
   },
   "last_prices": {
