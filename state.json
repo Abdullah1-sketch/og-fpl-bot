@@ -1211,6 +1211,11 @@
       "name": "Maddison",
       "prediction": -95.2,
       "alerted_at": "2026-10-10T05:53:01.270363+00:00"
+    },
+    "255": {
+      "name": "J.Cuenca",
+      "prediction": -104.1,
+      "alerted_at": "2026-10-10T06:05:26.669973+00:00"
     }
   },
   "last_prices": {
