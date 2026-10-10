@@ -13550,7 +13550,7 @@
       "156": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -13597,7 +13597,7 @@
         "red_cards": 0
       },
       "165": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -15407,9 +15407,14 @@
       "status": "sent",
       "text": "🏟️ أستون فيلا 1 - 1 برينتفورد\n🟨 إنذار | Buendía\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T14:50:35.449307+00:00"
+    },
+    "53:159": {
+      "status": "pending",
+      "text": "🏟️ تشيلسي [3] - 0 بورنموث\n⚽️ هدف | جواو بيدرو\n🅰️ صناعة | نيتو\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:07:05.630174+00:00"
     }
   },
-  "match_revision": 158,
+  "match_revision": 159,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15425,7 +15430,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "53": []
   },
   "bonus_posts": {
     "39": {
@@ -15513,7 +15519,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "53": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
