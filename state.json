@@ -1236,6 +1236,16 @@
       "name": "Osman",
       "prediction": -97.2,
       "alerted_at": "2026-10-10T07:08:40.258765+00:00"
+    },
+    "26": {
+      "name": "Havertz",
+      "prediction": -96.4,
+      "alerted_at": "2026-10-10T07:40:37.475920+00:00"
+    },
+    "367": {
+      "name": "Gakpo",
+      "prediction": -97.2,
+      "alerted_at": "2026-10-10T07:40:37.475920+00:00"
     }
   },
   "last_prices": {
