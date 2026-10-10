@@ -13010,7 +13010,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "89": {
@@ -15482,9 +15482,14 @@
       "status": "sent",
       "text": "🏟️ إيبسويتش 0 - 1 فولهام\n🟨 إنذار | Ángel\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:44:12.048994+00:00"
+    },
+    "52:174": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا 2 - 2 برينتفورد\n🟨 إنذار | Kayode\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:46:18.146799+00:00"
     }
   },
-  "match_revision": 173,
+  "match_revision": 174,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15500,7 +15505,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "52": []
   },
   "bonus_posts": {
     "39": {
@@ -15588,7 +15594,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "52": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -15607,8 +15615,11 @@
     "53": {
       "40:assists": 1,
       "566:own_goals": 1
-    }
+    },
+    "52": {}
   },
   "confirmed_price_logic_version": 2,
-  "unposted_assists": {}
+  "unposted_assists": {
+    "52": {}
+  }
 }
