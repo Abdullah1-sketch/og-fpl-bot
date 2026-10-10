@@ -14240,7 +14240,7 @@
       "124": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -15422,9 +15422,14 @@
       "status": "sent",
       "text": "🏟️ تشيلسي 3 - [1] بورنموث\n⚽️ هدف | Evanilson\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:13:45.888564+00:00"
+    },
+    "60:162": {
+      "status": "pending",
+      "text": "🏟️ سندرلاند 0 - [1] برايتون\n⚽️ هدف | De Cuyper\n🅰️ صناعة | Groß\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:14:55.784725+00:00"
     }
   },
-  "match_revision": 161,
+  "match_revision": 162,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15441,18 +15446,7 @@
     ],
     "33": [],
     "31": [],
-    "60": [
-      {
-        "change": {
-          "pid": "115",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-10-10T15:14:10.816878+00:00"
-      }
-    ],
+    "60": [],
     "57": [
       {
         "change": {
@@ -15553,7 +15547,7 @@
     }
   },
   "pending_assists": {
-    "57": []
+    "60": []
   },
   "revised_recredits": {
     "48": {
@@ -15574,7 +15568,7 @@
       "40:assists": 1,
       "566:own_goals": 1
     },
-    "57": {}
+    "60": {}
   },
   "confirmed_price_logic_version": 2
 }
