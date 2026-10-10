@@ -13777,7 +13777,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "263": {
@@ -15507,9 +15507,14 @@
       "status": "sent",
       "text": "🏟️ سندرلاند 0 - [2] برايتون\n⚽️ هدف | Hadjam\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:54:02.896584+00:00"
+    },
+    "57:179": {
+      "status": "pending",
+      "text": "🏟️ إيبسويتش 2 - 1 فولهام\n🟨 إنذار | Smith Rowe\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:54:22.902724+00:00"
     }
   },
-  "match_revision": 178,
+  "match_revision": 179,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15526,7 +15531,7 @@
     ],
     "33": [],
     "31": [],
-    "60": []
+    "57": []
   },
   "bonus_posts": {
     "39": {
@@ -15615,7 +15620,7 @@
     }
   },
   "pending_assists": {
-    "60": []
+    "57": []
   },
   "revised_recredits": {
     "48": {
@@ -15636,10 +15641,10 @@
       "40:assists": 1,
       "566:own_goals": 1
     },
-    "60": {}
+    "57": {}
   },
   "confirmed_price_logic_version": 2,
   "unposted_assists": {
-    "60": {}
+    "57": {}
   }
 }
