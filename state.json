@@ -12869,7 +12869,7 @@
       "41": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -13140,7 +13140,7 @@
         "red_cards": 0
       },
       "166": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -15372,9 +15372,14 @@
       "status": "sent",
       "text": "🏟️ تشيلسي 2 - 0 بورنموث\n🟨 إنذار | Tavernier\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T14:13:30.171927+00:00"
+    },
+    "52:152": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا [1] - 1 برينتفورد\n⚽️ هدف | N.Jackson\n🅰️ صناعة | Buendía\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T14:14:10.173365+00:00"
     }
   },
-  "match_revision": 151,
+  "match_revision": 152,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15391,7 +15396,7 @@
     ],
     "33": [],
     "31": [],
-    "53": []
+    "52": []
   },
   "bonus_posts": {
     "39": {
@@ -15480,7 +15485,7 @@
     }
   },
   "pending_assists": {
-    "53": []
+    "52": []
   },
   "revised_recredits": {
     "48": {
@@ -15500,7 +15505,8 @@
     "53": {
       "40:assists": 1,
       "566:own_goals": 1
-    }
+    },
+    "52": {}
   },
   "confirmed_price_logic_version": 2
 }
