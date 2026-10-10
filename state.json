@@ -13299,7 +13299,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "62": {
@@ -15392,9 +15392,14 @@
       "status": "sent",
       "text": "🏟️ سندرلاند 0 - 0 برايتون\n🟨 إنذار | Boscagli\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T14:39:30.355893+00:00"
+    },
+    "53:156": {
+      "status": "pending",
+      "text": "🏟️ تشيلسي 2 - 0 بورنموث\n🟨 إنذار | Truffert\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T14:45:40.461698+00:00"
     }
   },
-  "match_revision": 155,
+  "match_revision": 156,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15410,7 +15415,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "53": []
   },
   "bonus_posts": {
     "39": {
@@ -15498,7 +15504,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "53": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
