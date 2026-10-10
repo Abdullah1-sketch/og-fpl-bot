@@ -16055,9 +16055,11 @@
       "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '90', 'x-rate-limit-reset': '1791657290'}"
     },
     "59:183": {
-      "status": "pending",
+      "status": "rejected",
       "text": "🏟️ مانشستر يونايتد 1 - 1 توتنهام\n🟨 إنذار | Gray\n\n#FPL\n#فانتزي_البريميرليغ",
-      "at": "2026-10-10T18:28:27.241720+00:00"
+      "at": "2026-10-10T18:28:27.241720+00:00",
+      "tries": 1,
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '89', 'x-rate-limit-reset': '1791657290'}"
     }
   },
   "match_revision": 183,
