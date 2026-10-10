@@ -12814,7 +12814,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "33": {
@@ -15457,9 +15457,14 @@
       "status": "sent",
       "text": "🏟️ تشيلسي [5] - 1 بورنموث\n⚽️ هدف | Henderson\n🅰️ صناعة | بالمر\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:32:32.027728+00:00"
+    },
+    "52:169": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا 1 - 1 برينتفورد\n🟨 إنذار | Cash\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:35:32.032476+00:00"
     }
   },
-  "match_revision": 168,
+  "match_revision": 169,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15476,7 +15481,7 @@
     ],
     "33": [],
     "31": [],
-    "53": []
+    "52": []
   },
   "bonus_posts": {
     "39": {
@@ -15565,7 +15570,7 @@
     }
   },
   "pending_assists": {
-    "53": []
+    "52": []
   },
   "revised_recredits": {
     "48": {
@@ -15585,10 +15590,11 @@
     "53": {
       "40:assists": 1,
       "566:own_goals": 1
-    }
+    },
+    "52": {}
   },
   "confirmed_price_logic_version": 2,
   "unposted_assists": {
-    "53": {}
+    "52": {}
   }
 }
