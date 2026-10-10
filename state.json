@@ -13597,7 +13597,7 @@
         "red_cards": 0
       },
       "165": {
-        "goals_scored": 1,
+        "goals_scored": 2,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -15460,7 +15460,19 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "53": [
+      {
+        "change": {
+          "pid": "165",
+          "stat": "goals_scored",
+          "old": 1,
+          "new": 2,
+          "delta": 1
+        },
+        "detected_at": "2026-10-10T15:27:50.953843+00:00"
+      }
+    ]
   },
   "bonus_posts": {
     "39": {
@@ -15548,7 +15560,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "53": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
