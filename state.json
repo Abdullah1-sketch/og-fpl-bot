@@ -169,6 +169,11 @@
       "name": "N.Jackson",
       "prediction": 95.2,
       "alerted_at": "2026-10-10T07:26:35.762229+00:00"
+    },
+    "286": {
+      "name": "Belloumi",
+      "prediction": 98.2,
+      "alerted_at": "2026-10-10T08:40:43.170401+00:00"
     }
   },
   "alerted_fall": {
@@ -1271,6 +1276,16 @@
       "name": "Fatawu",
       "prediction": -99.6,
       "alerted_at": "2026-10-10T08:25:37.263384+00:00"
+    },
+    "272": {
+      "name": "Kusi-Asare",
+      "prediction": -96.5,
+      "alerted_at": "2026-10-10T08:40:43.170401+00:00"
+    },
+    "366": {
+      "name": "Wirtz",
+      "prediction": -95.6,
+      "alerted_at": "2026-10-10T08:40:43.170401+00:00"
     }
   },
   "last_prices": {
