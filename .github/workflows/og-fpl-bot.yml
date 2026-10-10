@@ -2,7 +2,7 @@ name: OG FPL Bot
 
 on:
   schedule:
-    - cron: "*/15 * * * *"
+    - cron: "4,19,34,49 * * * *"
   workflow_dispatch:
 
 permissions:
@@ -48,7 +48,7 @@ jobs:
           DRY_RUN: "false"
           BOT_GIT_CHECKPOINT: "true"
           LIVE_POLL_SECONDS: "5"
-          ASSIST_WAIT_SECONDS: "60"
+          ASSIST_WAIT_SECONDS: "20"
           X_POST_MIN_INTERVAL_SECONDS: "0"
           PYTHONUNBUFFERED: "1"
         run: python -u bot.py

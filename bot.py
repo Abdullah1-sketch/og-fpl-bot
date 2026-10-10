@@ -2283,11 +2283,10 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             stored[fid] = current
             pending_by_fixture.pop(fid, None)
             pending_assists_by_fixture.pop(fid, None)
-            if fixture.get('finished') or fixture.get('finished_provisional'):
-                state.setdefault('bonus_posts', {}).setdefault(
-                    fid, {'status': 'skipped_stale', 'at': now.isoformat()})
             checkpoint(state)
             print(f'Match {fid}: not polled for a while; fresh baseline, stale events not posted')
+            # Final bonus is still worth posting after downtime.
+            maybe_post_match_bonus(fixture, live, players, teams, state, now)
             continue
         if fid not in stored:
             # First installation during a match: establish baseline, not old goals.
