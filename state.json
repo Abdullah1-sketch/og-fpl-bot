@@ -13115,7 +13115,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 1,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "107": {
@@ -15382,9 +15382,14 @@
       "status": "sent",
       "text": "🏟️ إيبسويتش 0 - 0 فولهام\n🟨 إنذار | Davis\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T14:21:40.159949+00:00"
+    },
+    "52:154": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا 1 - 1 برينتفورد\n🟨 إنذار | Thiago\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T14:38:05.352394+00:00"
     }
   },
-  "match_revision": 153,
+  "match_revision": 154,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15400,7 +15405,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "52": []
   },
   "bonus_posts": {
     "39": {
@@ -15488,7 +15494,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "52": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -15507,7 +15515,8 @@
     "53": {
       "40:assists": 1,
       "566:own_goals": 1
-    }
+    },
+    "52": {}
   },
   "confirmed_price_logic_version": 2
 }
