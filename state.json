@@ -164,6 +164,11 @@
       "name": "Bogle",
       "prediction": 95.9,
       "alerted_at": "2026-10-09T23:24:46.924529+00:00"
+    },
+    "166": {
+      "name": "N.Jackson",
+      "prediction": 95.2,
+      "alerted_at": "2026-10-10T07:26:35.762229+00:00"
     }
   },
   "alerted_fall": {
