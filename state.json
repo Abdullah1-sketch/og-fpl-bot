@@ -1196,6 +1196,11 @@
       "name": "Dominguez",
       "prediction": -98.0,
       "alerted_at": "2026-10-10T01:26:38.552188+00:00"
+    },
+    "559": {
+      "name": "Bamba",
+      "prediction": -95.0,
+      "alerted_at": "2026-10-10T01:55:04.807936+00:00"
     }
   },
   "last_prices": {
