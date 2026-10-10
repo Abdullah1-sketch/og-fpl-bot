@@ -16168,10 +16168,11 @@
       "retry_at": "2026-10-10T18:19:49.708220+00:00"
     },
     "52": {
-      "status": "pending",
+      "status": "rejected",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nأستون فيلا × برينتفورد\n\n3 - N.Jackson\n2 - McGinn\n1 - Yarmoliuk\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T18:23:14.795740+00:00",
-      "signature": "166:3|45:2|102:1"
+      "signature": "166:3|45:2|102:1",
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '94', 'x-rate-limit-reset': '1791657290'}"
     }
   },
   "bonus_candidates": {
