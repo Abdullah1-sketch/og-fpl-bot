@@ -13889,7 +13889,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "306": {
@@ -15377,9 +15377,14 @@
       "status": "sent",
       "text": "🏟️ أستون فيلا [1] - 1 برينتفورد\n⚽️ هدف | N.Jackson\n🅰️ صناعة | Buendía\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T14:14:10.173365+00:00"
+    },
+    "57:153": {
+      "status": "pending",
+      "text": "🏟️ إيبسويتش 0 - 0 فولهام\n🟨 إنذار | Davis\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T14:21:40.159949+00:00"
     }
   },
-  "match_revision": 152,
+  "match_revision": 153,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15396,7 +15401,7 @@
     ],
     "33": [],
     "31": [],
-    "52": []
+    "57": []
   },
   "bonus_posts": {
     "39": {
@@ -15485,7 +15490,7 @@
     }
   },
   "pending_assists": {
-    "52": []
+    "57": []
   },
   "revised_recredits": {
     "48": {
@@ -15506,7 +15511,7 @@
       "40:assists": 1,
       "566:own_goals": 1
     },
-    "52": {}
+    "57": {}
   },
   "confirmed_price_logic_version": 2
 }
