@@ -14127,7 +14127,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "640": {
@@ -15477,9 +15477,14 @@
       "status": "sent",
       "text": "🏟️ أستون فيلا 1 - [2] برينتفورد\n⚽️ هدف | Ajer\n🅰️ صناعة | Anthony\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:43:27.043106+00:00"
+    },
+    "57:173": {
+      "status": "pending",
+      "text": "🏟️ إيبسويتش 0 - 1 فولهام\n🟨 إنذار | Ángel\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:44:12.048994+00:00"
     }
   },
-  "match_revision": 172,
+  "match_revision": 173,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15496,7 +15501,7 @@
     ],
     "33": [],
     "31": [],
-    "52": []
+    "57": []
   },
   "bonus_posts": {
     "39": {
@@ -15585,7 +15590,7 @@
     }
   },
   "pending_assists": {
-    "52": []
+    "57": []
   },
   "revised_recredits": {
     "48": {
@@ -15606,10 +15611,10 @@
       "40:assists": 1,
       "566:own_goals": 1
     },
-    "52": {}
+    "57": {}
   },
   "confirmed_price_logic_version": 2,
   "unposted_assists": {
-    "52": {}
+    "57": {}
   }
 }
