@@ -16168,10 +16168,11 @@
       "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '92', 'x-rate-limit-reset': '1791657290'}"
     },
     "60": {
-      "status": "pending",
+      "status": "rejected",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nسندرلاند × برايتون\n\n3 - De Cuyper\n2 - Verbruggen\n1 - F.Kadıoğlu\n1 - Sadiki\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T18:23:14.795740+00:00",
-      "signature": "115:3|109:2|113:1|545:1"
+      "signature": "115:3|109:2|113:1|545:1",
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '91', 'x-rate-limit-reset': '1791657290'}"
     }
   },
   "bonus_candidates": {
