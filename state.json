@@ -12692,7 +12692,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "346": {
@@ -13475,9 +13475,14 @@
       "status": "sent",
       "text": "🏟️ فولهام 1 - [1] مانشستر يونايتد\n⚽️ هدف | كونيا\n🅰️ صناعة | Dorgu\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-09-20T17:18:43.092927+00:00"
+    },
+    "51:137": {
+      "status": "pending",
+      "text": "🏟️ أرسنال 0 - 0 ليدز يونايتد\n🟨 إنذار | Tanaka\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T12:08:45.156094+00:00"
     }
   },
-  "match_revision": 136,
+  "match_revision": 137,
   "pending_goals": {
     "34": [],
     "32": [
@@ -13493,7 +13498,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "51": []
   },
   "bonus_posts": {
     "39": {
@@ -13575,7 +13581,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "51": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -13590,7 +13598,8 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
-    }
+    },
+    "51": {}
   },
   "confirmed_price_logic_version": 2
 }
