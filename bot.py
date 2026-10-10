@@ -1827,6 +1827,9 @@ LIVE_PRESTART_MINUTES = 20
 # Keep following a finished match long enough for FPL's official bonus to settle.
 LIVE_POSTMATCH_SECONDS = max(600, int(os.getenv('LIVE_POSTMATCH_SECONDS', '900')))
 LIVE_MAX_SECONDS = 300 * 60
+# If a match was not polled for this long (crash, delayed GitHub run), events in
+# between are old news: take a fresh baseline instead of tweeting them late.
+LIVE_STALE_GAP_SECONDS = max(120, int(os.getenv('LIVE_STALE_GAP_SECONDS', '600')))
 STOP_REQUESTED = False
 PLAYER_AR = {
     'Saka': 'ساكا', 'Ødegaard': 'أوديغارد', 'Haaland': 'هالاند',
@@ -2066,7 +2069,7 @@ def maybe_post_match_bonus(fixture, live, players, teams, state, now):
         posts[fid]['status'] = 'uncertain'
         checkpoint(state)
         print(f'Bonus post {fid} requires manual review: {type(exc).__name__}; NOT retried')
-        raise
+        return
     posts[fid]['status'] = 'sent' if not DRY_RUN else 'dry_run'
     candidates.pop(fid, None)
     checkpoint(state)
@@ -2240,8 +2243,11 @@ def _publish_match_batch(fixture, batch, players, teams, current_counts, previou
     except Exception as exc:
         outbox[key]['status'] = 'uncertain'
         checkpoint(state)
-        print(f'Match post {key} requires manual review: {type(exc).__name__}; NOT retried')
-        raise
+        # Do not stop the whole live run for one failed tweet: it is marked
+        # 'uncertain' and never retried, so no duplicate can be produced.
+        detail = getattr(getattr(exc, 'response', None), 'text', '') or ''
+        print(f'Match post {key} requires manual review: {type(exc).__name__} {detail[:200]}; NOT retried')
+        return
     outbox[key]['status'] = 'sent' if not DRY_RUN else 'dry_run'
     checkpoint(state)
 
@@ -2268,6 +2274,20 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
         fid = str(fixture['id'])
         current = match_counts(live, [fixture], players)[fid]
         if not current:
+            continue
+        last_polls = state.setdefault('match_last_poll', {})
+        last_poll = parse_iso_datetime(last_polls.get(fid))
+        last_polls[fid] = now.isoformat()
+        if (fid in stored and last_poll
+                and (now - last_poll).total_seconds() > LIVE_STALE_GAP_SECONDS):
+            stored[fid] = current
+            pending_by_fixture.pop(fid, None)
+            pending_assists_by_fixture.pop(fid, None)
+            if fixture.get('finished') or fixture.get('finished_provisional'):
+                state.setdefault('bonus_posts', {}).setdefault(
+                    fid, {'status': 'skipped_stale', 'at': now.isoformat()})
+            checkpoint(state)
+            print(f'Match {fid}: not polled for a while; fresh baseline, stale events not posted')
             continue
         if fid not in stored:
             # First installation during a match: establish baseline, not old goals.
