@@ -14340,7 +14340,7 @@
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
-        "red_cards": 0
+        "red_cards": 1
       },
       "501": {
         "goals_scored": 0,
@@ -15432,9 +15432,14 @@
       "status": "sent",
       "text": "🏟️ إيبسويتش 0 - [1] فولهام\n⚽️ هدف | Sessegnon\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:15:55.798079+00:00"
+    },
+    "60:164": {
+      "status": "pending",
+      "text": "🏟️ سندرلاند 0 - 1 برايتون\n🟥 طرد | Struijk\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:19:50.802951+00:00"
     }
   },
-  "match_revision": 163,
+  "match_revision": 164,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15451,7 +15456,7 @@
     ],
     "33": [],
     "31": [],
-    "57": []
+    "60": []
   },
   "bonus_posts": {
     "39": {
@@ -15540,7 +15545,7 @@
     }
   },
   "pending_assists": {
-    "57": []
+    "60": []
   },
   "revised_recredits": {
     "48": {
@@ -15561,7 +15566,7 @@
       "40:assists": 1,
       "566:own_goals": 1
     },
-    "57": {}
+    "60": {}
   },
   "confirmed_price_logic_version": 2
 }
