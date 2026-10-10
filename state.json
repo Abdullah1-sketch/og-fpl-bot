@@ -12600,7 +12600,7 @@
       "331": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -13485,9 +13485,14 @@
       "status": "sent",
       "text": "🏟️ أرسنال 0 - 0 ليدز يونايتد\n🟨 إنذار | Ampadu\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T12:11:01.302231+00:00"
+    },
+    "51:139": {
+      "status": "pending",
+      "text": "🏟️ أرسنال 0 - [1] ليدز يونايتد\n⚽️ هدف | Justin\n🅰️ صناعة | Gudmundsson\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T12:46:56.677278+00:00"
     }
   },
-  "match_revision": 138,
+  "match_revision": 139,
   "pending_goals": {
     "34": [],
     "32": [
@@ -13504,18 +13509,7 @@
     ],
     "33": [],
     "31": [],
-    "51": [
-      {
-        "change": {
-          "pid": "332",
-          "stat": "goals_scored",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-10-10T12:46:21.655885+00:00"
-      }
-    ]
+    "51": []
   },
   "bonus_posts": {
     "39": {
