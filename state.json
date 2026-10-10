@@ -15500,8 +15500,7 @@
       }
     ],
     "33": [],
-    "31": [],
-    "57": []
+    "31": []
   },
   "bonus_posts": {
     "39": {
@@ -15589,9 +15588,7 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {
-    "57": []
-  },
+  "pending_assists": {},
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -15610,11 +15607,8 @@
     "53": {
       "40:assists": 1,
       "566:own_goals": 1
-    },
-    "57": {}
+    }
   },
   "confirmed_price_logic_version": 2,
-  "unposted_assists": {
-    "57": {}
-  }
+  "unposted_assists": {}
 }
