@@ -12881,7 +12881,7 @@
         "red_cards": 0
       },
       "45": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
         "yellow_cards": 0,
@@ -12939,7 +12939,7 @@
       "53": {
         "goals_scored": 0,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -15467,9 +15467,14 @@
       "status": "sent",
       "text": "🏟️ أستون فيلا 1 - 1 برينتفورد\n🟨 إنذار | Janelt\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:39:07.042026+00:00"
+    },
+    "52:171": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا [2] - 1 برينتفورد\n⚽️ هدف | McGinn\n🅰️ صناعة | Manzambi\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:40:27.049800+00:00"
     }
   },
-  "match_revision": 170,
+  "match_revision": 171,
   "pending_goals": {
     "34": [],
     "32": [
