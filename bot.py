@@ -1795,6 +1795,44 @@ def fast_price_watch(state):
             return True
         time.sleep(FAST_PRICE_POLL_SECONDS)
 
+X_LIMIT_HEADERS = ('x-rate-limit-remaining', 'x-rate-limit-reset',
+                   'x-user-limit-24hour-remaining', 'x-user-limit-24hour-reset',
+                   'x-app-limit-24hour-remaining', 'x-app-limit-24hour-reset')
+X_LAST_LIMITS = {}
+
+
+class XRejected(Exception):
+    """X answered with an HTTP error: the tweet definitely was not posted."""
+
+    def __init__(self, status, body, limits):
+        super().__init__(f'X HTTP {status}')
+        self.status = status
+        self.body = (body or '')[:300]
+        self.limits = dict(limits)
+
+    def summary(self):
+        return f'HTTP {self.status} {self.body} {self.limits}'.strip()
+
+    def retry_at(self, now):
+        """When a retry makes sense, or None (e.g. 403 duplicate / not allowed)."""
+        if self.status == 429:
+            resets = []
+            for name in ('x-rate-limit-reset', 'x-user-limit-24hour-reset',
+                         'x-app-limit-24hour-reset'):
+                remaining = self.limits.get(name.replace('-reset', '-remaining'))
+                try:
+                    if remaining is not None and int(remaining) == 0:
+                        resets.append(int(self.limits[name]))
+                except (KeyError, ValueError):
+                    pass
+            if resets:
+                return datetime.fromtimestamp(max(resets) + 2, timezone.utc)
+            return now + timedelta(seconds=60)
+        if self.status >= 500:
+            return now + timedelta(seconds=20)
+        return None
+
+
 def post_to_x(text):
     if DRY_RUN:
         print("\n--- DRY RUN / لن يتم النشر ---")
@@ -1815,8 +1853,13 @@ def post_to_x(text):
         json={"text": text},
         timeout=20
     )
-    r.raise_for_status()
-    print("Posted:", r.json())
+    limits = {h: r.headers.get(h) for h in X_LIMIT_HEADERS if r.headers.get(h) is not None}
+    X_LAST_LIMITS.clear()
+    X_LAST_LIMITS.update(limits)
+    if r.status_code >= 400:
+        # X replied with an error, so the tweet was NOT published.
+        raise XRejected(r.status_code, r.text, limits)
+    print("Posted:", r.json(), limits)
 
 
 LIVE_POLL_SECONDS = max(5, int(os.getenv('LIVE_POLL_SECONDS', '5')))
@@ -1900,7 +1943,8 @@ def match_window(fixtures, state, now):
             if fid not in state.get('match_counts', {}):
                 continue  # Never replay a match first discovered after full time.
             finished_at = parse_iso_datetime(finishes.setdefault(fid, now.isoformat()))
-            if (now - finished_at).total_seconds() <= LIVE_POSTMATCH_SECONDS:
+            bonus_retry = state.get('bonus_posts', {}).get(fid, {}).get('status') == 'retry'
+            if (now - finished_at).total_seconds() <= LIVE_POSTMATCH_SECONDS or bonus_retry:
                 active.append(f)
         elif f.get('started') or age < 3 * 3600:
             finishes.pop(fid, None)
@@ -2029,6 +2073,11 @@ def maybe_post_match_bonus(fixture, live, players, teams, state, now):
 
     fid = str(fixture['id'])
     posts = state.setdefault('bonus_posts', {})
+    if fid in posts and posts[fid].get('status') == 'retry':
+        retry_at = parse_iso_datetime(posts[fid].get('retry_at'))
+        if retry_at and now < retry_at:
+            return
+        posts.pop(fid)   # X refused it before, so it was never published.
     if fid in posts:
         return
 
@@ -2065,6 +2114,14 @@ def maybe_post_match_bonus(fixture, live, players, teams, state, now):
     checkpoint(state)
     try:
         post_to_x(post)
+    except XRejected as exc:
+        retry_at = exc.retry_at(now)
+        posts[fid].update(status='retry' if retry_at else 'rejected', error=exc.summary())
+        if retry_at:
+            posts[fid]['retry_at'] = retry_at.isoformat()
+        checkpoint(state)
+        print(f'Bonus post {fid} rejected by X: {exc.summary()}')
+        return
     except Exception as exc:
         posts[fid]['status'] = 'uncertain'
         checkpoint(state)
@@ -2238,18 +2295,63 @@ def _publish_match_batch(fixture, batch, players, teams, current_counts, previou
         previous[change['pid']][change['stat']] = change['new']
     outbox[key] = {'status': 'pending', 'text': post, 'at': now.isoformat()}
     checkpoint(state)
+    _send_match_outbox(state, outbox, key, now)
+
+
+MATCH_RETRY_MAX_AGE_SECONDS = 300   # an event older than this is no longer news
+MATCH_RETRY_MAX_TRIES = 4
+
+
+def _send_match_outbox(state, outbox, key, now):
+    """Send one reserved match tweet. Never stops the live run.
+
+    - X replied with an error  -> not published; retried while still fresh.
+    - no reply (network/timeout) -> 'uncertain'; never retried (no duplicates).
+    """
+    entry = outbox[key]
+    entry['tries'] = int(entry.get('tries', 0)) + 1
     try:
-        post_to_x(post)
-    except Exception as exc:
-        outbox[key]['status'] = 'uncertain'
+        post_to_x(entry['text'])
+    except XRejected as exc:
+        retry_at = exc.retry_at(now)
+        created = parse_iso_datetime(entry.get('at')) or now
+        fresh = retry_at and (retry_at - created).total_seconds() <= MATCH_RETRY_MAX_AGE_SECONDS
+        entry['status'] = 'retry' if fresh and entry['tries'] < MATCH_RETRY_MAX_TRIES else 'rejected'
+        entry['error'] = exc.summary()
+        if entry['status'] == 'retry':
+            entry['retry_at'] = retry_at.isoformat()
         checkpoint(state)
-        # Do not stop the whole live run for one failed tweet: it is marked
-        # 'uncertain' and never retried, so no duplicate can be produced.
-        detail = getattr(getattr(exc, 'response', None), 'text', '') or ''
-        print(f'Match post {key} requires manual review: {type(exc).__name__} {detail[:200]}; NOT retried')
+        print(f'Match post {key} rejected by X: {exc.summary()}; status={entry["status"]}')
         return
-    outbox[key]['status'] = 'sent' if not DRY_RUN else 'dry_run'
+    except Exception as exc:
+        entry['status'] = 'uncertain'
+        entry['error'] = type(exc).__name__
+        checkpoint(state)
+        print(f'Match post {key} requires manual review: {type(exc).__name__}; NOT retried')
+        return
+    entry['status'] = 'sent' if not DRY_RUN else 'dry_run'
+    entry.pop('retry_at', None)
+    if X_LAST_LIMITS:
+        state['x_limits'] = dict(X_LAST_LIMITS, at=now.isoformat())
     checkpoint(state)
+
+
+def retry_match_posts(state, now):
+    outbox = state.get('match_outbox', {})
+    for key, entry in list(outbox.items()):
+        if entry.get('status') != 'retry':
+            continue
+        retry_at = parse_iso_datetime(entry.get('retry_at'))
+        if retry_at and now < retry_at:
+            continue
+        created = parse_iso_datetime(entry.get('at')) or now
+        if (now - created).total_seconds() > MATCH_RETRY_MAX_AGE_SECONDS:
+            entry['status'] = 'rejected'
+            checkpoint(state)
+            continue
+        entry['status'] = 'pending'
+        checkpoint(state)
+        _send_match_outbox(state, outbox, key, now)
 
 
 def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
@@ -2264,6 +2366,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
     # newly detected goal from the same team.
     pending_assists_by_fixture = state.setdefault('pending_assists', {})
     revised_recredits_by_fixture = state.setdefault('revised_recredits', {})
+    retry_match_posts(state, now)
     # Assists that were queued, never matched to a goal, and dropped without a
     # tweet. If FPL later removes one, nothing public needs correcting.
     unposted_assists_by_fixture = state.setdefault('unposted_assists', {})
