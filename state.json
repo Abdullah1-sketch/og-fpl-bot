@@ -16189,10 +16189,11 @@
       "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '91', 'x-rate-limit-reset': '1791657290'}"
     },
     "59": {
-      "status": "pending",
+      "status": "rejected",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nمانشستر يونايتد × توتنهام\n\n3 - كونيا\n2 - Tonali\n1 - مبيومو\n1 - سولانكي\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T18:37:07.221929+00:00",
-      "signature": "428:3|455:2|427:1|526:1"
+      "signature": "428:3|455:2|427:1|526:1",
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '99', 'x-rate-limit-reset': '1791658328'}"
     }
   },
   "bonus_candidates": {
