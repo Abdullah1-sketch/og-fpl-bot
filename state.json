@@ -13003,7 +13003,7 @@
         "goals_scored": 1,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "88": {
@@ -15487,9 +15487,14 @@
       "status": "sent",
       "text": "🏟️ أستون فيلا 2 - 2 برينتفورد\n🟨 إنذار | Kayode\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:46:18.146799+00:00"
+    },
+    "52:175": {
+      "status": "pending",
+      "text": "🏟️ أستون فيلا 2 - 2 برينتفورد\n🟨 إنذار | Ajer\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:49:17.920650+00:00"
     }
   },
-  "match_revision": 174,
+  "match_revision": 175,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15517,7 +15522,8 @@
         },
         "detected_at": "2026-10-10T15:48:37.889422+00:00"
       }
-    ]
+    ],
+    "52": []
   },
   "bonus_posts": {
     "39": {
@@ -15606,7 +15612,7 @@
     }
   },
   "pending_assists": {
-    "57": []
+    "52": []
   },
   "revised_recredits": {
     "48": {
@@ -15627,10 +15633,10 @@
       "40:assists": 1,
       "566:own_goals": 1
     },
-    "57": {}
+    "52": {}
   },
   "confirmed_price_logic_version": 2,
   "unposted_assists": {
-    "57": {}
+    "52": {}
   }
 }
