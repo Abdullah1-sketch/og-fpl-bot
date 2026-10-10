@@ -1191,6 +1191,11 @@
       "name": "Kamara",
       "prediction": -97.4,
       "alerted_at": "2026-10-10T00:06:14.054671+00:00"
+    },
+    "487": {
+      "name": "Dominguez",
+      "prediction": -98.0,
+      "alerted_at": "2026-10-10T01:26:38.552188+00:00"
     }
   },
   "last_prices": {
