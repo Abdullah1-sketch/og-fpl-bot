@@ -16168,10 +16168,11 @@
       "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '93', 'x-rate-limit-reset': '1791657290'}"
     },
     "57": {
-      "status": "pending",
+      "status": "rejected",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nإيبسويتش × فولهام\n\n3 - O'Shea\n2 - Ouattara\n1 - Iwobi\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T18:23:14.795740+00:00",
-      "signature": "304:3|592:2|261:1"
+      "signature": "304:3|592:2|261:1",
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '92', 'x-rate-limit-reset': '1791657290'}"
     }
   },
   "bonus_candidates": {
