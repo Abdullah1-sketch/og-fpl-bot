@@ -1216,6 +1216,21 @@
       "name": "J.Cuenca",
       "prediction": -104.1,
       "alerted_at": "2026-10-10T06:05:26.669973+00:00"
+    },
+    "69": {
+      "name": "Scott",
+      "prediction": -95.5,
+      "alerted_at": "2026-10-10T07:08:40.258765+00:00"
+    },
+    "95": {
+      "name": "O.Dango",
+      "prediction": -96.8,
+      "alerted_at": "2026-10-10T07:08:40.258765+00:00"
+    },
+    "600": {
+      "name": "Osman",
+      "prediction": -97.2,
+      "alerted_at": "2026-10-10T07:08:40.258765+00:00"
     }
   },
   "last_prices": {
