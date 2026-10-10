@@ -15455,18 +15455,7 @@
     }
   },
   "pending_assists": {
-    "53": [
-      {
-        "change": {
-          "pid": "40",
-          "stat": "assists",
-          "old": 0,
-          "new": 1,
-          "delta": 1
-        },
-        "detected_at": "2026-10-10T14:05:57.336061+00:00"
-      }
-    ]
+    "53": []
   },
   "revised_recredits": {
     "48": {
