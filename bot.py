@@ -2089,7 +2089,12 @@ def match_post(fixture, changes, players, teams, current_counts=None):
     home_score = home_score if isinstance(home_score, int) else 0
     away_score = away_score if isinstance(away_score, int) else 0
     scoring_teams = set()
+    # Teams that just LOST a goal (VAR, etc.). /fixtures/ can still show the old
+    # score for a few seconds, so their score follows the live credited total.
+    reduced_teams = set()
     for change in changes:
+        if change['delta'] < 0 and change['stat'] in ('goals_scored', 'own_goals'):
+            reduced_teams.add(goal_beneficiary(change, fixture, players))
         if change['delta'] <= 0:
             continue
         player_team = players[change['pid']]['team']
@@ -2122,10 +2127,16 @@ def match_post(fixture, changes, players, teams, current_counts=None):
             home_score = max(home_score, credited[fixture['team_h']])
         if fixture['team_a'] in scoring_teams:
             away_score = max(away_score, credited[fixture['team_a']])
+        if fixture['team_h'] in reduced_teams:
+            home_score = min(home_score, credited[fixture['team_h']])
+        if fixture['team_a'] in reduced_teams:
+            away_score = min(away_score, credited[fixture['team_a']])
 
     home_score_text = f'[{home_score}]' if fixture['team_h'] in scoring_teams else str(home_score)
     away_score_text = f'[{away_score}]' if fixture['team_a'] in scoring_teams else str(away_score)
     correction_post = any(change['delta'] < 0 for change in changes)
+    goal_removed = any(change['delta'] < 0 and change['stat'] in ('goals_scored', 'own_goals')
+                       for change in changes)
     lines = ([] if not correction_post else ['⚠️ تعديل رسمي من FPL'])
     lines.append(f'🏟️ {home} {home_score_text} - {away_score_text} {away}')
     for change in changes:
@@ -2144,27 +2155,77 @@ def match_post(fixture, changes, players, teams, current_counts=None):
             lines.append(f'{label} | {name}{suffix}')
         else:
             if change['stat'] == 'assists':
-                if change['new'] == 0:
+                if goal_removed:
+                    # Same tweet already says the goal was cancelled.
+                    lines.append(f'🅰️ تم إلغاء صناعة | {name}')
+                elif change['new'] == 0:
                     lines += [f'🅰️ تم إلغاء صناعة | {name}',
                               '↳ الهدف الآن بدون صناعة محتسبة']
                 else:
                     lines += [f'🅰️ تعديل صناعة | {name}',
                               f"↳ الصناعات المحتسبة الآن: {change['new']}"]
             elif change['stat'] == 'goals_scored':
-                lines += [f'⚽️ تم إلغاء هدف | {name}',
-                          '↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل']
+                lines.append(f'⚽️ تم إلغاء هدف | {name}')
             elif change['stat'] == 'own_goals':
-                lines += [f'⚽️ تم إلغاء هدف عكسي | {name}',
-                          '↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل']
+                lines.append(f'⚽️ تم إلغاء هدف عكسي | {name}')
             else:
                 lines.append(f'⚠️ تعديل FPL | {name}: القيمة المحتسبة الآن {change["new"]}')
+    if goal_removed:
+        lines.append('↳ النتيجة أعلاه هي النتيجة الرسمية بعد التعديل')
     return '\n'.join(lines + ['', '#FPL', '#فانتزي_البريميرليغ'])
 
 
-def _publish_match_batch(fixture, batch, players, teams, current_counts, previous, state, outbox, now):
+def goal_beneficiary(change, fixture, players):
+    """The team that a goal or own goal counts for in the score."""
+    team_id = players[change['pid']]['team']
+    if change['stat'] == 'own_goals':
+        return fixture['team_a'] if team_id == fixture['team_h'] else fixture['team_h']
+    return team_id
+
+
+def reassignment_post(fixture, batch, players, teams):
+    """One tweet for a goal that FPL moved to another player.
+
+    The score does not change, so no team is bracketed as having scored.
+    batch = [removed_goal, added_goal, *assist_changes]
+    """
+    home = team_ar(teams.get(fixture['team_h'], str(fixture['team_h'])))
+    away = team_ar(teams.get(fixture['team_a'], str(fixture['team_a'])))
+    home = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(home, home)
+    away = {'Hull City': 'هال سيتي', 'Ipswich Town': 'إيبسويتش'}.get(away, away)
+    home_score = fixture.get('team_h_score')
+    away_score = fixture.get('team_a_score')
+    home_score = home_score if isinstance(home_score, int) else 0
+    away_score = away_score if isinstance(away_score, int) else 0
+
+    def name(change):
+        n = players[change['pid']]['web_name']
+        return PLAYER_AR.get(n, n)
+
+    removed, added = batch[0], batch[1]
+    old_kind = 'الهدف العكسي' if removed['stat'] == 'own_goals' else 'هدف'
+    new_label = '⚽️ هدف عكسي' if added['stat'] == 'own_goals' else '⚽️ الهدف الآن لـ'
+    lines = ['⚠️ تعديل رسمي من FPL',
+             f'🏟️ {home} {home_score} - {away_score} {away}',
+             f'🔄 تم تحويل {old_kind} ({name(removed)})',
+             f'{new_label} | {name(added)}']
+    for change in batch[2:]:
+        if change['stat'] == 'assists' and change['delta'] > 0:
+            lines.append(f'🅰️ صناعة | {name(change)}')
+        elif change['stat'] == 'assists' and change['delta'] < 0:
+            lines.append(f'🅰️ تم إلغاء صناعة | {name(change)}')
+    lines.append('↳ النتيجة لم تتغير')
+    return '\n'.join(lines + ['', '#FPL', '#فانتزي_البريميرليغ'])
+
+
+def _publish_match_batch(fixture, batch, players, teams, current_counts, previous, state, outbox, now,
+                         reassignment=False):
     revision = int(state.get('match_revision', 0)) + 1
     key = f"{fixture['id']}:{revision}"
-    post = match_post(fixture, batch, players, teams, current_counts)
+    if reassignment:
+        post = reassignment_post(fixture, batch, players, teams)
+    else:
+        post = match_post(fixture, batch, players, teams, current_counts)
     if len(post) > 280:
         raise ValueError('Match post exceeds limit; event retained for review')
     # Reserve BEFORE X call. If the response is lost, do not blindly retry a
@@ -2197,6 +2258,9 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
     # newly detected goal from the same team.
     pending_assists_by_fixture = state.setdefault('pending_assists', {})
     revised_recredits_by_fixture = state.setdefault('revised_recredits', {})
+    # Assists that were queued, never matched to a goal, and dropped without a
+    # tweet. If FPL later removes one, nothing public needs correcting.
+    unposted_assists_by_fixture = state.setdefault('unposted_assists', {})
     for fixture in fixtures:
         live = live_by_gw.get(fixture['event'])
         if live is None:
@@ -2215,6 +2279,7 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
         pending = pending_by_fixture.setdefault(fid, [])
         pending_assists = pending_assists_by_fixture.setdefault(fid, [])
         revised_recredits = revised_recredits_by_fixture.setdefault(fid, {})
+        unposted_assists = unposted_assists_by_fixture.setdefault(fid, {})
         changes = []
         for pid, values in current.items():
             if pid not in previous:
@@ -2261,6 +2326,17 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                     previous[change['pid']]['assists'] = change['new']
                     checkpoint(state)
                     continue
+                # An assist that was dropped silently was never tweeted either.
+                silent = unposted_assists.get(change['pid'], 0)
+                if silent >= -change['delta']:
+                    remaining_silent = silent + change['delta']
+                    if remaining_silent:
+                        unposted_assists[change['pid']] = remaining_silent
+                    else:
+                        unposted_assists.pop(change['pid'], None)
+                    previous[change['pid']]['assists'] = change['new']
+                    checkpoint(state)
+                    continue
             if change['stat'] in ('goals_scored', 'own_goals', 'assists') and change['delta'] < 0:
                 revised_recredits[recredit_key] = change['old']
             remaining.append(change)
@@ -2270,14 +2346,70 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
         positive_own_goals = [c for c in changes if c['stat'] == 'own_goals' and c['delta'] > 0]
         positive_assists = [c for c in changes if c['stat'] == 'assists' and c['delta'] > 0]
         used = set()
+        reassignment_batches = []
+
+        # FPL sometimes moves a goal to another player (own goal -> scorer,
+        # scorer -> own goal, or scorer A -> scorer B). In one update this shows
+        # as one goal removed and one goal added for the SAME team. That is one
+        # correction, not a new goal plus separate cancellations, so it becomes
+        # a single tweet with the unchanged score.
+        goal_stats = ('goals_scored', 'own_goals')
+        for team_id in (fixture['team_h'], fixture['team_a']):
+            removed = [c for c in changes if c['stat'] in goal_stats and c['delta'] == -1
+                       and goal_beneficiary(c, fixture, players) == team_id]
+            added = [c for c in changes if c['stat'] in goal_stats and c['delta'] == 1
+                     and goal_beneficiary(c, fixture, players) == team_id]
+            if not (len(removed) == len(added) == 1):
+                continue
+            batch = [removed[0], added[0]]
+            used.update((id(removed[0]), id(added[0])))
+            # The original goal was not deleted, only re-credited, so a later
+            # move back must be announced as another move, not suppressed.
+            revised_recredits.pop(f"{removed[0]['pid']}:{removed[0]['stat']}", None)
+            if added[0]['stat'] == 'goals_scored':
+                team_new_assists = [c for c in positive_assists if c['delta'] == 1
+                                    and players[c['pid']]['team'] == team_id]
+                if len(team_new_assists) == 1:
+                    batch.append(team_new_assists[0])
+                    used.add(id(team_new_assists[0]))
+                elif not team_new_assists:
+                    waiting = [h for h in pending_assists
+                               if players[h['change']['pid']]['team'] == team_id]
+                    if len(waiting) == 1:
+                        pending_assists.remove(waiting[0])
+                        batch.append(waiting[0]['change'])
+            for c in changes:
+                if (c['stat'] == 'assists' and c['delta'] < 0 and id(c) not in used
+                        and players[c['pid']]['team'] == team_id):
+                    revised_recredits.pop(f"{c['pid']}:assists", None)
+                    batch.append(c)
+                    used.add(id(c))
+            reassignment_batches.append(batch)
+
+        # A goal removed outright (e.g. VAR) usually takes its assist with it in
+        # the same update. Announce both in one correction tweet.
+        for goal in changes:
+            if (goal['stat'] not in goal_stats or goal['delta'] >= 0 or id(goal) in used):
+                continue
+            team_id = goal_beneficiary(goal, fixture, players)
+            batch = [goal]
+            used.add(id(goal))
+            for c in changes:
+                if (c['stat'] == 'assists' and c['delta'] < 0 and id(c) not in used
+                        and players[c['pid']]['team'] == team_id):
+                    batch.append(c)
+                    used.add(id(c))
+            batches.append(batch)
 
         # Pair any goal number (not just the first) when one +1 goal and one +1
         # assist arrive for the same team in this fixture update.
         for team_id in (fixture['team_h'], fixture['team_a']):
             team_goals = [c for c in positive_goals
-                          if c['delta'] == 1 and players[c['pid']]['team'] == team_id]
+                          if id(c) not in used and c['delta'] == 1
+                          and players[c['pid']]['team'] == team_id]
             team_assists = [c for c in positive_assists
-                            if c['delta'] == 1 and players[c['pid']]['team'] == team_id]
+                            if id(c) not in used and c['delta'] == 1
+                            and players[c['pid']]['team'] == team_id]
             if len(team_goals) == len(team_assists) == 1:
                 batches.append([team_goals[0], team_assists[0]])
                 used.update((id(team_goals[0]), id(team_assists[0])))
@@ -2359,6 +2491,10 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
                 batches.append([change])
                 used.add(id(change))
 
+        for batch in reassignment_batches:
+            _publish_match_batch(fixture, batch, players, teams, current, previous,
+                                 state, outbox, now, reassignment=True)
+
         for batch in batches:
             _publish_match_batch(fixture, batch, players, teams, current, previous,
                                  state, outbox, now)
@@ -2378,6 +2514,8 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             detected = parse_iso_datetime(held.get('detected_at'))
             if not detected or (now - detected).total_seconds() >= ASSIST_WAIT_SECONDS:
                 pending_assists.remove(held)
+                pid = held['change']['pid']
+                unposted_assists[pid] = unposted_assists.get(pid, 0) + held['change']['delta']
                 checkpoint(state)
 
         if not pending:
@@ -2386,6 +2524,8 @@ def process_matches(fixtures, live_by_gw, bootstrap, state, now_utc=None):
             pending_assists_by_fixture.pop(fid, None)
         if not revised_recredits:
             revised_recredits_by_fixture.pop(fid, None)
+        if not unposted_assists:
+            unposted_assists_by_fixture.pop(fid, None)
 
         # Once the match is over, publish FPL's settled official bonus exactly once.
         maybe_post_match_bonus(fixture, live, players, teams, state, now)
