@@ -16048,9 +16048,11 @@
       "at": "2026-10-10T18:21:54.115992+00:00"
     },
     "59:182": {
-      "status": "pending",
+      "status": "rejected",
       "text": "🏟️ مانشستر يونايتد 1 - 1 توتنهام\n🟨 إنذار | Dalot\n\n#FPL\n#فانتزي_البريميرليغ",
-      "at": "2026-10-10T18:25:32.254124+00:00"
+      "at": "2026-10-10T18:25:32.254124+00:00",
+      "tries": 1,
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '90', 'x-rate-limit-reset': '1791657290'}"
     }
   },
   "match_revision": 182,
