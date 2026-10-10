@@ -1316,6 +1316,16 @@
       "name": "N.Williams",
       "prediction": -99.6,
       "alerted_at": "2026-10-10T09:24:59.045227+00:00"
+    },
+    "185": {
+      "name": "Sakamoto",
+      "prediction": -95.4,
+      "alerted_at": "2026-10-10T09:40:10.476744+00:00"
+    },
+    "167": {
+      "name": "Delap",
+      "prediction": -95.0,
+      "alerted_at": "2026-10-10T09:40:10.476744+00:00"
     }
   },
   "last_prices": {
