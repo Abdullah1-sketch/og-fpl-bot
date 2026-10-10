@@ -16168,10 +16168,11 @@
       "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '94', 'x-rate-limit-reset': '1791657290'}"
     },
     "53": {
-      "status": "pending",
+      "status": "rejected",
       "text": "⭐ بونص المباراة حتى هذه اللحظة |\nتشيلسي × بورنموث\n\n3 - Henderson\n2 - جواو بيدرو\n1 - Evanilson\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T18:23:14.795740+00:00",
-      "signature": "101:3|165:2|79:1"
+      "signature": "101:3|165:2|79:1",
+      "error": "HTTP 403 {\"detail\":\"Your account is not permitted to access this feature.\",\"status\":403,\"title\":\"Forbidden\",\"type\":\"about:blank\"} {'x-rate-limit-remaining': '93', 'x-rate-limit-reset': '1791657290'}"
     }
   },
   "bonus_candidates": {
