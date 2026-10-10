@@ -13261,7 +13261,7 @@
         "red_cards": 0
       },
       "40": {
-        "goals_scored": 0,
+        "goals_scored": 1,
         "own_goals": 0,
         "assists": 1,
         "yellow_cards": 0,
@@ -13445,7 +13445,7 @@
       "101": {
         "goals_scored": 1,
         "own_goals": 0,
-        "assists": 0,
+        "assists": 1,
         "yellow_cards": 0,
         "red_cards": 0
       },
@@ -15347,9 +15347,14 @@
       "status": "sent",
       "text": "🏟️ تشيلسي [2] - 0 بورنموث\n⚽️ هدف عكسي | Silva\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T14:05:17.309495+00:00"
+    },
+    "53:147": {
+      "status": "pending",
+      "text": "🏟️ تشيلسي [2] - 0 بورنموث\n⚽️ هدف | روجرز\n🅰️ صناعة | Henderson\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T14:10:47.497425+00:00"
     }
   },
-  "match_revision": 146,
+  "match_revision": 147,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15365,7 +15370,8 @@
       }
     ],
     "33": [],
-    "31": []
+    "31": [],
+    "53": []
   },
   "bonus_posts": {
     "39": {
@@ -15453,7 +15459,9 @@
       "first_seen": "2026-09-20T14:59:44.685532+00:00"
     }
   },
-  "pending_assists": {},
+  "pending_assists": {
+    "53": []
+  },
   "revised_recredits": {
     "48": {
       "512:goals_scored": 1
@@ -15468,6 +15476,10 @@
     "44": {
       "204:goals_scored": 1,
       "588:assists": 1
+    },
+    "53": {
+      "40:assists": 1,
+      "566:own_goals": 1
     }
   },
   "confirmed_price_logic_version": 2
