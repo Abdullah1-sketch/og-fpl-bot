@@ -13383,7 +13383,7 @@
         "goals_scored": 0,
         "own_goals": 0,
         "assists": 0,
-        "yellow_cards": 0,
+        "yellow_cards": 1,
         "red_cards": 0
       },
       "74": {
@@ -15437,9 +15437,14 @@
       "status": "sent",
       "text": "🏟️ سندرلاند 0 - 1 برايتون\n🟥 طرد | Struijk\n\n#FPL\n#فانتزي_البريميرليغ",
       "at": "2026-10-10T15:19:50.802951+00:00"
+    },
+    "53:165": {
+      "status": "pending",
+      "text": "🏟️ تشيلسي 3 - 1 بورنموث\n🟨 إنذار | Adams\n\n#FPL\n#فانتزي_البريميرليغ",
+      "at": "2026-10-10T15:24:10.822790+00:00"
     }
   },
-  "match_revision": 164,
+  "match_revision": 165,
   "pending_goals": {
     "34": [],
     "32": [
@@ -15456,7 +15461,7 @@
     ],
     "33": [],
     "31": [],
-    "60": []
+    "53": []
   },
   "bonus_posts": {
     "39": {
@@ -15545,7 +15550,7 @@
     }
   },
   "pending_assists": {
-    "60": []
+    "53": []
   },
   "revised_recredits": {
     "48": {
@@ -15565,8 +15570,7 @@
     "53": {
       "40:assists": 1,
       "566:own_goals": 1
-    },
-    "60": {}
+    }
   },
   "confirmed_price_logic_version": 2
 }
