@@ -1286,6 +1286,11 @@
       "name": "Wirtz",
       "prediction": -95.6,
       "alerted_at": "2026-10-10T08:40:43.170401+00:00"
+    },
+    "357": {
+      "name": "Frimpong",
+      "prediction": -95.9,
+      "alerted_at": "2026-10-10T08:53:02.341292+00:00"
     }
   },
   "last_prices": {
