@@ -1246,6 +1246,11 @@
       "name": "Gakpo",
       "prediction": -97.2,
       "alerted_at": "2026-10-10T07:40:37.475920+00:00"
+    },
+    "576": {
+      "name": "Stroud",
+      "prediction": -97.1,
+      "alerted_at": "2026-10-10T07:52:22.143893+00:00"
     }
   },
   "last_prices": {
