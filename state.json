@@ -184,6 +184,11 @@
       "name": "Vuskovic",
       "prediction": 95.1,
       "alerted_at": "2026-10-10T09:24:59.045227+00:00"
+    },
+    "25": {
+      "name": "Gyökeres",
+      "prediction": 95.0,
+      "alerted_at": "2026-10-10T09:52:51.256025+00:00"
     }
   },
   "alerted_fall": {
@@ -1326,6 +1331,26 @@
       "name": "Delap",
       "prediction": -95.0,
       "alerted_at": "2026-10-10T09:40:10.476744+00:00"
+    },
+    "397": {
+      "name": "Semenyo",
+      "prediction": -97.2,
+      "alerted_at": "2026-10-10T09:52:51.256025+00:00"
+    },
+    "481": {
+      "name": "Anderson",
+      "prediction": -96.7,
+      "alerted_at": "2026-10-10T09:52:51.256025+00:00"
+    },
+    "439": {
+      "name": "Šeško",
+      "prediction": -95.9,
+      "alerted_at": "2026-10-10T09:52:51.256025+00:00"
+    },
+    "496": {
+      "name": "Kinsky",
+      "prediction": -96.4,
+      "alerted_at": "2026-10-10T09:52:51.256025+00:00"
     }
   },
   "last_prices": {
